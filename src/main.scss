@@ -1,8 +1,9 @@
 @use './components/navbar/NavBar';
+@use './components/hero/HeroSection';
 
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -17,7 +18,7 @@ html {
 body {
     color: #fff;
     background-color: #001c25;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     line-height: 1.5;
     font-weight: 400;
     height: 100%;

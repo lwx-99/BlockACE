@@ -1,8 +1,8 @@
-
 $primary-color: #00b3c5;
+$light-text-color:#BEFBFF;
 $dark-primary-color: #003445;
 $dark-secondary-color: #324B4F;
-
+$main-background-color: #001c25;
 .nav-bar {
     display: flex;
     justify-content: center;
@@ -40,6 +40,8 @@ $dark-secondary-color: #324B4F;
                     
                     .nav-link {
                         text-decoration: none;
+                        
+                        font-weight: 600;
                     }
                 }
 
@@ -59,7 +61,7 @@ $dark-secondary-color: #324B4F;
         justify-content: flex-end;
         height: 80px;
         width: 120px;
-        padding: 0 16px;;
+        padding-left: 16px;
 
 
         .lang-svg-icon {

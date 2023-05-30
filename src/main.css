@@ -34,6 +34,7 @@
 }
 .nav-bar .nav-bar-container .nav-menu-container ul.nav-menu li.nav-item .nav-link {
   text-decoration: none;
+  font-weight: 600;
 }
 .nav-bar .nav-bar-container .nav-menu-container ul.nav-menu li.nav-item:hover {
   border-top: 4px solid #00b3c5;
@@ -46,7 +47,7 @@
   justify-content: flex-end;
   height: 80px;
   width: 120px;
-  padding: 0 16px;
+  padding-left: 16px;
 }
 .nav-bar .lang-btn .lang-svg-icon {
   display: flex;
@@ -117,9 +118,106 @@
   transition: all 0.2s ease-in-out 0s;
 }
 
+.hero-section {
+  height: 600px;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #003445;
+  border-radius: 16px;
+  position: relative;
+  top: 100px;
+}
+.hero-section .hero-section-title {
+  position: absolute;
+  left: 70px;
+  bottom: 80px;
+  width: 600px;
+}
+.hero-section .hero-section-title h1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  font-size: 2.5rem;
+}
+.hero-section .hero-section-title h1 .branding-name {
+  font-size: 4rem;
+  color: #BEFBFF;
+}
+.hero-section .hero-section-title p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.hero-section .hero-section-title .hero-button .btn-01 {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #BEFBFF;
+  background: #001c25;
+  border: none;
+  padding: 16px 24px;
+  border-radius: 12px;
+  text-align: center;
+  margin-right: 12px;
+}
+.hero-section .hero-section-title .hero-button .btn-01:hover {
+  background: #00b3c5;
+  transition: all 0.2s linear;
+}
+.hero-section .hero-section-title .hero-button .btn-02 {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #BEFBFF;
+  background: transparent;
+  border: 1px solid #001c25;
+  padding: 16px 24px;
+  border-radius: 12px;
+  text-align: center;
+}
+.hero-section .hero-section-title .hero-button .btn-02:hover {
+  border: 1px solid #00b3c5;
+  transition: all 0.2s linear;
+}
+.hero-section .hero-animated-illu {
+  position: absolute;
+  right: 100px;
+  bottom: 75px;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+@keyframes updown {
+  from {
+    transform: translate(-50%, -45%);
+  }
+  to {
+    transform: translate(-50%, -55%);
+  }
+}
+@keyframes glow {
+  from {
+    filter: drop-shadow(5px 10px 15px rgba(0, 255, 213, 0.3));
+  }
+  to {
+    filter: drop-shadow(5px 10px 20px rgba(0, 255, 213, 0.6));
+  }
+}
+.hero-section .hero-animated-illu .illu-01 {
+  position: absolute;
+  left: 50%;
+  animation: updown 2s ease-in-out infinite alternate, glow 2s ease-in-out infinite alternate;
+}
+.hero-section .hero-section-title > * {
+  margin: 18px 0;
+}
+
+.fun {
+  font-size: 2rem;
+}
+
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -134,7 +232,7 @@ html {
 body {
   color: #fff;
   background-color: #001c25;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Quicksand", sans-serif;
   line-height: 1.5;
   font-weight: 400;
   height: 100%;
