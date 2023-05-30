@@ -12,7 +12,7 @@ function NavBar() {
           <div className="nav-bar--logo-container">
             <Link to="/" className="nav-logo">
 
-              <img src="public/image/blockaceLogo.png" height="48px" width="48px"/>
+              <img src="public/image/blockaceLogo.png" height="32px"/>
             </Link>
           </div>
           <div className="nav-menu-container">

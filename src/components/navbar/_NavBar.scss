@@ -11,10 +11,11 @@ $dark-secondary-color: #324B4F;
     top: 0;
     width: 100%;
     height: 80px;
+    z-index: 1000;
 
 
     .nav-bar-container {
-        font-size: 1.125rem;
+        font-size: 0.875rem;
         width: 1400px;
         display: flex;
         justify-content: space-around;
@@ -22,7 +23,6 @@ $dark-secondary-color: #324B4F;
 
         .nav-menu-container {
             display: flex;
-            justify-content: flex-end;
             align-items: center;
 
             ul.nav-menu {
@@ -35,7 +35,7 @@ $dark-secondary-color: #324B4F;
                     align-items: center;
                     border-top: 4px solid transparent;
                     height: 80px;
-                    margin: auto 16px;
+                    margin: auto 10px;
                     padding: 0 10px;
                     
                     .nav-link {
@@ -58,6 +58,7 @@ $dark-secondary-color: #324B4F;
         align-items: center;
         justify-content: flex-end;
         height: 80px;
+        width: 120px;
         padding: 0 16px;;
 
 
@@ -95,7 +96,7 @@ $dark-secondary-color: #324B4F;
 
             button {
                 cursor: pointer;
-                font-size: 1.25rem;
+                font-size: 1rem;
                 background: none;
                 border: none;
                 padding: 16px 24px 16px 18px;
