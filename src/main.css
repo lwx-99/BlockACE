@@ -7,6 +7,7 @@
   width: 100%;
   height: 80px;
   z-index: 1000;
+  background-color: #001c25;
 }
 .nav-bar .nav-bar-container {
   font-size: 0.875rem;
@@ -82,6 +83,8 @@
   }
 }
 .nav-bar .lang-btn .lang-selector button {
+  display: flex;
+  align-items: center;
   cursor: pointer;
   font-size: 1rem;
   background: none;
@@ -93,7 +96,7 @@
 }
 .nav-bar .lang-btn .lang-selector button span {
   color: #9b9b9b;
-  margin-left: 6px;
+  margin: 0 6px;
 }
 .nav-bar .lang-btn .lang-selector button:hover {
   background-color: #003445;
@@ -213,6 +216,64 @@
 
 .fun {
   font-size: 2rem;
+}
+
+.service-section {
+  height: 400px;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #003445;
+  border-radius: 16px;
+  margin-top: 40px;
+}
+
+.about-us-section {
+  height: 450px;
+  width: 1200px;
+  display: flex;
+  padding: 30px 60px;
+  flex-direction: column;
+  background-color: #003445;
+  border-radius: 16px;
+  margin-top: 140px;
+}
+.about-us-section h1.section-title {
+  margin: 0 0 10px 0;
+  text-align: left;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.about-us-section .about-us-content {
+  display: grid;
+  grid-template: 200px/auto 400px;
+  grid-template-areas: "Article Figure";
+  gap: 40px;
+}
+.about-us-section .about-us-content article {
+  grid-area: Article;
+}
+.about-us-section .about-us-content figure {
+  grid-area: Figure;
+}
+.about-us-section .about-us-content figure img {
+  max-width: 100%;
+  max-height: auto;
+  border-radius: 15px;
+  filter: drop-shadow(15px 15px 0px #BEFBFF);
+}
+
+.verticleSilde {
+  grid-area: verticleSlide;
+  position: relative;
+}
+.verticleSilde .main-display {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 * {

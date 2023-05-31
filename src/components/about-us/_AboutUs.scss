@@ -1,0 +1,46 @@
+$primary-color: #00b3c5;
+$light-text-color:#BEFBFF;
+$dark-primary-color: #003445;
+$dark-secondary-color: #324B4F;
+$main-background-color: #001c25;
+
+.about-us-section {
+    height: 450px;
+    width: 1200px;
+    display: flex;
+    padding: 30px 60px;
+    flex-direction: column;
+    background-color: $dark-primary-color;
+    border-radius: 16px;
+    margin-top: 140px;
+    
+    h1.section-title {
+        margin: 0 0 10px 0;
+        text-align: left;
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+
+    .about-us-content {
+        display: grid;
+        grid-template: 200px / auto 400px;
+        grid-template-areas: "Article verticleSlide";
+        gap: 40px;
+
+        article {
+            grid-area: Article;
+        }
+
+        figure {
+            
+            img {
+                max-width: 100%;
+                max-height: auto;
+                border-radius: 15px;
+                filter: drop-shadow(15px 15px 0px $light-text-color);
+            }
+        }
+    }
+
+
+}

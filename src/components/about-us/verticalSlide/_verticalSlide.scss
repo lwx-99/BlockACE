@@ -1,0 +1,35 @@
+$primary-color: #00b3c5;
+$light-text-color:#BEFBFF;
+$dark-primary-color: #003445;
+$dark-secondary-color: #324B4F;
+$main-background-color: #001c25;
+
+.verticleSilde {
+    grid-area: verticleSlide;
+    position: relative;
+
+    .main-display {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .secondary-display {
+        position: absolute;
+        top: 0px;
+
+        .secondary-display-01 {
+            position: absolute;
+            top: 0px;
+
+        }
+
+        .secondary-display-02 {
+            position: absolute;
+            top: 0px;
+        }
+    }
+}

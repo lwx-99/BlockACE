@@ -54,8 +54,8 @@ function NavBar() {
             </div>
             { IsShow ?
             <div className="lang-selector">
-              <button className="lang-selector-btn" onClick={() => setCurrentLang({language: "EN"})}>English <span>EN</span></button>
-              <button className="lang-selector-btn" onClick={() => setCurrentLang({language: "VI"})}>Tiếng Việt <span>VI</span></button>
+              <button className="lang-selector-btn" onClick={() => setCurrentLang({language: "EN"})}>English <span>EN</span><img src="/image/svg/united-kingdom.svg" width="20"></img></button>
+              <button className="lang-selector-btn" onClick={() => setCurrentLang({language: "VI"})}>Tiếng Việt <span>VI</span><img src="/image/svg/vietnam.svg" width="20"></img></button>
             </div>
             : <></>}
           </div>

@@ -1,5 +1,8 @@
 @use './components/navbar/NavBar';
 @use './components/hero/HeroSection';
+@use './components/service/Services';
+@use './components/about-us/AboutUs';
+@use './components/about-us/verticleSlide/verticalSlide';
 
 * {
     box-sizing: border-box;

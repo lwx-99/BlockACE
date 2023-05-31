@@ -12,6 +12,7 @@ $main-background-color: #001c25;
     width: 100%;
     height: 80px;
     z-index: 1000;
+    background-color: $main-background-color;
 
 
     .nav-bar-container {
@@ -97,6 +98,8 @@ $main-background-color: #001c25;
             animation: appear 0.2s ease-in;
 
             button {
+                display: flex;
+                align-items: center;
                 cursor: pointer;
                 font-size: 1rem;
                 background: none;
@@ -108,7 +111,7 @@ $main-background-color: #001c25;
 
                 span {
                     color: #9b9b9b;
-                    margin-left: 6px;
+                    margin: 0 6px;
                 }
             }
 
