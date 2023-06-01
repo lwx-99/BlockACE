@@ -230,7 +230,7 @@
 }
 
 .about-us-section {
-  height: 450px;
+  height: 600px;
   width: 1200px;
   display: flex;
   padding: 30px 60px;
@@ -238,6 +238,8 @@
   background-color: #003445;
   border-radius: 16px;
   margin-top: 140px;
+  align-items: center;
+  justify-content: center;
 }
 .about-us-section h1.section-title {
   margin: 0 0 10px 0;
@@ -247,33 +249,137 @@
 }
 .about-us-section .about-us-content {
   display: grid;
-  grid-template: 200px/auto 400px;
-  grid-template-areas: "Article Figure";
+  grid-template: 500px/auto 500px;
+  grid-template-areas: "";
   gap: 40px;
 }
-.about-us-section .about-us-content article {
-  grid-area: Article;
-}
-.about-us-section .about-us-content figure {
-  grid-area: Figure;
-}
-.about-us-section .about-us-content figure img {
-  max-width: 100%;
-  max-height: auto;
-  border-radius: 15px;
-  filter: drop-shadow(15px 15px 0px #BEFBFF);
-}
 
-.verticleSilde {
-  grid-area: verticleSlide;
-  position: relative;
+@keyframes appear1 {
+  from {
+    position: absolute;
+    z-index: 1;
+    top: -190px;
+    left: 50px;
+    right: 20px;
+    opacity: 0.25;
+  }
+  to {
+    width: 420px;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(12px 1px 20px rgba(0, 0, 0, 0.6));
+    animation: appear1 0.3s linear;
+  }
 }
-.verticleSilde .main-display {
+.VerticalSlide {
+  grid-area: VerticalSlide;
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.VerticalSlide .secondary-display {
+  width: 350px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  index: 1;
+}
+.VerticalSlide .secondary-display .main-display {
+  width: 420px;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(12px 1px 20px rgba(0, 0, 0, 0.6));
+  animation: appear1 0.3s linear;
+}
+.VerticalSlide .secondary-display .secondary-display-01 {
   position: absolute;
   z-index: 1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: -190px;
+  left: 50px;
+  right: 20px;
+  opacity: 0.25;
+}
+.VerticalSlide .secondary-display .secondary-display-02 {
+  position: absolute;
+  z-index: 1;
+  bottom: -200px;
+  left: 30px;
+  opacity: 0.4;
+}
+
+.CardSlide {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  width: 360px;
+  height: 480px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper-slide:nth-child(1n) {
+  background: url("/image/slide/blockace-about-us.png");
+  background-size: auto 100%;
+  background-position: center;
+}
+
+.swiper-slide:nth-child(2n) {
+  background: url("/image/slide/slide-01.jpg");
+  background-size: auto 100%;
+  background-position: center;
+}
+
+.swiper-slide:nth-child(3n) {
+  background: url("/image/slide/slide-02.jpg");
+  background-size: auto 100%;
+  background-position: center;
+}
+
+.swiper-slide:nth-child(4n) {
+  background-color: rgb(211, 122, 7);
+}
+
+.swiper-slide:nth-child(5n) {
+  background-color: rgb(118, 163, 12);
+}
+
+.swiper-slide:nth-child(6n) {
+  background-color: rgb(180, 10, 47);
+}
+
+.swiper-slide:nth-child(7n) {
+  background-color: rgb(35, 99, 19);
+}
+
+.swiper-slide:nth-child(8n) {
+  background-color: rgb(0, 68, 255);
+}
+
+.swiper-slide:nth-child(9n) {
+  background-color: rgb(218, 12, 218);
+}
+
+.swiper-slide:nth-child(10n) {
+  background-color: rgb(54, 94, 77);
 }
 
 * {

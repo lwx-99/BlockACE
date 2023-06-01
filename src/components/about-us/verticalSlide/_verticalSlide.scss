@@ -4,32 +4,70 @@ $dark-primary-color: #003445;
 $dark-secondary-color: #324B4F;
 $main-background-color: #001c25;
 
-.verticleSilde {
-    grid-area: verticleSlide;
-    position: relative;
-
-    .main-display {
+@keyframes appear1 {
+    from {
+        position: absolute;
+        z-index: 1;
+        top: -190px;
+        left: 50px;
+        right: 20px;
+        opacity: 0.25;
+    } to {
+        width: 420px;
         position: absolute;
         z-index: 2;
-        top: 50%;
         left: 50%;
+        top: 50%;
         transform: translate(-50%, -50%);
-
+        filter: drop-shadow(12px 1px 20px rgba(0, 0, 0, 0.6));
+        animation: appear1 0.3s linear;
     }
+    
+}
+
+.VerticalSlide {
+    grid-area: VerticalSlide;
+    position: relative;
+    display: flex;
+    width: 100%;
+
+
 
     .secondary-display {
+        width: 350px;
         position: absolute;
-        top: 0px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        index: 1;
+
+        .main-display {
+            width: 420px;
+            position: absolute;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            filter: drop-shadow(12px 1px 20px rgba(0, 0, 0, 0.6));
+            animation: appear1 0.3s linear;
+        }
 
         .secondary-display-01 {
             position: absolute;
-            top: 0px;
+            z-index: 1;
+            top: -190px;
+            left: 50px;
+            right: 20px;
+            opacity: 0.25;
 
         }
 
         .secondary-display-02 {
             position: absolute;
-            top: 0px;
+            z-index: 1;
+            bottom: -200px;
+            left: 30px;
+            opacity: 0.4;
         }
     }
 }

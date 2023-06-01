@@ -2,7 +2,8 @@
 @use './components/hero/HeroSection';
 @use './components/service/Services';
 @use './components/about-us/AboutUs';
-@use './components/about-us/verticleSlide/verticalSlide';
+@use './components/about-us/verticalSlide/VerticalSlide';
+@use './components/about-us/cardSlide/CardSlide';
 
 * {
     box-sizing: border-box;

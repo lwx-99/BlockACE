@@ -5,7 +5,7 @@ $dark-secondary-color: #324B4F;
 $main-background-color: #001c25;
 
 .about-us-section {
-    height: 450px;
+    height: 600px;
     width: 1200px;
     display: flex;
     padding: 30px 60px;
@@ -13,6 +13,8 @@ $main-background-color: #001c25;
     background-color: $dark-primary-color;
     border-radius: 16px;
     margin-top: 140px;
+    align-items: center;
+    justify-content: center;
     
     h1.section-title {
         margin: 0 0 10px 0;
@@ -23,24 +25,10 @@ $main-background-color: #001c25;
 
     .about-us-content {
         display: grid;
-        grid-template: 200px / auto 400px;
-        grid-template-areas: "Article verticleSlide";
+        grid-template: 500px / auto 500px;
+        grid-template-areas: "";
         gap: 40px;
-
-        article {
-            grid-area: Article;
-        }
-
-        figure {
-            
-            img {
-                max-width: 100%;
-                max-height: auto;
-                border-radius: 15px;
-                filter: drop-shadow(15px 15px 0px $light-text-color);
-            }
-        }
     }
 
-
 }
+
