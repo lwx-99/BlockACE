@@ -4,7 +4,7 @@ $dark-primary-color: #003445;
 $dark-secondary-color: #324B4F;
 $main-background-color: #001c25;
 
-.service-section {
+.service-section {  
     height: 600px;
     width: 1200px;
     display: flex;
@@ -14,7 +14,30 @@ $main-background-color: #001c25;
     justify-content: center;
     background-color: $dark-primary-color;
     border-radius: 16px;
-    margin-top: 40px
+    margin: 40px auto 0 auto;
+
+    h1.section-title {
+        margin-bottom: 10px;
+        text-align: left;
+        font-weight: 600;
+        font-size: 3.5rem;
+        color: $light-text-color;
+        margin-top: 50px;
+    }
+
+    .service-card-container {
+        display: grid;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        grid-template: 500px / 400px 400px 400px;
+
+        .service-card {
+            padding: 0 30px;
+        }
+    }
 
     
 }

@@ -12,7 +12,7 @@ $main-background-color: #001c25;
     flex-direction: column;
     background-color: transparent;
     border-radius: 16px;
-    margin-top: 140px;
+    margin: 140px auto 0 auto;
     align-items: center;
     justify-content: center;
 
@@ -25,7 +25,7 @@ $main-background-color: #001c25;
 
 
             h1.section-title {
-                margin: 0 0 10px 0;
+                margin-bottom: 10px;
                 text-align: left;
                 font-weight: 600;
                 font-size: 3.5rem;
