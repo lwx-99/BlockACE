@@ -235,7 +235,7 @@
   display: flex;
   padding: 30px 60px;
   flex-direction: column;
-  background-color: #003445;
+  background-color: transparent;
   border-radius: 16px;
   margin-top: 140px;
   align-items: center;
@@ -245,13 +245,16 @@
   margin: 0 0 10px 0;
   text-align: left;
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  color: #BEFBFF;
 }
 .about-us-section .about-us-content {
   display: grid;
-  grid-template: 500px/auto 500px;
-  grid-template-areas: "";
+  grid-template: 500px/auto 460px;
   gap: 40px;
+}
+.about-us-section .about-us-content p {
+  font-size: 18px;
 }
 
 @keyframes appear1 {
@@ -322,8 +325,8 @@
 }
 
 .swiper {
-  width: 360px;
-  height: 480px;
+  width: 330px;
+  height: 440px;
 }
 
 .swiper-slide {
@@ -337,7 +340,7 @@
 }
 
 .swiper-slide:nth-child(1n) {
-  background: url("/image/slide/blockace-about-us.png");
+  background: url("/image/slide/slide-00.jpg");
   background-size: auto 100%;
   background-position: center;
 }
@@ -355,11 +358,15 @@
 }
 
 .swiper-slide:nth-child(4n) {
-  background-color: rgb(211, 122, 7);
+  background: url("/image/slide/slide-03.jpg");
+  background-size: auto 100%;
+  background-position: center;
 }
 
 .swiper-slide:nth-child(5n) {
-  background-color: rgb(118, 163, 12);
+  background: url("/image/slide/slide-04.jpg");
+  background-size: auto 100%;
+  background-position: center;
 }
 
 .swiper-slide:nth-child(6n) {
