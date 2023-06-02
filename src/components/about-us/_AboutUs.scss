@@ -15,24 +15,37 @@ $main-background-color: #001c25;
     margin-top: 140px;
     align-items: center;
     justify-content: center;
-    
-    h1.section-title {
-        margin: 0 0 10px 0;
-        text-align: left;
-        font-weight: 600;
-        font-size: 3.5rem;
-        color: $light-text-color;
-    }
 
     .about-us-content {
         display: grid;
         grid-template: 500px / auto 460px;
         gap: 40px;
 
-        p {
-            font-size: 18px;
+        .about-us-main {
+
+
+            h1.section-title {
+                margin: 0 0 10px 0;
+                text-align: left;
+                font-weight: 600;
+                font-size: 3.5rem;
+                color: $light-text-color;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            .brand-previous-logo {
+                display: flex;
+                justify-content: center;
+                margin: 30px 0;
+
+                figure {
+                    margin: 0px 30px;
+                }
+            }
         }
     }
-
 }
 

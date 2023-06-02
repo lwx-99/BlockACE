@@ -241,20 +241,28 @@
   align-items: center;
   justify-content: center;
 }
-.about-us-section h1.section-title {
+.about-us-section .about-us-content {
+  display: grid;
+  grid-template: 500px/auto 460px;
+  gap: 40px;
+}
+.about-us-section .about-us-content .about-us-main h1.section-title {
   margin: 0 0 10px 0;
   text-align: left;
   font-weight: 600;
   font-size: 3.5rem;
   color: #BEFBFF;
 }
-.about-us-section .about-us-content {
-  display: grid;
-  grid-template: 500px/auto 460px;
-  gap: 40px;
-}
-.about-us-section .about-us-content p {
+.about-us-section .about-us-content .about-us-main p {
   font-size: 18px;
+}
+.about-us-section .about-us-content .about-us-main .brand-previous-logo {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.about-us-section .about-us-content .about-us-main .brand-previous-logo figure {
+  margin: 0px 30px;
 }
 
 @keyframes appear1 {
