@@ -5,10 +5,12 @@ $dark-secondary-color: #324B4F;
 $main-background-color: #001c25;
 
 .service-section {
-    height: 400px;
+    height: 600px;
     width: 1200px;
     display: flex;
+    padding: 30px 60px;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     background-color: $dark-primary-color;
     border-radius: 16px;

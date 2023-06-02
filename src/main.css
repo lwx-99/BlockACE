@@ -219,10 +219,12 @@
 }
 
 .service-section {
-  height: 400px;
+  height: 600px;
   width: 1200px;
   display: flex;
+  padding: 30px 60px;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   background-color: #003445;
   border-radius: 16px;
