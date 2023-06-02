@@ -16,9 +16,11 @@ function HeroSection() {
                 </Link>
               </div>
             </div>
-            <div className="hero-animated-illu">
+            {/*<div className="hero-animated-illu">
               <img src="/image/png-hero-1.png" className="illu-01" width="300" />
               <img src="/image/png-hero-2.png" className="illu-02" width="300"/>
+              </div>*/}
+            <div className="hero-section-layer">
             </div>
         </section>
     </>

@@ -9,6 +9,9 @@ function Services() {
           <div className="service-card-container">
             <div className='service-card market-sector'>
               <h2>Market Sector</h2>
+              <div className='background-layer'>
+                
+              </div>
 
             </div>
             <div className='service-card business-sector'>
