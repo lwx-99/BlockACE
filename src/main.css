@@ -5,7 +5,6 @@
   align-items: center;
   position: fixed;
   top: 0;
-  width: 100%;
   height: 80px;
   margin: 0 auto;
   z-index: 1000;
@@ -56489,7 +56488,7 @@ i[class^=fi-brands-]:before, i[class*=" fi-brands-"]:before, span[class^=fi-bran
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  width: 1400px;
+  width: 1200px;
   height: 300px;
   margin: 0 auto;
   padding-bottom: 80px;
@@ -56513,15 +56512,44 @@ i[class^=fi-brands-]:before, i[class*=" fi-brands-"]:before, span[class^=fi-bran
   opacity: 0.7;
   margin-left: 40px;
 }
-.footer .footer-copyright .social-media i.fi {
-  margin: 0 10px;
+.footer .footer-copyright .social-media {
+  display: flex;
+  align-items: center;
+}
+.footer .footer-copyright .social-media .social-media-icon {
+  display: flex;
+  align-items: center;
+}
+.footer .footer-copyright .social-media .social-media-icon i.fi {
+  height: 1.125rem;
+  margin: auto 10px;
   font-size: 1.125rem;
   opacity: 0.7;
 }
-.footer .footer-copyright .social-media i.fi:hover {
+.footer .footer-copyright .social-media .social-media-icon i.fi:hover {
   opacity: 1;
   color: #BEFBFF;
   transition: all 0.2s ease-in;
+}
+.footer .footer-copyright .social-media .email-contact {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+}
+.footer .footer-copyright .social-media .email-contact a {
+  display: flex;
+}
+.footer .footer-copyright .social-media .email-contact a:hover {
+  color: #BEFBFF;
+  transition: all 0.2s ease-in;
+}
+.footer .footer-copyright .social-media .email-contact i {
+  margin: auto 0 auto 8px;
+  height: 1.125rem;
 }
 
 * {
@@ -56545,7 +56573,8 @@ body {
   line-height: 1.5;
   font-weight: 400;
   height: 100%;
-  margin: 100px 0 0 0;
+  margin: 100px auto 0 auto;
+  width: 1400px;
   text-rendering: optimizeLegibility;
   font-synthesis: none;
   text-rendering: optimizeLegibility;

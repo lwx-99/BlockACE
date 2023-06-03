@@ -23,6 +23,12 @@ function Footer() {
                         <i class="fi fi-brands-facebook"></i>
                         <i class="fi fi-brands-instagram"></i>
                     </div>
+                    <div className="email-contact">
+                        <a>
+                            <p>Contact Us</p>
+                            <i class="fi fi-br-envelope"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
 
