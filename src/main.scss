@@ -5,6 +5,7 @@
 @use './components/about-us/verticalSlide/VerticalSlide';
 @use './components/about-us/cardSlide/CardSlide';
 @use './components/project/Projects';
+@use './components/footer/Footer';
 
 * {
     box-sizing: border-box;
@@ -27,13 +28,12 @@ body {
     line-height: 1.5;
     font-weight: 400;
     height: 100%;
-    margin: 0;
+    margin: 100px 0 0 0;
     text-rendering: optimizeLegibility;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
 }
 
 a:visited {

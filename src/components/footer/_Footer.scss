@@ -1,0 +1,57 @@
+$primary-color: #00b3c5;
+$light-text-color:#BEFBFF;
+$dark-primary-color: #003445;
+$dark-secondary-color: #324B4F;
+$main-background-color: #001c25;
+@import "~@flaticon/flaticon-uicons/css/all/all";
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 1400px;
+    height: 300px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    background-color: $main-background-color;
+
+    .footer-copyright {
+        width: 100%;
+
+        .footer-logo-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+
+                p {
+                    font-weight: 500;
+                    font-size: 0.85rem;
+                    opacity: 0.7;
+                    margin-left: 40px;
+                }
+        }
+
+        .social-media {
+
+            i.fi {
+                margin: 0 10px;
+                font-size: 1.125rem;
+                opacity: 0.7;
+            }
+
+            i.fi:hover {
+                opacity: 1;
+                color: $light-text-color;
+                transition: all 0.2s ease-in;
+            }
+        }
+    }
+
+
+}
