@@ -1,0 +1,26 @@
+$primary-color: #00b3c5;
+$light-text-color:#BEFBFF;
+$dark-primary-color: #003445;
+$dark-secondary-color: #324B4F;
+$main-background-color: #001c25;
+
+.projects-section {
+    height: 600px;
+    width: 1200px;
+    display: flex;
+    padding: 30px 60px;
+    flex-direction: column;
+    background-color: transparent;
+    border-radius: 16px;
+    margin: 140px auto 0 auto;
+    align-items: start;
+    justify-content: center;
+
+    h1.projects-section-title {
+        margin-bottom: 10px;
+        text-align: left;
+        font-weight: 600;
+        font-size: 3.5rem;
+        color: $light-text-color;
+    }
+}

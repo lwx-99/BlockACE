@@ -467,6 +467,26 @@
   background-color: rgb(54, 94, 77);
 }
 
+.projects-section {
+  height: 600px;
+  width: 1200px;
+  display: flex;
+  padding: 30px 60px;
+  flex-direction: column;
+  background-color: transparent;
+  border-radius: 16px;
+  margin: 140px auto 0 auto;
+  align-items: start;
+  justify-content: center;
+}
+.projects-section h1.projects-section-title {
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 3.5rem;
+  color: #BEFBFF;
+}
+
 * {
   box-sizing: border-box;
   margin: 0 0;
