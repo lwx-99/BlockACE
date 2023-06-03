@@ -56544,6 +56544,7 @@ i[class^=fi-brands-]:before, i[class*=" fi-brands-"]:before, span[class^=fi-bran
   display: flex;
 }
 .footer .footer-copyright .social-media .email-contact a:hover {
+  cursor: pointer;
   color: #BEFBFF;
   transition: all 0.2s ease-in;
 }

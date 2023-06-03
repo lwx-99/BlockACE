@@ -73,6 +73,7 @@ $main-background-color: #001c25;
                 }
                 
                 a:hover {
+                    cursor: pointer;
                     color: $light-text-color;
                     transition: all 0.2s ease-in;
                 }
