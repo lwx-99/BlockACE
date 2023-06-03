@@ -25,16 +25,24 @@ $main-background-color: #001c25;
 
 
 .projects-section {
-    height: 600px;
+    box-sizing: content-box;
+    height: auto;
     width: 1200px;
     display: flex;
-    padding: 30px 60px;
+    padding: 60px 40px;
     flex-direction: column;
     background-color: transparent;
     border-radius: 16px;
-    margin: 140px auto 0 auto;
+    border: 1px solid rgba(0, 179, 197, 0.5);
+    margin: 80px auto 0 auto;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+
+    .title {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
 
     h1.projects-section-title {
         margin-bottom: 10px;
@@ -45,14 +53,15 @@ $main-background-color: #001c25;
     }
 
     .projects-container {
+        position: relative;
         overflow: hidden;
-        background: linear-gradient(to left, rgba(0,28,37,1) 0%, rgba(0,28,37,1) 100%);
 
-        .projects-container-line-01 {
+        .projects-container-line {
             display: flex;
             flex-wrap: nowrap;
             width: 1200px;
             overflow: hidden;
+            margin-top: 20px;
 
             .slide-01 {
                 display: flex;
@@ -67,6 +76,36 @@ $main-background-color: #001c25;
                 flex-wrap: nowrap;
                 animation: sliding2 18s linear infinite;
             }
+
+            
+            .slide-03 {
+                display: flex;
+                justify-content: flex-start;
+                flex-wrap: nowrap;
+                animation: sliding 20s linear infinite;
+            }
+
+            .slide-04 {
+                display: flex;
+                justify-content: flex-start;
+                flex-wrap: nowrap;
+                animation: sliding 20s linear infinite;
+            }
+
+            .slide-05 {
+                display: flex;
+                justify-content: flex-start;
+                flex-wrap: nowrap;
+                animation: sliding 16s linear infinite;
+            }
+
+            .slide-06 {
+                display: flex;
+                justify-content: flex-start;
+                flex-wrap: nowrap;
+                animation: sliding 16s linear infinite;
+            }
+
 
             .project-item {
                 display: flex;
@@ -95,6 +134,27 @@ $main-background-color: #001c25;
 
             }
         }
+    }
+
+    .projects-container::before {
+        background: linear-gradient(-90deg,rgba(0,28,37,0), $main-background-color);
+        content: "";
+        top: 0;
+        position: absolute;
+        width: 80px;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .projects-container::after {
+        background: linear-gradient(90deg,rgba(0,28,37,0), $main-background-color);
+        content: "";
+        top: 0;
+        right: 0;
+        position: absolute;
+        width: 80px;
+        height: 100%;
+        z-index: 1;
     }
 
 }
