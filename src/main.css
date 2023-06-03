@@ -578,6 +578,10 @@
   font-size: 1.125rem;
   font-weight: 500;
 }
+.projects-section .projects-container .projects-container-line .project-item:hover {
+  cursor: pointer;
+  background-color: #00b3c5;
+}
 .projects-section .projects-container::before {
   background: linear-gradient(-90deg, rgba(0, 28, 37, 0), #001c25);
   content: "";
