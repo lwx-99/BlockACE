@@ -51,6 +51,10 @@ $main-background-color: #001c25;
             }
         }
 
+        .service-card:hover {
+            background-color: $primary-color;
+        }
+
         .market-sector {
             grid-area: market;
             position: relative;

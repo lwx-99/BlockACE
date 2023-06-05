@@ -18,7 +18,7 @@ function NavBar() {
           <div className="nav-menu-container">
             <ul className="nav-menu">
               <li className="nav-item">
-                <Link to="/" className="nav-link">
+                <Link to="#" className="nav-link">
                   Home
                 </Link>
               </li>
