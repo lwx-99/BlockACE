@@ -17,4 +17,22 @@ $main-background-color: #001c25;
     border-radius: 16px;
     margin: 80px auto 0 auto;
 
+    h1.section-title {
+        margin-bottom: 20px;
+        text-align: left;
+        font-weight: 600;
+        font-size: 3.5rem;
+        color: $light-text-color;
+    }
+
+    .customer-container {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 250px);
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
