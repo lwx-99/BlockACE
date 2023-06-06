@@ -36,3 +36,29 @@ $main-background-color: #001c25;
     }
 
 }
+
+
+@media screen and (max-width: 960px) {
+    
+    .customer-section {  
+        height: 600px;
+        width: 90vw;
+        padding: 30px 20px;
+        margin: 0 auto;
+
+        h1.section-title {
+            text-align: center;
+            font-size: 2.5rem;
+        }
+    
+        .customer-container {
+            grid-template-columns: repeat(2, 35vw);
+            gap: 30px;
+
+            img {
+                width: 35vw;
+            }
+        }
+    }
+    
+    }

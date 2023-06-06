@@ -163,3 +163,29 @@ $main-background-color: #001c25;
     }
 
 }
+
+@media screen and (max-width: 960px) {
+    
+    .projects-section  {
+        box-sizing: border-box;
+        border: 1px solid rgba(0, 179, 197, 0.2);
+        margin: 80px auto 0 auto;
+        width: 90vw;
+        margin: 80px auto 100px auto;
+    
+        h1.projects-section-title {
+            width: 100%;
+            text-align: center;
+            font-size: 2.75rem;
+        }
+    
+        .projects-container {
+    
+            .projects-container-line {
+                width: 100vw;
+            }
+        }
+    
+    }
+    
+}

@@ -42,3 +42,23 @@ a:visited {
     color:#fff;
     text-decoration: none;
 }
+
+@media screen and (max-width: 960px) {
+    
+    body {
+        color: #fff;
+        background-color: #001c25;
+        font-family: 'Quicksand', sans-serif;
+        line-height: 1.5;
+        font-weight: 400;
+        height: 100%;
+        margin: 100px auto 0 auto;
+        width: 100vw;
+        text-rendering: optimizeLegibility;
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+}

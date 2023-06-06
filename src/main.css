@@ -379,6 +379,89 @@
   font-size: 2rem;
 }
 
+@media screen and (max-width: 960px) {
+  .hero-section {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .hero-section .hero-section-layer {
+    background-size: 210%;
+    background-position: -20% 20%;
+  }
+  .hero-section .hero-section-title {
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+    width: 80%;
+    z-index: 1;
+  }
+  .hero-section .hero-section-title h1 {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    font-size: 2rem;
+    width: 100%;
+  }
+  .hero-section .hero-section-title h1 .branding-name {
+    font-size: 3rem;
+    color: #BEFBFF;
+    width: 100%;
+  }
+  .hero-section .hero-section-title p {
+    font-weight: 400;
+    font-size: 1rem;
+    width: 100%;
+  }
+  .hero-section .hero-section-title .hero-button .btn-01 {
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #BEFBFF;
+    background: #001c25;
+    border: none;
+    padding: 16px 24px;
+    border-radius: 12px;
+    text-align: center;
+    margin-right: 12px;
+  }
+  .hero-section .hero-section-title .hero-button .btn-01:hover {
+    background: #00b3c5;
+    transition: all 0.2s linear;
+  }
+  .hero-section .hero-section-title .hero-button .btn-02 {
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #BEFBFF;
+    background: transparent;
+    border: 1px solid #001c25;
+    padding: 16px 24px;
+    border-radius: 12px;
+    text-align: center;
+  }
+  .hero-section .hero-section-title .hero-button .btn-02:hover {
+    border: 1px solid #00b3c5;
+    transition: all 0.2s linear;
+  }
+  .hero-section .hero-animated-illu {
+    position: absolute;
+    right: 100px;
+    bottom: 75px;
+    animation: glow 2s ease-in-out infinite alternate;
+    z-index: 1;
+  }
+  .hero-section .hero-animated-illu .illu-01 {
+    position: absolute;
+    left: 50%;
+    animation: updown 2s ease-in-out infinite alternate, glow 2s ease-in-out infinite alternate;
+  }
+  .hero-section .hero-section-title > * {
+    margin: 22px 0;
+  }
+  .fun {
+    font-size: 2rem;
+  }
+}
 .service-section {
   box-sizing: border-box;
   height: 720px;
@@ -446,6 +529,57 @@
   grid-area: community;
 }
 
+@media screen and (max-width: 960px) {
+  .service-section {
+    box-sizing: border-box;
+    height: auto;
+    width: 90vw;
+    display: flex;
+    padding: 20px 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: #003445;
+    border-radius: 16px;
+    margin: 0 auto;
+  }
+  .service-section h1.section-title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.75rem;
+    color: #BEFBFF;
+  }
+  .service-section .service-card-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .service-section .service-card-container .service-card {
+    padding: 0 30px;
+    background-color: #324B4F;
+    width: 100%;
+    height: 180px;
+    border-radius: 30px;
+    padding: 30px 40px;
+  }
+  .service-section .service-card-container .service-card h2 {
+    font-size: 1.75rem;
+  }
+  .service-section .service-card-container .market-sector .background-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: url("/image/service/Asset 1.png");
+    background-size: auto;
+    background-position: auto;
+  }
+}
 .about-us-section {
   height: 600px;
   width: 1200px;
@@ -482,6 +616,52 @@
   margin: 0px 30px;
 }
 
+@media screen and (max-width: 960px) {
+  .about-us-section {
+    height: 900px;
+    width: 100vw;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    background-color: transparent;
+    border-radius: 0px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-us-section .about-us-content {
+    display: grid;
+    grid-template: 400px/100vw;
+    gap: 20px;
+    justify-items: center;
+  }
+  .about-us-section .about-us-content .about-us-main {
+    width: 90%;
+  }
+  .about-us-section .about-us-content .about-us-main h1.section-title {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.75rem;
+    color: #BEFBFF;
+  }
+  .about-us-section .about-us-content .about-us-main p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .about-us-section .about-us-content .about-us-main .brand-previous-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .about-us-section .about-us-content .about-us-main .brand-previous-logo figure {
+    margin: 0px 10px;
+  }
+  .about-us-section .about-us-content .about-us-main .brand-previous-logo figure img {
+    width: 120px;
+  }
+}
 @keyframes appear1 {
   from {
     position: absolute;
@@ -614,6 +794,12 @@
   background-color: rgb(54, 94, 77);
 }
 
+@media screen and (max-width: 960px) {
+  .swiper {
+    width: 225px;
+    height: 300px;
+  }
+}
 @keyframes sliding {
   from {
     transform: translate3d(0px, 0px, 0px);
@@ -749,6 +935,23 @@
   z-index: 1;
 }
 
+@media screen and (max-width: 960px) {
+  .projects-section {
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 179, 197, 0.2);
+    margin: 80px auto 0 auto;
+    width: 90vw;
+    margin: 80px auto 100px auto;
+  }
+  .projects-section h1.projects-section-title {
+    width: 100%;
+    text-align: center;
+    font-size: 2.75rem;
+  }
+  .projects-section .projects-container .projects-container-line {
+    width: 100vw;
+  }
+}
 @font-face {
   font-family: uicons-bold-rounded;
   src: url(../uicons-bold-rounded-CJXWQMMG.eot#iefix) format("embedded-opentype"), url(../uicons-bold-rounded-CGKSAYQ5.woff2) format("woff2"), url(../uicons-bold-rounded-O7JX4SAW.woff) format("woff");
@@ -56701,6 +56904,82 @@ i[class^=fi-brands-]:before, i[class*=" fi-brands-"]:before, span[class^=fi-bran
   height: 1.125rem;
 }
 
+@media screen and (max-width: 960px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90vw;
+    height: auto;
+    margin: 60px auto 0 auto;
+    padding-bottom: 50px;
+    background-color: #001c25;
+  }
+  .footer .footer-copyright {
+    width: 100%;
+  }
+  .footer .footer-copyright .footer-logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .footer .footer-copyright .footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .footer .footer-copyright .footer-logo p {
+    font-weight: 500;
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin-left: 40px;
+  }
+  .footer .footer-copyright .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .footer-copyright .social-media .social-media-icon {
+    display: flex;
+    align-items: center;
+  }
+  .footer .footer-copyright .social-media .social-media-icon i.fi {
+    height: 0.85rem;
+    margin: auto 10px;
+    font-size: 0.85rem;
+    opacity: 0.7;
+  }
+  .footer .footer-copyright .social-media .social-media-icon i.fi:hover {
+    opacity: 1;
+    color: #BEFBFF;
+    transition: all 0.2s ease-in;
+  }
+  .footer .footer-copyright .social-media .email-contact {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: white;
+  }
+  .footer .footer-copyright .social-media .email-contact a {
+    display: flex;
+  }
+  .footer .footer-copyright .social-media .email-contact a:hover {
+    cursor: pointer;
+    color: #BEFBFF;
+    transition: all 0.2s ease-in;
+  }
+  .footer .footer-copyright .social-media .email-contact i {
+    margin: auto 0 auto 4px;
+    height: 1rem;
+  }
+}
 .customer-section {
   box-sizing: border-box;
   height: 720px;
@@ -56731,6 +57010,25 @@ i[class^=fi-brands-]:before, i[class*=" fi-brands-"]:before, span[class^=fi-bran
   align-items: center;
 }
 
+@media screen and (max-width: 960px) {
+  .customer-section {
+    height: 600px;
+    width: 90vw;
+    padding: 30px 20px;
+    margin: 0 auto;
+  }
+  .customer-section h1.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .customer-section .customer-container {
+    grid-template-columns: repeat(2, 35vw);
+    gap: 30px;
+  }
+  .customer-section .customer-container img {
+    width: 35vw;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0 0;
@@ -56764,4 +57062,22 @@ body {
 a:visited {
   color: #fff;
   text-decoration: none;
+}
+
+@media screen and (max-width: 960px) {
+  body {
+    color: #fff;
+    background-color: #001c25;
+    font-family: "Quicksand", sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    height: 100%;
+    margin: 100px auto 0 auto;
+    width: 100vw;
+    text-rendering: optimizeLegibility;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }/*# sourceMappingURL=main.css.map */
