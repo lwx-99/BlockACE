@@ -157,6 +157,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
+    flex-wrap: nowrap;
     width: 100%;
     height: 100vh;
     position: absolute;
@@ -170,7 +171,8 @@
     align-items: center;
     justify-content: center;
     border-top: none;
-    height: 80px;
+    min-height: 80px;
+    height: auto;
     width: 100%;
     margin: 0 auto;
     padding: 0;
@@ -57012,9 +57014,9 @@ i[class^=fi-brands-]:before, i[class*=" fi-brands-"]:before, span[class^=fi-bran
 
 @media screen and (max-width: 960px) {
   .customer-section {
-    height: 600px;
+    height: auto;
     width: 90vw;
-    padding: 30px 20px;
+    padding: 30px 20px 60px 20px;
     margin: 0 auto;
   }
   .customer-section h1.section-title {
