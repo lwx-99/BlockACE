@@ -4,8 +4,8 @@ import OurResource from './resource/OurResource'
 
 function ContactResource() {
   return (
-    <div>
-        <div className="section-container">
+    <div className='section-container'>
+        <div className="reveal">
             <div className="resource-contact-section">
                 <div className="resource-container">
                     <h1>Resources Center</h1>
