@@ -1,0 +1,53 @@
+$primary-color: #00b3c5;
+$light-text-color:#BEFBFF;
+$dark-primary-color: #003445;
+$dark-secondary-color: #324B4F;
+$main-background-color: #001c25;
+
+.resource-contact-section {
+    height: 700px;
+    width: 1400px;
+    display: flex;
+    padding: 60px;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: $dark-primary-color;
+    border-radius: 16px;
+    margin: 100px auto 0 auto;
+
+    .contact-container, .resource-container {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+    .resource-contact-section {
+        height: 700px;
+        width: 90vw;
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        background-color: $dark-primary-color;
+        border-radius: 16px;
+        margin: 100px auto 0 auto;
+
+        .contact-container {
+            width: 100%;
+
+            h1 {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
