@@ -25,7 +25,7 @@ function Footer() {
                     </div>
                     <div className="email-contact">
                         <a href="mailto:thaile@blockace.co">
-                            <p>Contact Us</p>
+                            <p>Email Us</p>
                             <i class="fi fi-br-envelope"></i>
                         </a>
                     </div>

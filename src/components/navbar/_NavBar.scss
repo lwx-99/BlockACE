@@ -68,8 +68,10 @@ $main-background-color: #001c25;
 
         }
     }
+    
 
     .lang-btn {
+        position: relative;
         border-top: 4px solid transparent;
         display: flex;
         align-items: center;
@@ -98,7 +100,8 @@ $main-background-color: #001c25;
         .lang-selector {
 
             position: absolute;
-            top: 80px;
+            top: 75px;
+            right: 0px;
             display: flex;
             flex-direction: column;
             background-color: $dark-secondary-color;
@@ -118,6 +121,7 @@ $main-background-color: #001c25;
                 color: #fff;
                 border-radius: 12px;
                 text-align: left;
+                width: 170px;
 
                 span {
                     color: #9b9b9b;
