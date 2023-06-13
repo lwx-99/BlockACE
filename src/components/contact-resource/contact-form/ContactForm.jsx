@@ -49,7 +49,7 @@ function ContactForm() {
     <div className="">
         <div className="contact-us-section">
                 <div className="">
-                    <div className="w-full max-w-sm mx-auto my-5 border border-gray-100 rounded-md p-7">
+                    <div className="w-full mx-auto my-0 border border-gray-100 rounded-md p-7">
                         {!isSubmitSuccessful && (
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <input
@@ -81,7 +81,7 @@ function ContactForm() {
                                 className={`w-full px-4 py-3 border-2  rounded-md outline-none  focus:ring-4  ${
                                 errors.name
                                     ? "border-red-600 focus:border-red-600 ring-red-100"
-                                    : "border-gray-300 focus:border-indigo-600 ring-indigo-100"
+                                    : "border-gray-300 focus:border-cyan-600 ring-indigo-100"
                                 }`}
                                 {...register("name", {
                                 required: "Full name is required",
@@ -89,7 +89,7 @@ function ContactForm() {
                                 })}
                             />
                             {errors.name && (
-                                <div className="mt-1 text-red-600">
+                                <div className="mt-1 text-cyan-200">
                                 <small>{errors.name.message}</small>
                                 </div>
                             )}
@@ -108,7 +108,7 @@ function ContactForm() {
                                 className={`w-full px-4 py-3 border-2  rounded-md outline-none  focus:ring-4  ${
                                 errors.email
                                     ? "border-red-600 focus:border-red-600 ring-red-100"
-                                    : "border-gray-300 focus:border-indigo-600 ring-indigo-100"
+                                    : "border-gray-300 focus:border-cyan-600 ring-indigo-100"
                                 }`}
                                 {...register("email", {
                                 required: "Enter your email",
@@ -119,7 +119,7 @@ function ContactForm() {
                                 })}
                             />
                             {errors.email && (
-                                <div className="mt-1 text-red-600">
+                                <div className="mt-1 text-cyan-200">
                                 <small>{errors.email.message}</small>
                                 </div>
                             )}
@@ -132,12 +132,12 @@ function ContactForm() {
                                 className={`w-full px-4 py-3 border-2  rounded-md outline-none  h-36  focus:ring-4  ${
                                 errors.message
                                     ? "border-red-600 focus:border-red-600 ring-red-100"
-                                    : "border-gray-300 focus:border-indigo-600 ring-indigo-100"
+                                    : "border-gray-300 focus:border-cyan-600 ring-indigo-100"
                                 }`}
                                 {...register("message", { required: "Enter your Message" })}
                             />
                             {errors.message && (
-                                <div className="mt-1 text-red-600">
+                                <div className="mt-1 text-cyan-200">
                                 {" "}
                                 <small>{errors.message.message}</small>
                                 </div>
@@ -146,7 +146,7 @@ function ContactForm() {
 
                             <button
                             type="submit"
-                            className="w-full py-4 text-white transition-colors bg-cyan-600 rounded-md hover:bg-cyan-500 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-indigo-200 px-7 umami--click--contact-submit">
+                            className="w-full py-4 text-white px-7 umami--click--contact-submit submit-btn">
                             {isSubmitting ? (
                                 <svg
                                 className="w-5 h-5 mx-auto text-white animate-spin"
@@ -175,9 +175,9 @@ function ContactForm() {
                         <>
                             <div className="flex flex-col items-center justify-center text-center text-white rounded-md">
                             <svg
-                                width="100"
-                                height="100"
-                                className="text-cyan-300"
+                                width="72"
+                                height="72"
+                                className="text-cyan-200"
                                 viewBox="0 0 100 100"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -187,10 +187,10 @@ function ContactForm() {
                                 strokeWidth="3"
                                 />
                             </svg>
-                            <h3 className="py-5 text-2xl text-cyan-300">Success</h3>
+                            <h3 className="py-5 text-2xl text-cyan-200">Success</h3>
                             <p className="text-white md:px-3">{Message}</p>
                             <button
-                                className="mt-6 text-base text-white bg-cyan-600 hover:bg-cyan-500 rounded-lg w-32 h-12 outline-none outline-offset-0"
+                                className="mt-6 w-32 h-12 back-btn"
                                 onClick={() => reset()}>
                                 Go back
                             </button>
