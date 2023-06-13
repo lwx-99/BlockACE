@@ -4,7 +4,7 @@ import CardSlide from './cardSlide/CardSlide'
 
 function AboutUs() {
   return (
-    <section className="about-us-section reveal">
+    <section className="about-us-section reveal" id="about-us">
         <div className="about-us-content">
           <div className="about-us-main">
             <h1 className="section-title">About Us</h1>

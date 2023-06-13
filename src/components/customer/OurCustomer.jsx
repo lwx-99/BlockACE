@@ -183,7 +183,7 @@ const CustomerList = [
 
 function OurCustomer() {
   return (
-    <div className="customer-section reveal">
+    <div className="customer-section reveal" id="customers">
       <h1 className="section-title">Partners & Clients</h1>
       <div className="customer-container">
           { CustomerList.map( (item) => (

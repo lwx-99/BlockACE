@@ -3,13 +3,13 @@ import React from 'react'
 function Services() {
   return (
     <>
-        <section className="service-section reveal">
+        <section className="service-section reveal" id="services">
           <h1 className="section-title">Our Solutions</h1>
 
           <div className="service-card-container">
             <div className='service-card communication-sector'>
-              <h2>COMMUNICATION</h2>
-                <div className="content">
+              <div className="content">
+                <h2>COMMUNICATION</h2>
                   <ul>
                     <li>Press Release & Media Relations</li>
                     <li>Community Building & Management</li>
@@ -17,7 +17,7 @@ function Services() {
                     <li>Market Maker Strategy</li>
                     <li>Exchanges Listing</li>
                   </ul>
-                </div>
+              </div>
               <div className='background-layer'>
                 
               </div>
