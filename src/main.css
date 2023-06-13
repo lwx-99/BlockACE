@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@keyframes appear-nav {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .nav-bar {
   display: flex;
   justify-content: center;
@@ -83,14 +91,6 @@
   border-radius: 12px;
   opacity: 1;
   animation: appear-nav 0.2s ease-in;
-}
-@keyframes appear-nav {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 .nav-bar .lang-btn .lang-selector button {
   display: flex;
@@ -211,6 +211,10 @@
     margin-right: 10px;
     border: none;
   }
+  .nav-bar .lang-btn .rotate-icon {
+    display: none;
+    visibility: hidden;
+  }
   .nav-bar .lang-btn .lang-selector {
     position: absolute;
     top: 80px;
@@ -220,15 +224,7 @@
     padding: 15px 15px;
     border-radius: 12px;
     opacity: 1;
-    animation: appear 0.2s ease-in;
-  }
-  @keyframes appear {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+    animation: appear-nav 0.2s ease-in;
   }
   .nav-bar .lang-btn .lang-selector button {
     display: flex;
