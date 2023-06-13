@@ -217,7 +217,7 @@ function ContactForm() {
                                 strokeWidth="3"
                                 />
                             </svg>
-                            <h3 className="py-5 text-2xl text-cyan-200">Success</h3>
+                            <h3 className="py-5 text-xl text-cyan-200">Success</h3>
                             <p className="text-white md:px-3">{Message}</p>
                             <button
                                 className="mt-6 w-32 h-12 back-btn"
@@ -231,9 +231,9 @@ function ContactForm() {
                         {isSubmitSuccessful && !isSuccess && (
                         <div className="flex flex-col items-center justify-center text-center text-white rounded-md">
                             <svg
-                            width="97"
-                            height="97"
-                            viewBox="0 0 97 97"
+                            width="72"
+                            height="72"
+                            viewBox="0 0 100 100"
                             className="text-red-400"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -244,11 +244,11 @@ function ContactForm() {
                             />
                             </svg>
 
-                            <h3 className="text-2xl text-red-400 py-7">
+                            <h3 className="text-xl text-red-400 py-7">
                             Oops, Something went wrong!
                             </h3>
                             <p className="text-white md:px-3">{Message}</p>
-                            <button className="mt-5 focus:outline-none" onClick={() => reset()}>
+                            <button className="mt-6 w-32 h-12 back-btn" onClick={() => reset()}>
                             Try Again
                             </button>
                         </div>
