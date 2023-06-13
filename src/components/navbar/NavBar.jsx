@@ -9,7 +9,7 @@ function NavBar() {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  const [mobile, setMobile] = useState(false);
+  const [mobile, setMobile] = useState(true);
   const mobileMode = () => {
     if(window.innerWidth <= 960) {
       setMobile(true);
