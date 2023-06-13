@@ -12,11 +12,9 @@ $main-background-color: #001c25;
 .nav-bar {
     display: flex;
     justify-content: center;
-    align-items: center;
-    position: fixed;
+    position: sticky;
     top: 0;
     height: 80px;
-    margin: 0 auto;
     z-index: 1000;
     background-color: $main-background-color;
 
