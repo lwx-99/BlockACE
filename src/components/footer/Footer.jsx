@@ -24,7 +24,7 @@ function Footer() {
                         <i class="fi fi-brands-instagram"></i>
                     </div>
                     <div className="email-contact">
-                        <a>
+                        <a href="mailto:thaile@blockace.co">
                             <p>Contact Us</p>
                             <i class="fi fi-br-envelope"></i>
                         </a>
