@@ -415,6 +415,7 @@
 @media screen and (max-width: 960px) {
   .hero-section {
     width: 90vw;
+    height: 80vh;
     margin: 0 auto;
   }
   .hero-section .hero-section-layer {
