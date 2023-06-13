@@ -50,15 +50,15 @@ $main-background-color: #001c25;
 
         h1.section-title {
             text-align: center;
-            font-size: 2.5rem;
+            font-size: 2.25rem;
         }
     
         .customer-container {
-            grid-template-columns: repeat(2, 35vw);
+            grid-template-columns: repeat(3, 25vw);
             gap: 30px;
 
             img {
-                width: 35vw;
+                width: 25vw;
             }
         }
     }

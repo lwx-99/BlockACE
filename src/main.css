@@ -607,7 +607,7 @@
     padding: 0 30px;
     background-color: #324B4F;
     width: 100%;
-    height: 180px;
+    height: auto;
     border-radius: 30px;
     padding: 30px 40px;
   }
@@ -57114,14 +57114,14 @@ i[class^=fi-brands-]:before, i[class*=" fi-brands-"]:before, span[class^=fi-bran
   }
   .customer-section h1.section-title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
   .customer-section .customer-container {
-    grid-template-columns: repeat(2, 35vw);
+    grid-template-columns: repeat(3, 25vw);
     gap: 30px;
   }
   .customer-section .customer-container img {
-    width: 35vw;
+    width: 25vw;
   }
 }
 * {
