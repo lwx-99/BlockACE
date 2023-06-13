@@ -62,9 +62,9 @@ const project03 = [
 
 function Projects() {
   return (
-    <div className="projects-section">
+    <div className="projects-section reveal">
         <div className="title">
-            <h1 className="projects-section-title">Projects</h1>
+            <h1 className="projects-section-title">Our Portfolio</h1>
         </div>
         <div className="projects-container">
           <div className="project-container-layer">

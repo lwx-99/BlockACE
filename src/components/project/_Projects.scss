@@ -25,16 +25,15 @@ $main-background-color: #001c25;
 
 
 .projects-section {
-    box-sizing: content-box;
     height: auto;
-    width: 1200px;
+    width: 1400px;
     display: flex;
     padding: 50px 40px 60px 40px;
     flex-direction: column;
     background-color: transparent;
     border-radius: 16px;
     border: 1px solid rgba(0, 179, 197, 0.5);
-    margin: 80px auto 0 auto;
+    margin: 120px auto 120px auto;
     align-items: center;
     justify-content: flex-start;
 
@@ -59,7 +58,7 @@ $main-background-color: #001c25;
         .projects-container-line {
             display: flex;
             flex-wrap: nowrap;
-            width: 1200px;
+            width: 1300px;
             overflow: hidden;
             margin-top: 20px;
 

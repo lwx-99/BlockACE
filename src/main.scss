@@ -12,6 +12,7 @@
     box-sizing: border-box;
     margin: 0 0;
     padding: 0;
+    line-height: 1.625;
 }
 
 div {
@@ -41,6 +42,18 @@ body {
 a:visited {
     color:#fff;
     text-decoration: none;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
 }
 
 @media screen and (max-width: 960px) {

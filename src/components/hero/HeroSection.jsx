@@ -5,8 +5,8 @@ function HeroSection() {
     <>
         <section className="hero-section">
             <div className="hero-section-title">
-              <h1><span className="branding-name">BlockACE</span><br />The Entire Blockchain Solution</h1>
-              <p>Established in 2018, we entered the cryptocurrency market with a diverse services package from branding, community, promotion and other specialized services.</p>
+              <h1><span className="branding-name">BLOCKACE</span><br /><span className="short-des">Agency, Incubator, Accelerator and Investor for Cryptocurrency and Blockchain Businesses</span></h1>
+              <p>BLOCKACE was established in 2018, operating in Ha Noi and Ho Chi Minh by experienced industry veterans since 2016.</p>
               <div className="hero-button">
                 <Link to=''>
                   <button className="btn-01">Explore</button>

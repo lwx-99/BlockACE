@@ -4,6 +4,27 @@ $dark-primary-color: #003445;
 $dark-secondary-color: #324B4F;
 $main-background-color: #001c25;
 
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateX(150px);
+    } 
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes appear-nonmove {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 100%;
+    }
+}
+
+
 @keyframes updown {
     from {transform: translate(-50%, -45%);}
     to {transform: translate(-50%, -55%);}
@@ -19,8 +40,8 @@ $main-background-color: #001c25;
   }
 
 .hero-section {
-    height: 600px;
-    width: 1200px;
+    height: 750px;
+    width: 1400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,7 +54,7 @@ $main-background-color: #001c25;
         background: url("/image/service/Asset 1.png");
         background-size: 80%;
         background-repeat: no-repeat;
-        background-position: 180% 35%;
+        background-position: 190% 35%;
         position: absolute;
         top: 0;
         right: 0;
@@ -41,25 +62,33 @@ $main-background-color: #001c25;
         height: 100%;
         z-index: 0;
         animation: glow 4s ease-in-out infinite alternate;
+        /*filter: drop-shadow(0px 0px 5px rgba(0, 255, 213, 1));*/
     }
 
     .hero-section-title {
         position: absolute;
-        left: 70px;
+        left: 80px;
         bottom: 80px;
         width: 600px;
         z-index: 1;
+        animation: appear 1.25s ease 0s;
         
 
         h1 {
             font-family: 'Nunito Sans', sans-serif;
-            font-weight: 600;
+            font-weight: 500;
             line-height: 1.2;
-            font-size: 2.5rem;
+            font-size: 1.75rem;
 
             .branding-name {
-                font-size: 4rem;
+                font-size: 4.25rem;
                 color: $light-text-color;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+            }
+
+            .short-des {
+                line-height: 1.2;
             }
         }
 
@@ -156,12 +185,12 @@ $main-background-color: #001c25;
             h1 {
                 font-family: 'Nunito Sans', sans-serif;
                 font-weight: 600;
-                line-height: 1.2;
-                font-size: 2rem;
+                line-height: 1.25;
+                font-size: 1.5rem;
                 width: 100%;
     
                 .branding-name {
-                    font-size: 3rem;
+                    font-size: 2.75rem;
                     color: $light-text-color;
                     width: 100%;
                     

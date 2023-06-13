@@ -18,7 +18,7 @@
   font-size: 0.875rem;
   width: 1400px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .nav-bar .nav-bar-container .nav-menu-container {
@@ -39,12 +39,17 @@
   padding: 0 10px;
 }
 .nav-bar .nav-bar-container .nav-menu-container ul.nav-menu li.nav-item .nav-link {
+  font-family: "Raleway", sans-serif;
   text-decoration: none;
   font-weight: 600;
 }
 .nav-bar .nav-bar-container .nav-menu-container ul.nav-menu li.nav-item:hover {
   border-top: 4px solid #00b3c5;
-  transition: all 0.2s linear;
+  transition: all 0.5s ease;
+}
+.nav-bar .nav-bar-container .nav-menu-container ul.nav-menu li.nav-item:hover .nav-link {
+  color: #BEFBFF;
+  transition: all 0.5s ease;
 }
 .nav-bar .lang-btn {
   border-top: 4px solid transparent;
@@ -77,9 +82,9 @@
   padding: 15px 15px;
   border-radius: 12px;
   opacity: 1;
-  animation: appear 0.2s ease-in;
+  animation: appear-nav 0.2s ease-in;
 }
-@keyframes appear {
+@keyframes appear-nav {
   from {
     opacity: 0;
   }
@@ -178,6 +183,7 @@
     padding: 0;
   }
   .nav-bar .nav-bar-container .nav-menu-container ul.nav-menu li.nav-item .nav-link {
+    font-family: "Raleway", sans-serif;
     text-decoration: none;
     font-size: 1.125rem;
     font-weight: 500;
@@ -269,6 +275,24 @@
     align-items: center;
   }
 }
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes appear-nonmove {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
 @keyframes updown {
   from {
     transform: translate(-50%, -45%);
@@ -286,8 +310,8 @@
   }
 }
 .hero-section {
-  height: 600px;
-  width: 1200px;
+  height: 750px;
+  width: 1400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -300,7 +324,7 @@
   background: url("/image/service/Asset 1.png");
   background-size: 80%;
   background-repeat: no-repeat;
-  background-position: 180% 35%;
+  background-position: 190% 35%;
   position: absolute;
   top: 0;
   right: 0;
@@ -308,23 +332,30 @@
   height: 100%;
   z-index: 0;
   animation: glow 4s ease-in-out infinite alternate;
+  /*filter: drop-shadow(0px 0px 5px rgba(0, 255, 213, 1));*/
 }
 .hero-section .hero-section-title {
   position: absolute;
-  left: 70px;
+  left: 80px;
   bottom: 80px;
   width: 600px;
   z-index: 1;
+  animation: appear 1.25s ease 0s;
 }
 .hero-section .hero-section-title h1 {
   font-family: "Nunito Sans", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.2;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
 }
 .hero-section .hero-section-title h1 .branding-name {
-  font-size: 4rem;
+  font-size: 4.25rem;
   color: #BEFBFF;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.hero-section .hero-section-title h1 .short-des {
+  line-height: 1.2;
 }
 .hero-section .hero-section-title p {
   font-weight: 400;
@@ -400,12 +431,12 @@
   .hero-section .hero-section-title h1 {
     font-family: "Nunito Sans", sans-serif;
     font-weight: 600;
-    line-height: 1.2;
-    font-size: 2rem;
+    line-height: 1.25;
+    font-size: 1.5rem;
     width: 100%;
   }
   .hero-section .hero-section-title h1 .branding-name {
-    font-size: 3rem;
+    font-size: 2.75rem;
     color: #BEFBFF;
     width: 100%;
   }
@@ -466,10 +497,10 @@
 }
 .service-section {
   box-sizing: border-box;
-  height: 720px;
-  width: 1200px;
+  height: auto;
+  width: 1400px;
   display: flex;
-  padding: 30px 60px;
+  padding: 30px 60px 60px 60px;
   flex-direction: column;
   align-items: center;
   justify-content: start;
@@ -480,9 +511,10 @@
 .service-section h1.section-title {
   margin-bottom: 20px;
   text-align: left;
-  font-weight: 600;
-  font-size: 3.5rem;
+  font-weight: 700;
+  font-size: 3.25rem;
   color: #BEFBFF;
+  font-family: "Raleway", sans-serif;
 }
 .service-section .service-card-container {
   display: grid;
@@ -491,9 +523,9 @@
   justify-content: center;
   align-items: center;
   justify-items: center;
-  grid-template: 250px 250px/520px 520px;
+  grid-template: 1fr 1fr/1fr 1fr;
   gap: 30px;
-  grid-template-areas: "market business" "market community";
+  grid-template-areas: "communication marketing" "communication creative";
 }
 .service-section .service-card-container .service-card {
   padding: 0 30px;
@@ -508,27 +540,39 @@
 }
 .service-section .service-card-container .service-card:hover {
   background-color: #00b3c5;
+  transition: all 0.5s ease;
 }
-.service-section .service-card-container .market-sector {
-  grid-area: market;
+.service-section .service-card-container .communication-sector {
+  grid-area: communication;
   position: relative;
 }
-.service-section .service-card-container .market-sector .background-layer {
+.service-section .service-card-container .communication-sector li {
+  font-size: 1.5rem;
+}
+.service-section .service-card-container .communication-sector .background-layer {
   position: absolute;
   top: 0;
   left: 0;
+  border-radius: 30px;
   width: 100%;
   height: 100%;
   z-index: 1;
   background: url("/image/service/Asset 1.png");
-  background-size: auto;
-  background-position: auto;
+  background-size: 160%;
+  background-position: -60% 10%;
+  background-repeat: no-repeat;
 }
-.service-section .service-card-container .business-sector {
-  grid-area: business;
+.service-section .service-card-container .marketing-sector {
+  grid-area: marketing;
 }
-.service-section .service-card-container .community-sector {
-  grid-area: community;
+.service-section .service-card-container .creative-sector {
+  grid-area: creative;
+}
+.service-section .service-card-container li {
+  font-size: 1.25rem;
+}
+.service-section .service-card-container ul {
+  list-style-type: none;
 }
 
 @media screen and (max-width: 960px) {
@@ -570,7 +614,7 @@
   .service-section .service-card-container .service-card h2 {
     font-size: 1.75rem;
   }
-  .service-section .service-card-container .market-sector .background-layer {
+  .service-section .service-card-container .communication-sector .background-layer {
     position: absolute;
     top: 0;
     left: 0;
@@ -583,31 +627,79 @@
   }
 }
 .about-us-section {
-  height: 600px;
+  height: 800px;
   width: 1200px;
   display: flex;
-  padding: 30px 60px;
   flex-direction: column;
   background-color: transparent;
   border-radius: 16px;
-  margin: 0 auto;
+  margin: 20px auto;
   align-items: center;
   justify-content: center;
 }
 .about-us-section .about-us-content {
-  display: grid;
-  grid-template: 500px/auto 460px;
+  display: flex;
+  grid-template: 700px/auto 460px;
   gap: 40px;
 }
+.about-us-section .about-us-content .about-us-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .about-us-section .about-us-content .about-us-main h1.section-title {
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 3.25rem;
+  color: #BEFBFF;
+  font-family: "Raleway", sans-serif;
+}
+.about-us-section .about-us-content .about-us-main .about-us-article {
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+}
+.about-us-section .about-us-content .about-us-main .about-us-article p {
+  max-width: 80%;
+  text-align: center;
+  font-size: 1.125rem;
+  font-family: "Raleway", sans-serif;
+}
+.about-us-section .about-us-content .about-us-main .mission-business-container {
+  display: flex;
+  height: auto;
+  justify-content: space-around;
+  align-content: center;
+}
+.about-us-section .about-us-content .about-us-main .mission-business-container .our-mission, .about-us-section .about-us-content .about-us-main .mission-business-container .our-business {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.about-us-section .about-us-content .about-us-main .mission-business-container .our-mission figure, .about-us-section .about-us-content .about-us-main .mission-business-container .our-business figure {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.about-us-section .about-us-content .about-us-main .mission-business-container .our-mission figure img, .about-us-section .about-us-content .about-us-main .mission-business-container .our-business figure img {
+  filter: drop-shadow(0px 0px 1px rgb(0, 255, 213));
+}
+.about-us-section .about-us-content .about-us-main .mission-business-container .our-mission h3, .about-us-section .about-us-content .about-us-main .mission-business-container .our-business h3 {
+  text-align: center;
+  font-size: 1.5rem;
   margin-bottom: 10px;
-  text-align: left;
-  font-weight: 600;
-  font-size: 3.5rem;
   color: #BEFBFF;
 }
-.about-us-section .about-us-content .about-us-main p {
-  font-size: 18px;
+.about-us-section .about-us-content .about-us-main .mission-business-container .our-mission p, .about-us-section .about-us-content .about-us-main .mission-business-container .our-business p {
+  font-size: 1.125rem;
+  text-align: center;
+  font-style: italic;
+  font-family: "Raleway", sans-serif;
 }
 .about-us-section .about-us-content .about-us-main .brand-previous-logo {
   display: flex;
@@ -620,7 +712,7 @@
 
 @media screen and (max-width: 960px) {
   .about-us-section {
-    height: 900px;
+    height: 1100px;
     width: 100vw;
     display: flex;
     padding: 0;
@@ -633,7 +725,7 @@
   }
   .about-us-section .about-us-content {
     display: grid;
-    grid-template: 400px/100vw;
+    grid-template: 650px/100vw;
     gap: 20px;
     justify-items: center;
   }
@@ -819,16 +911,15 @@
   }
 }
 .projects-section {
-  box-sizing: content-box;
   height: auto;
-  width: 1200px;
+  width: 1400px;
   display: flex;
   padding: 50px 40px 60px 40px;
   flex-direction: column;
   background-color: transparent;
   border-radius: 16px;
   border: 1px solid rgba(0, 179, 197, 0.5);
-  margin: 80px auto 0 auto;
+  margin: 120px auto 120px auto;
   align-items: center;
   justify-content: flex-start;
 }
@@ -851,7 +942,7 @@
 .projects-section .projects-container .projects-container-line {
   display: flex;
   flex-wrap: nowrap;
-  width: 1200px;
+  width: 1300px;
   overflow: hidden;
   margin-top: 20px;
 }
@@ -56841,7 +56932,7 @@ i[class^=fi-brands-]:before, i[class*=" fi-brands-"]:before, span[class^=fi-bran
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  width: 1200px;
+  width: 1400px;
   height: 300px;
   margin: 0 auto;
   padding-bottom: 80px;
@@ -56983,32 +57074,34 @@ i[class^=fi-brands-]:before, i[class*=" fi-brands-"]:before, span[class^=fi-bran
   }
 }
 .customer-section {
-  box-sizing: border-box;
-  height: 720px;
-  width: 1200px;
+  height: auto;
+  width: 1400px;
   display: flex;
-  padding: 30px 60px;
+  padding: 30px 60px 60px 60px;
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  background-color: #003445;
+  /*background-color: $dark-primary-color;*/
   border-radius: 16px;
   margin: 80px auto 0 auto;
 }
 .customer-section h1.section-title {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   text-align: left;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 3.5rem;
   color: #BEFBFF;
+  font-family: "Raleway", sans-serif;
 }
 .customer-section .customer-container {
   margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(4, 250px);
+  grid-template-columns: repeat(8, 130px);
   gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
+  justify-items: center;
   align-items: center;
 }
 
@@ -57035,6 +57128,7 @@ i[class^=fi-brands-]:before, i[class*=" fi-brands-"]:before, span[class^=fi-bran
   box-sizing: border-box;
   margin: 0 0;
   padding: 0;
+  line-height: 1.625;
 }
 
 div {
@@ -57064,6 +57158,18 @@ body {
 a:visited {
   color: #fff;
   text-decoration: none;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 @media screen and (max-width: 960px) {

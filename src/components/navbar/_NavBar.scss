@@ -24,7 +24,7 @@ $main-background-color: #001c25;
         font-size: 0.875rem;
         width: 1400px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
 
         .nav-menu-container {
@@ -45,6 +45,7 @@ $main-background-color: #001c25;
                     padding: 0 10px;
                     
                     .nav-link {
+                        font-family: 'Raleway', sans-serif;
                         text-decoration: none;
                         
                         font-weight: 600;
@@ -53,7 +54,12 @@ $main-background-color: #001c25;
 
                 li.nav-item:hover {
                     border-top: 4px solid $primary-color;
-                    transition: all 0.2s linear;
+                    transition: all 0.5s ease;
+
+                    .nav-link {
+                        color: $light-text-color;
+                        transition: all 0.5s ease;
+                    }
                 }
             }
 
@@ -87,7 +93,7 @@ $main-background-color: #001c25;
         }
 
         .lang-selector {
-            @keyframes appear {
+            @keyframes appear-nav {
                 from {opacity: 0;}
                 to {opacity: 1;}
               }
@@ -100,7 +106,7 @@ $main-background-color: #001c25;
             padding: 15px 15px;
             border-radius: 12px;
             opacity: 1;
-            animation: appear 0.2s ease-in;
+            animation: appear-nav 0.2s ease-in;
 
             button {
                 display: flex;
@@ -205,6 +211,7 @@ $main-background-color: #001c25;
                         padding: 0;
                         
                         .nav-link {
+                            font-family: 'Raleway', sans-serif;
                             text-decoration: none;
                             font-size: 1.125rem;
                             font-weight: 500;
