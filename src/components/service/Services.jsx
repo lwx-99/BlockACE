@@ -2,7 +2,7 @@ import React from 'react'
 
 function Services() {
   return (
-    <>
+    <div className="section-container">
         <section className="service-section reveal" id="services">
           <h1 className="section-title">Our Solutions</h1>
 
@@ -45,7 +45,7 @@ function Services() {
             </div>
           </div>
         </section>
-    </>
+    </div>
   )
 }
 

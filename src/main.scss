@@ -76,6 +76,10 @@ a:visited {
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+
+        .section-container {
+            overflow-x: hidden;
+        }
     }
     
 }

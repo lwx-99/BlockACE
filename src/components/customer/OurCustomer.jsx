@@ -183,6 +183,7 @@ const CustomerList = [
 
 function OurCustomer() {
   return (
+  <div className="section-container">
     <div className="customer-section reveal" id="customers">
       <h1 className="section-title">Partners & Clients</h1>
       <div className="customer-container">
@@ -192,8 +193,8 @@ function OurCustomer() {
             </figure>
           ))}
       </div>
-      
     </div>
+  </div>
   )
 }
 

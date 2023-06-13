@@ -57202,4 +57202,7 @@ a:visited {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+  body .section-container {
+    overflow-x: hidden;
+  }
 }/*# sourceMappingURL=main.css.map */
