@@ -57163,10 +57163,10 @@ i[class^=fi-brands-]:before, i[class*=" fi-brands-"]:before, span[class^=fi-bran
   }
 }
 .resource-contact-section {
-  height: 800px;
+  height: 900px;
   width: 1400px;
   display: flex;
-  padding: 60px;
+  padding: 50px;
   flex-direction: row;
   align-items: flex-start;
   flex-wrap: wrap;

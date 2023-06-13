@@ -125,6 +125,36 @@ function ContactForm() {
                             )}
                             </div>
 
+                            <div className="mb-5">
+                            <label htmlFor="EmailSubject" className="sr-only">
+                                Subject
+                            </label>
+                            <input
+                                id="EmailSubject"
+                                type="text"
+                                placeholder="Subject"
+                                name="EmailSubject"
+                                autoComplete="false"
+                                className={`w-full px-4 py-3 border-2  rounded-md outline-none  focus:ring-4  ${
+                                errors.EmailSubject
+                                    ? "border-red-600 focus:border-red-600 ring-red-100"
+                                    : "border-gray-300 focus:border-cyan-600 ring-indigo-100"
+                                }`}
+                                {...register("EmailSubject", {
+                                required: "Enter your subject",
+                                pattern: {
+                                    value: "",
+                                    message: "Please enter a subject",
+                                },
+                                })}
+                            />
+                            {errors.EmailSubject && (
+                                <div className="mt-1 text-cyan-200">
+                                <small>{errors.EmailSubject.message}</small>
+                                </div>
+                            )}
+                            </div>
+
                             <div className="mb-3">
                             <textarea
                                 name="message"
