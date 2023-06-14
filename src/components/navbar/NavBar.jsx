@@ -65,6 +65,11 @@ function NavBar() {
                   Partners
                 </HashLink>
               </li>
+              <li className="nav-item">
+                <HashLink smooth scroll={scrollWithOffset} to="#contact-us" className="nav-link"  onClick={closeMobileMenu}>
+                  Contact
+                </HashLink>
+              </li>
             </ul>
           </div>
           <div className="lang-btn-mobile-menu-btn">
