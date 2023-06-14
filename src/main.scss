@@ -2,7 +2,6 @@
 @use './components/hero/HeroSection';
 @use './components/service/Services';
 @use './components/about-us/AboutUs';
-@use './components/about-us/verticalSlide/VerticalSlide';
 @use './components/about-us/cardSlide/CardSlide';
 @use './components/project/Projects';
 @use './components/footer/Footer';
@@ -10,7 +9,7 @@
 @use './components/contact-resource/contact-form/ContactForm';
 @use './components/contact-resource/ContactResource';
 @use './components/contact-resource/resource/OurResource';
-
+@use './components/our-team/OurTeam';
 
 * {
     box-sizing: border-box;
@@ -70,6 +69,10 @@ a:visited {
 .reveal.active {
     transform: translateY(0px);
     opacity: 1;
+}
+
+.section-container {
+    overflow-x: hidden;
 }
 
 @media screen and (max-width: 960px) {

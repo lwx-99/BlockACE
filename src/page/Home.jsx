@@ -4,6 +4,7 @@ import Projects from '../components/project/Projects'
 import Services from '../components/service/Services'
 import OurCustomer from '../components/customer/OurCustomer'
 import ContactResource from '../components/contact-resource/ContactResource'
+import OurTeam from '../components/our-team/OurTeam'
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
         <HeroSection />
         <AboutUs />
         <Services />
+        <OurTeam />
         <Projects />
         <OurCustomer />
         <ContactResource />

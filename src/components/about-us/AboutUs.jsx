@@ -1,5 +1,4 @@
 import React from 'react'
-import VerticalSlide from './verticalSlide/verticalSlide'
 import CardSlide from './cardSlide/CardSlide'
 
 function AboutUs() {

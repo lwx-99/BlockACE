@@ -50,6 +50,11 @@ function NavBar() {
                   Services
                 </HashLink>
               </li>
+              <li className="nav-item" >
+                <HashLink smooth scroll={scrollWithOffset} to="#team" className="nav-link"  onClick={closeMobileMenu}>
+                  Team
+                </HashLink>
+              </li>
               <li className="nav-item">
                 <HashLink smooth scroll={scrollWithOffset250} to="#projects" className="nav-link"  onClick={closeMobileMenu}>
                   Projects
