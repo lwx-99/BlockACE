@@ -9,7 +9,7 @@ function Services() {
           <div className="service-card-container">
             <div className='service-card communication-sector'>
               <div className="content">
-                <h2>COMMUNICATION</h2>
+                <h2> BUSINESS DEVELOPMENT</h2>
                   <ul>
                     <li>Press Release & Media Relations</li>
                     <li>Community Building & Management</li>
