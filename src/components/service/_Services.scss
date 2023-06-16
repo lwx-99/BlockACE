@@ -1,26 +1,33 @@
 $primary-color: #00b3c5;
 $light-text-color:#BEFBFF;
-$dark-primary-color: #003445;
+$dark-text-color: #1f2123;
+$button-semi-dark-color: #474d57;
+$button-dark-color: #001934;
+$button-dark-color-hover: #00244b;
+$button-light-color: #00b3c5;
+$main-background-color: #000e1d;
+
+$font-stack: 'Chakra Petch', sans-serif;
+
 $dark-secondary-color: #324B4F;
-$main-background-color: #001c25;
+$dark-primary-color: #003445;
 
 .service-section {  
     box-sizing: border-box;
     height: auto;
-    width: 1400px;
+    width: calc(100vw - 10px);
     margin: 0 auto;
-    padding: 30px 60px 60px 60px;
-    border-radius: 16px;
+    padding: 80px;
+    border-radius: 0 0 72px 72px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    background-color: $dark-primary-color;
+    background-color: $main-background-color;
 
 
 
     h1.section-title {
-        margin-bottom: 20px;
         text-align: left;
         font-weight: 700;
         font-size: 3.25rem;

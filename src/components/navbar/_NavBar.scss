@@ -1,8 +1,14 @@
 $primary-color: #00b3c5;
 $light-text-color:#BEFBFF;
-$dark-primary-color: #003445;
-$dark-secondary-color: #324B4F;
-$main-background-color: #001c25;
+$dark-text-color: #1f2123;
+$button-semi-dark-color: #474d57;
+$button-dark-color: #001934;
+$button-dark-color-hover: #00244b;
+$button-light-color: #00b3c5;
+$main-background-color: #000e1d;
+
+$font-stack: 'Chakra Petch', sans-serif;
+
 
 @keyframes appear-nav {
     from {opacity: 0;}
@@ -59,7 +65,7 @@ $main-background-color: #001c25;
                     
                     .nav-link {
                         font-family: 'Chakra Petch', sans-serif;
-                        color: #001020;
+                        color: $dark-text-color;
                         text-decoration: none;
                         font-weight: 500;
                         font-size: 1.125rem;
@@ -68,7 +74,7 @@ $main-background-color: #001c25;
                 }
 
                 li.nav-item:hover {
-                    background-color: #001020;
+                    background-color: $main-background-color;
                     border-radius: 12px;
 
                     .nav-link {
@@ -114,7 +120,7 @@ $main-background-color: #001c25;
             right: 0px;
             display: flex;
             flex-direction: column;
-            background-color: #474d57;
+            background-color: $button-dark-color;
             padding: 15px 15px;
             border-radius: 12px;
             opacity: 1;
@@ -136,16 +142,15 @@ $main-background-color: #001c25;
                 span {
                     color: #9b9b9b;
                     margin: 0 6px;
-                    font-weight: 600;
+                    font-weight: 500;
                 }
             }
 
             button:hover {
-                background-color: #fcd535;
-                color: #181a20;
+                background-color: $button-dark-color-hover;
+                color: #fff;
 
                 span {
-                    color: #181a20;
                     margin: 0 6px;
                 }
             }
@@ -239,7 +244,7 @@ $main-background-color: #001c25;
     
                     li.nav-item:hover {
                         border-top: none;
-                        background: $dark-primary-color;
+                        background: $main-background-color;
                         transition: all 0.2s linear;
                     }
                 }
@@ -272,7 +277,7 @@ $main-background-color: #001c25;
                 top: 80px;
                 display: flex;
                 flex-direction: column;
-                background-color: $dark-secondary-color;
+                background-color: #fff;
                 padding: 15px 15px;
                 border-radius: 12px;
                 opacity: 1;
@@ -297,7 +302,7 @@ $main-background-color: #001c25;
                 }
     
                 button:hover {
-                    background-color: $dark-primary-color;
+                    background-color: #fff;
                     transition: all 0.3s linear;
                 }
             }

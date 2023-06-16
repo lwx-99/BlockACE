@@ -1,8 +1,10 @@
 $primary-color: #00b3c5;
 $light-text-color:#BEFBFF;
-$dark-primary-color: #003445;
-$dark-secondary-color: #324B4F;
-$main-background-color: #001c25;
+$dark-text-color: #1f2123;
+$button-semi-dark-color: #474d57;
+$button-dark-color: #1e1f20;
+$button-light-color: #00b3c5;
+$main-background-color: #000e1d;
 
 @keyframes appear {
     0% {
@@ -27,8 +29,8 @@ $main-background-color: #001c25;
 
 .hero-section {
     width: calc(100vw - 5vh);
-    height: auto;
-    min-height: 600px;
+    height: calc(100vh - 2.5vh);
+    min-height: 700px;
     max-height: 1000px;
     display: flex;
     flex-direction: column;
@@ -36,10 +38,10 @@ $main-background-color: #001c25;
     align-items: center;
     background-color: #000e1d;
     border-radius: 16px;
-    margin: 2.5vh;
+    margin: 2.5vh 2.5vh 0 2.5vh;
     overflow: hidden;
-    border-radius: 32px;
-    padding: 60px 60px;
+    border-radius: 32px 32px 0 0;
+    padding: 30px 60px;
 
     .hero-section-container {
         width: 1400px;
@@ -48,7 +50,6 @@ $main-background-color: #001c25;
         display: flex;
         justify-content: flex-start;
         align-items: flex-end;
-        margin-top: 200px;
 
         .hero-section-content > * {
             margin: 25px 0
@@ -102,8 +103,8 @@ $main-background-color: #001c25;
                 }
     
                 .btn-01:hover {
-                    background-color: #4681ff;
-                    background-image: linear-gradient(135deg, #00b3c5, rgba(122, 64, 238, 0));
+                    background-color: $primary-color;
+                    border: 1px solid $primary-color;
                 }
     
                 .btn-02 {
@@ -120,8 +121,8 @@ $main-background-color: #001c25;
                 }
     
                 .btn-02:hover {
-                    border: 1px solid #fcd535;
-                    color: #fcd535;
+                    border: 1px solid $primary-color;
+                    color: $primary-color;
                 }
             }
         }
@@ -160,7 +161,6 @@ $main-background-color: #001c25;
     
                 .branding-name {
                     font-size: 2.75rem;
-                    color: $light-text-color;
                     width: 100%;
                     
                 }
@@ -178,8 +178,6 @@ $main-background-color: #001c25;
                     cursor: pointer;
                     font-size: 1rem;
                     font-weight: 300;
-                    color: $light-text-color;
-                    background: $main-background-color;
                     border: none;
                     padding: 16px 24px;
                     border-radius: 12px;
@@ -188,7 +186,6 @@ $main-background-color: #001c25;
                 }
     
                 .btn-01:hover {
-                    background: $primary-color;
                     transition: all 0.2s linear;
                 }
     
@@ -196,35 +193,17 @@ $main-background-color: #001c25;
                     cursor: pointer;
                     font-size: 1rem;
                     font-weight: 300;
-                    color: $light-text-color;
                     background: transparent;
-                    border: 1px solid $main-background-color;
                     padding: 16px 24px;
                     border-radius: 12px;
                     text-align: center;
                 }
     
                 .btn-02:hover {
-                    border: 1px solid $primary-color;
                     transition: all 0.2s linear;
                 }
             }
             
-        }
-    
-    
-        .hero-animated-illu {
-            position: absolute;
-            right: 100px;
-            bottom: 75px;
-            animation: glow 2s ease-in-out infinite alternate;;
-            z-index: 1;
-    
-            .illu-01{
-                position: absolute;
-                left: 50%;
-                animation: updown 2s ease-in-out infinite alternate, glow 2s ease-in-out infinite alternate;
-            }
         }
     
         .hero-section-title > * {

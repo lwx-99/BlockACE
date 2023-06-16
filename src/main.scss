@@ -11,6 +11,13 @@
 @use './components/contact-resource/resource/OurResource';
 @use './components/our-team/OurTeam';
 
+$primary-color: #00b3c5;
+$light-text-color:#BEFBFF;
+$dark-text-color: #1f2123;
+$button-dark-color: #474d57;
+$button-light-color: #00b3c5;
+$main-background-color: #000e1d;
+
 * {
     box-sizing: border-box;
     margin: 0 0;
