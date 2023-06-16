@@ -5,13 +5,13 @@ $dark-secondary-color: #324B4F;
 $main-background-color: #001c25;
 
 .about-us-section {
-    height: 800px;
+    height: 700px;
     width: 1200px;
     display: flex;
     flex-direction: column;
     background-color: transparent;
     border-radius: 16px;
-    margin: 20px auto;
+    margin: 0 auto;
     align-items: center;
     justify-content: center;
 
@@ -33,7 +33,7 @@ $main-background-color: #001c25;
                 font-weight: 700;
                 font-size: 3.25rem;
                 color: $light-text-color;
-                font-family: 'Raleway', sans-serif;
+                font-family: 'Chakra Petch', sans-serif;
             }
 
             .about-us-article {

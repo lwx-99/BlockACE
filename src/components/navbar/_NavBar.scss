@@ -14,54 +14,65 @@ $main-background-color: #001c25;
     justify-content: center;
     position: sticky;
     top: 0;
-    height: 80px;
+    height: auto;
     z-index: 1000;
-    background-color: $main-background-color;
+    background-color: transparent;
+    max-width: 100%;
+
 
     .nav-bar--logo-container {
-        height: 32px;
+        max-height: 40px;
         width: auto;
     }
 
     .nav-bar-container {
-        font-size: 0.875rem;
+        
         width: 1400px;
+        max-width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        color: #fff;
 
         .nav-menu-container {
+            background-color: #fff;
+            border-radius: 100px;
             display: flex;
             align-items: center;
+            padding: 8px 30px;
+            margin: 0 80px;
 
             ul.nav-menu {
                 display: flex;
                 flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
                 list-style: none;
 
                 li.nav-item {
                     display: flex;
                     align-items: center;
                     border-top: 4px solid transparent;
-                    height: 80px;
-                    margin: auto 10px;
-                    padding: 0 10px;
+                    height: 50px;
+                    margin: 0;
+                    padding: 0 20px;
                     
                     .nav-link {
-                        font-family: 'Raleway', sans-serif;
+                        font-family: 'Chakra Petch', sans-serif;
+                        color: #001020;
                         text-decoration: none;
-                        
-                        font-weight: 600;
+                        font-weight: 500;
+                        font-size: 1.125rem;
+                       
                     }
                 }
 
                 li.nav-item:hover {
-                    border-top: 4px solid $primary-color;
-                    transition: all 0.5s ease;
+                    background-color: #001020;
+                    border-radius: 12px;
 
                     .nav-link {
-                        color: $light-text-color;
-                        transition: all 0.5s ease;
+                        color: #fff;
                     }
                 }
             }
@@ -75,10 +86,9 @@ $main-background-color: #001c25;
         border-top: 4px solid transparent;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
         height: 80px;
-        width: 120px;
-        padding-left: 16px;
+        width: 90px;
 
 
         .lang-svg-icon {
@@ -93,7 +103,7 @@ $main-background-color: #001c25;
 
             .rotate-icon {
                 transform: rotate(360deg);
-                transition: all 0.2s ease-in-out 0s;
+                transition: all 0.2s ease-in-out;
             }
         }
 
@@ -104,7 +114,7 @@ $main-background-color: #001c25;
             right: 0px;
             display: flex;
             flex-direction: column;
-            background-color: $dark-secondary-color;
+            background-color: #474d57;
             padding: 15px 15px;
             border-radius: 12px;
             opacity: 1;
@@ -126,12 +136,18 @@ $main-background-color: #001c25;
                 span {
                     color: #9b9b9b;
                     margin: 0 6px;
+                    font-weight: 600;
                 }
             }
 
             button:hover {
-                background-color: $dark-primary-color;
-                transition: all 0.3s linear;
+                background-color: #fcd535;
+                color: #181a20;
+
+                span {
+                    color: #181a20;
+                    margin: 0 6px;
+                }
             }
         }
 
@@ -145,11 +161,6 @@ $main-background-color: #001c25;
             right: 30px;
             width: 30px;
         }
-    }
-
-    .lang-btn:hover {
-        border-top: 4px solid $primary-color;
-        transition: all 0.2s linear;
     }
 
     .lang-btn:hover .rotate-icon {
@@ -169,7 +180,7 @@ $main-background-color: #001c25;
         display: flex;
         justify-content: center;
         align-items: center;
-        position: fixed;
+        position: sticky;
         top: 0;
         height: 80px;
         margin: 0 auto;

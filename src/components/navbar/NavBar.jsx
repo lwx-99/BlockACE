@@ -30,16 +30,11 @@ function NavBar() {
           <div className="nav-bar--logo-container">
             <Link to="/" className="nav-logo">
 
-              <img src="/image/blockaceLogo.png" height="32px"/>
+              <img src="/image/blockaceLogo.png" height="40px"/>
             </Link>
           </div>
           <div className="nav-menu-container">
             <ul className={click ? "nav-menu active" : "nav-menu"}>
-              <li className="nav-item">
-                <HashLink smooth scroll={scrollWithOffset250} to="#home" className="nav-link"  onClick={closeMobileMenu}>
-                  Home
-                </HashLink>
-              </li>
               <li className="nav-item">
                 <HashLink smooth scroll={scrollWithOffset} to="#about-us" className="nav-link"  onClick={closeMobileMenu}>
                   About Us

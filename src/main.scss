@@ -15,7 +15,7 @@
     box-sizing: border-box;
     margin: 0 0;
     padding: 0;
-    line-height: 1.625;
+    line-height: 1.5;
 }
 
 div {
@@ -27,14 +27,13 @@ html {
 } 
 
 body {
-    color: #fff;
-    background-color: #001c25;
-    font-family: 'Quicksand', sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
+    color: #1f2123;
+    background-color: #f4f4f7;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
     height: 100%;
+    width: calc(100vw - 10px);
     margin: 0 auto;
-    width: 100%;
     text-rendering: optimizeLegibility;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -75,26 +74,25 @@ a:visited {
     overflow-x: hidden;
 }
 
+
+::-webkit-scrollbar {
+    width: 10px;
+    color: transparent;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(155, 155, 155);
+    border-radius: 10px;
+}
+
+
 @media screen and (max-width: 960px) {
     
-    body {
-        color: #fff;
-        background-color: #001c25;
-        font-family: 'Quicksand', sans-serif;
-        line-height: 1.5;
-        font-weight: 400;
-        height: 100%;
-        margin: 100px auto 0 auto;
-        width: 100vw;
-        text-rendering: optimizeLegibility;
-        font-synthesis: none;
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-
-        .section-container {
-            overflow-x: hidden;
-        }
-    }
     
 }

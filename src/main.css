@@ -12,60 +12,68 @@
   justify-content: center;
   position: sticky;
   top: 0;
-  height: 80px;
+  height: auto;
   z-index: 1000;
-  background-color: #001c25;
+  background-color: transparent;
+  max-width: 100%;
 }
 .nav-bar .nav-bar--logo-container {
-  height: 32px;
+  max-height: 40px;
   width: auto;
 }
 .nav-bar .nav-bar-container {
-  font-size: 0.875rem;
   width: 1400px;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #fff;
 }
 .nav-bar .nav-bar-container .nav-menu-container {
+  background-color: #fff;
+  border-radius: 100px;
   display: flex;
   align-items: center;
+  padding: 8px 30px;
+  margin: 0 80px;
 }
 .nav-bar .nav-bar-container .nav-menu-container ul.nav-menu {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   list-style: none;
 }
 .nav-bar .nav-bar-container .nav-menu-container ul.nav-menu li.nav-item {
   display: flex;
   align-items: center;
   border-top: 4px solid transparent;
-  height: 80px;
-  margin: auto 10px;
-  padding: 0 10px;
+  height: 50px;
+  margin: 0;
+  padding: 0 20px;
 }
 .nav-bar .nav-bar-container .nav-menu-container ul.nav-menu li.nav-item .nav-link {
-  font-family: "Raleway", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
+  color: #001020;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 1.125rem;
 }
 .nav-bar .nav-bar-container .nav-menu-container ul.nav-menu li.nav-item:hover {
-  border-top: 4px solid #00b3c5;
-  transition: all 0.5s ease;
+  background-color: #001020;
+  border-radius: 12px;
 }
 .nav-bar .nav-bar-container .nav-menu-container ul.nav-menu li.nav-item:hover .nav-link {
-  color: #BEFBFF;
-  transition: all 0.5s ease;
+  color: #fff;
 }
 .nav-bar .lang-btn {
   position: relative;
   border-top: 4px solid transparent;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   height: 80px;
-  width: 120px;
-  padding-left: 16px;
+  width: 90px;
 }
 .nav-bar .lang-btn .lang-svg-icon {
   display: flex;
@@ -78,7 +86,7 @@
 }
 .nav-bar .lang-btn .lang-svg-icon .rotate-icon {
   transform: rotate(360deg);
-  transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out;
 }
 .nav-bar .lang-btn .lang-selector {
   position: absolute;
@@ -86,7 +94,7 @@
   right: 0px;
   display: flex;
   flex-direction: column;
-  background-color: #324B4F;
+  background-color: #474d57;
   padding: 15px 15px;
   border-radius: 12px;
   opacity: 1;
@@ -108,10 +116,15 @@
 .nav-bar .lang-btn .lang-selector button span {
   color: #9b9b9b;
   margin: 0 6px;
+  font-weight: 600;
 }
 .nav-bar .lang-btn .lang-selector button:hover {
-  background-color: #003445;
-  transition: all 0.3s linear;
+  background-color: #fcd535;
+  color: #181a20;
+}
+.nav-bar .lang-btn .lang-selector button:hover span {
+  color: #181a20;
+  margin: 0 6px;
 }
 .nav-bar .lang-btn .lang-selector ::before {
   background: url(/public/image/svg/nav-triangle.6acc08d5.svg) no-repeat 50%/cover;
@@ -122,10 +135,6 @@
   position: absolute;
   right: 30px;
   width: 30px;
-}
-.nav-bar .lang-btn:hover {
-  border-top: 4px solid #00b3c5;
-  transition: all 0.2s linear;
 }
 .nav-bar .lang-btn:hover .rotate-icon {
   transform: rotate(180deg);
@@ -140,7 +149,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    position: sticky;
     top: 0;
     height: 80px;
     margin: 0 auto;
@@ -282,22 +291,6 @@
     transform: translateX(0);
   }
 }
-@keyframes appear-nonmove {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100%;
-  }
-}
-@keyframes updown {
-  from {
-    transform: translate(-50%, -45%);
-  }
-  to {
-    transform: translate(-50%, -55%);
-  }
-}
 @keyframes glow {
   from {
     filter: drop-shadow(0px 0px 0px rgba(0, 255, 213, 0.3));
@@ -307,107 +300,91 @@
   }
 }
 .hero-section {
-  height: 750px;
-  width: 1400px;
+  width: calc(100vw - 5vh);
+  height: auto;
+  min-height: 600px;
+  max-height: 1000px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-color: #003445;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000e1d;
   border-radius: 16px;
-  position: relative;
-  margin: 0 auto;
+  margin: 2.5vh;
   overflow: hidden;
+  border-radius: 32px;
+  padding: 60px 60px;
 }
-.hero-section .hero-section-layer {
-  background: url("/image/service/Asset 1.png");
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: 190% 35%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
+.hero-section .hero-section-container {
+  width: 1400px;
+  max-width: 100%;
   height: 100%;
-  z-index: 0;
-  animation: glow 4s ease-in-out infinite alternate;
-  /*filter: drop-shadow(0px 0px 5px rgba(0, 255, 213, 1));*/
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: 200px;
 }
-.hero-section .hero-section-title {
-  position: absolute;
-  left: 80px;
-  bottom: 80px;
-  width: 600px;
-  z-index: 1;
-  animation: appear 1.25s ease 0s;
+.hero-section .hero-section-container .hero-section-content > * {
+  margin: 25px 0;
 }
-.hero-section .hero-section-title h1 {
+.hero-section .hero-section-container .hero-section-content {
+  width: 50%;
+  animation: appear 1.25s ease;
+  color: #fff;
+}
+.hero-section .hero-section-container .hero-section-content h1 {
   font-family: "Nunito Sans", sans-serif;
-  font-weight: 500;
   line-height: 1.2;
-  font-size: 1.75rem;
 }
-.hero-section .hero-section-title h1 .branding-name {
-  font-size: 4.25rem;
-  color: #BEFBFF;
-  font-family: "Poppins", sans-serif;
+.hero-section .hero-section-container .hero-section-content h1 .branding-name {
+  font-size: 6.5rem;
+  color: #ffffff;
+  font-family: "Chakra Petch", sans-serif;
   font-weight: 600;
 }
-.hero-section .hero-section-title h1 .short-des {
+.hero-section .hero-section-container .hero-section-content h1 .short-des {
   line-height: 1.2;
+  font-weight: 200;
+  color: #BEFBFF;
+  font-size: 2.5rem;
 }
-.hero-section .hero-section-title p {
-  font-weight: 400;
-  font-size: 1rem;
+.hero-section .hero-section-container .hero-section-content p {
+  font-weight: 300;
+  font-size: 1.25rem;
 }
-.hero-section .hero-section-title .hero-button .btn-01 {
+.hero-section .hero-section-container .hero-section-content .hero-button .btn-01 {
+  font-family: "Chakra Petch", sans-serif;
   cursor: pointer;
   font-size: 1rem;
-  font-weight: 300;
-  color: #BEFBFF;
-  background: #001c25;
+  font-weight: 400;
+  color: #fff;
+  background: #474d57;
   border: none;
   padding: 16px 24px;
   border-radius: 12px;
   text-align: center;
   margin-right: 12px;
+  border: 1px solid #474d57;
 }
-.hero-section .hero-section-title .hero-button .btn-01:hover {
-  background: #00b3c5;
-  transition: all 0.2s linear;
+.hero-section .hero-section-container .hero-section-content .hero-button .btn-01:hover {
+  background-color: #4681ff;
+  background-image: linear-gradient(135deg, #00b3c5, rgba(122, 64, 238, 0));
 }
-.hero-section .hero-section-title .hero-button .btn-02 {
+.hero-section .hero-section-container .hero-section-content .hero-button .btn-02 {
+  font-family: "Chakra Petch", sans-serif;
   cursor: pointer;
   font-size: 1rem;
-  font-weight: 300;
-  color: #BEFBFF;
+  font-weight: 400;
+  color: #fff;
   background: transparent;
-  border: 1px solid #001c25;
+  border: 1px solid #474d57;
   padding: 16px 24px;
   border-radius: 12px;
   text-align: center;
 }
-.hero-section .hero-section-title .hero-button .btn-02:hover {
-  border: 1px solid #00b3c5;
-  transition: all 0.2s linear;
-}
-.hero-section .hero-animated-illu {
-  position: absolute;
-  right: 100px;
-  bottom: 75px;
-  animation: glow 2s ease-in-out infinite alternate;
-  z-index: 1;
-}
-.hero-section .hero-animated-illu .illu-01 {
-  position: absolute;
-  left: 50%;
-  animation: updown 2s ease-in-out infinite alternate, glow 2s ease-in-out infinite alternate;
-}
-.hero-section .hero-section-title > * {
-  margin: 18px 0;
-}
-
-.fun {
-  font-size: 2rem;
+.hero-section .hero-section-container .hero-section-content .hero-button .btn-02:hover {
+  border: 1px solid #fcd535;
+  color: #fcd535;
 }
 
 @media screen and (max-width: 960px) {
@@ -420,31 +397,31 @@
     background-size: 210%;
     background-position: -20% 20%;
   }
-  .hero-section .hero-section-title {
+  .hero-section .hero-section-content {
     position: absolute;
     left: 30px;
     bottom: 20px;
     width: 80%;
     z-index: 1;
   }
-  .hero-section .hero-section-title h1 {
+  .hero-section .hero-section-content h1 {
     font-family: "Nunito Sans", sans-serif;
     font-weight: 600;
     line-height: 1.25;
     font-size: 1.5rem;
     width: 100%;
   }
-  .hero-section .hero-section-title h1 .branding-name {
+  .hero-section .hero-section-content h1 .branding-name {
     font-size: 2.75rem;
     color: #BEFBFF;
     width: 100%;
   }
-  .hero-section .hero-section-title p {
+  .hero-section .hero-section-content p {
     font-weight: 400;
     font-size: 1rem;
     width: 100%;
   }
-  .hero-section .hero-section-title .hero-button .btn-01 {
+  .hero-section .hero-section-content .hero-button .btn-01 {
     cursor: pointer;
     font-size: 1rem;
     font-weight: 300;
@@ -456,11 +433,11 @@
     text-align: center;
     margin-right: 12px;
   }
-  .hero-section .hero-section-title .hero-button .btn-01:hover {
+  .hero-section .hero-section-content .hero-button .btn-01:hover {
     background: #00b3c5;
     transition: all 0.2s linear;
   }
-  .hero-section .hero-section-title .hero-button .btn-02 {
+  .hero-section .hero-section-content .hero-button .btn-02 {
     cursor: pointer;
     font-size: 1rem;
     font-weight: 300;
@@ -471,7 +448,7 @@
     border-radius: 12px;
     text-align: center;
   }
-  .hero-section .hero-section-title .hero-button .btn-02:hover {
+  .hero-section .hero-section-content .hero-button .btn-02:hover {
     border: 1px solid #00b3c5;
     transition: all 0.2s linear;
   }
@@ -498,14 +475,14 @@
   box-sizing: border-box;
   height: auto;
   width: 1400px;
-  display: flex;
-  padding: 30px 60px 60px 60px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  background-color: #003445;
-  border-radius: 16px;
   margin: 0 auto;
+  padding: 30px 60px 60px 60px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: #003445;
 }
 .service-section h1.section-title {
   margin-bottom: 20px;
@@ -638,13 +615,13 @@
   }
 }
 .about-us-section {
-  height: 800px;
+  height: 700px;
   width: 1200px;
   display: flex;
   flex-direction: column;
   background-color: transparent;
   border-radius: 16px;
-  margin: 20px auto;
+  margin: 0 auto;
   align-items: center;
   justify-content: center;
 }
@@ -666,7 +643,7 @@
   font-weight: 700;
   font-size: 3.25rem;
   color: #BEFBFF;
-  font-family: "Raleway", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
 }
 .about-us-section .about-us-content .about-us-main .about-us-article {
   margin-bottom: 80px;
@@ -57283,7 +57260,7 @@ i[class^=fi-brands-]:before, i[class*=" fi-brands-"]:before, span[class^=fi-bran
   box-sizing: border-box;
   margin: 0 0;
   padding: 0;
-  line-height: 1.625;
+  line-height: 1.5;
 }
 
 div {
@@ -57295,14 +57272,13 @@ html {
 }
 
 body {
-  color: #fff;
-  background-color: #001c25;
-  font-family: "Quicksand", sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  color: #1f2123;
+  background-color: #f4f4f7;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
   height: 100%;
+  width: calc(100vw - 10px);
   margin: 0 auto;
-  width: 100%;
   text-rendering: optimizeLegibility;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -57343,23 +57319,18 @@ a:visited {
   overflow-x: hidden;
 }
 
-@media screen and (max-width: 960px) {
-  body {
-    color: #fff;
-    background-color: #001c25;
-    font-family: "Quicksand", sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
-    height: 100%;
-    margin: 100px auto 0 auto;
-    width: 100vw;
-    text-rendering: optimizeLegibility;
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  body .section-container {
-    overflow-x: hidden;
-  }
+::-webkit-scrollbar {
+  width: 10px;
+  color: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(155, 155, 155);
+  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */
