@@ -1,36 +1,43 @@
 $primary-color: #00b3c5;
 $light-text-color:#BEFBFF;
-$dark-primary-color: #003445;
-$dark-secondary-color: #324B4F;
-$main-background-color: #001c25;
+$dark-text-color: #1f2123;
+$button-semi-dark-color: #474d57;
+$button-dark-color: #001934;
+$button-dark-color-hover: #00244b;
+$button-light-color: #00b3c5;
+$main-background-color: #000e1d;
 
-.section-container {
+$font-stack-section-title: 'Chakra Petch', sans-serif;
+
+$dark-secondary-color: #324B4F;
+$dark-primary-color: #003445;
+
+.contact-us-section-container {
     width: 100%;
 
     .contact-us-section {
-        min-width: 500px;
+        min-width: 300px;
 
         .submit-btn, .back-btn {
             box-shadow: none;
             border: 0;
-            background-color: $main-background-color;
+            background-color: $button-semi-dark-color;
             border-radius: 12px;
+            color: #fff;
+            font-family: 'Chakra Petch', sans-serif;
             font-size: 1rem;
             font-weight: 300;
-            color: $light-text-color;
-            font-family: sans-serif;
         }
 
         .submit-btn:hover, .back-btn:hover {
             background: $primary-color;
-            transition: all 0.2s linear;
         }
     }
 
 }
 
 @media screen and (max-width: 960px) {
-    .section-container {
+    .contact-us-section-container {
         width: 100%;
 
         .contact-us-section {

@@ -1,15 +1,23 @@
 $primary-color: #00b3c5;
 $light-text-color:#BEFBFF;
-$dark-primary-color: #003445;
+$dark-text-color: #1f2123;
+$button-semi-dark-color: #474d57;
+$button-dark-color: #001934;
+$button-dark-color-hover: #00244b;
+$button-light-color: #00b3c5;
+$main-background-color: #000e1d;
+
+$font-stack-section-title: 'Chakra Petch', sans-serif;
+
 $dark-secondary-color: #324B4F;
-$main-background-color: #001c25;
+$dark-primary-color: #003445;
 
 @keyframes sliding {
     from {
         transform: translate3d(0px, 0px, 0px);
     }
     to {
-        transform: translate3d(-1534px, 0px, 0px);
+        transform: translate3d(-1562px, 0px, 0px);
     }
 }
 
@@ -18,7 +26,7 @@ $main-background-color: #001c25;
         transform: translate3d(0px, 0px, 0px);
     }
     to {
-        transform: translate3d(-1160px, 0px, 0px);
+        transform: translate3d(-1174px, 0px, 0px);
     }
 }
 
@@ -27,22 +35,27 @@ $main-background-color: #001c25;
         transform: translate3d(0px, 0px, 0px);
     }
     to {
-        transform: translate3d(-1379px, 0px, 0px);
+        transform: translate3d(-1395px, 0px, 0px);
     }
 }
 
+.project-section-container {
+    background-color: $main-background-color;
+    border-radius: 32px;
+    width: calc(100vw - 5vh);
+    margin: 0 2.5vh;
+}
 
 
 .projects-section {
     height: auto;
     width: 1400px;
-    display: flex;
-    padding: 50px 40px 60px 40px;
-    flex-direction: column;
+    max-width: calc(100vw - 5vh);
+    padding: 150px 0;
     background-color: transparent;
-    border-radius: 16px;
-    border: 1px solid rgba(0, 179, 197, 0.5);
-    margin: 120px auto 120px auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: flex-start;
 
@@ -50,16 +63,16 @@ $main-background-color: #001c25;
         width: 100%;
         display: flex;
         justify-content: flex-start;
-        padding: 0 20px;
+        padding: 0 70px;
     }
 
     h1.projects-section-title {
-        margin-bottom: 10px;
+        margin-bottom: 40px;
         text-align: left;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 3.5rem;
-        color: $light-text-color;
-        font-family: "Raleway", sans-serif;
+        color: #fff;
+        font-family: $font-stack-section-title;
     }
 
     .projects-container {
@@ -70,6 +83,7 @@ $main-background-color: #001c25;
             display: flex;
             flex-wrap: nowrap;
             width: 1300px;
+            max-width: calc(100vw - 5vh);
             overflow: hidden;
             margin-top: 20px;
 
@@ -124,7 +138,8 @@ $main-background-color: #001c25;
                     justify-content: space-around;
                     align-items: center;
                     margin: 0 8px;
-                    background-color: $dark-secondary-color;
+                    background-color: transparent;
+                    border: 1px solid rgba(255, 255, 255, 0.5);
                     padding: 12px 18px;
                     border-radius: 12px;
 
@@ -149,7 +164,11 @@ $main-background-color: #001c25;
 
                 a:hover {
                     cursor: pointer;
-                    background-color: $primary-color;
+                    background-color: #fcd535;
+
+                    p {
+                        color: $dark-text-color;
+                    }
                 }
 
             }

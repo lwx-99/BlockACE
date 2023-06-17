@@ -46,7 +46,7 @@ function ContactForm() {
   
 
   return (
-    <div className="">
+    <div className="contact-us-section-container">
         <div className="contact-us-section">
                 <div className="">
                     <div className="w-full mx-auto my-0 border border-gray-100 rounded-md p-7">

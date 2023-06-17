@@ -1,32 +1,45 @@
 $primary-color: #00b3c5;
 $light-text-color:#BEFBFF;
-$dark-primary-color: #003445;
+$dark-text-color: #1f2123;
+$button-semi-dark-color: #474d57;
+$button-dark-color: #001934;
+$button-dark-color-hover: #00244b;
+$button-light-color: #00b3c5;
+$main-background-color: #000e1d;
+
+$font-stack-section-title: 'Chakra Petch', sans-serif;
+
 $dark-secondary-color: #324B4F;
-$main-background-color: #001c25;
+$dark-primary-color: #003445;
+
+.team-section-container {
+    width: calc(100vw - 10px);
+}
 
 .team-section {
     height: auto;
     width: 1400px;
+    max-width: calc(100vw - 10px);
     display: flex;
-    padding: 60px 60px 60px 60px;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
-    /*background-color: $dark-primary-color;*/
-    border-radius: 16px;
-    margin: 80px auto 0 auto;
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding: 150px 0;
 
     h1 {
-        margin-bottom: 30px;
-        text-align: left;
-        font-weight: 600;
+        margin-bottom: 2rem;
+        margin-left: 20px;
+        text-align: center;
+        font-weight: 700;
         font-size: 3.5rem;
-        color: $light-text-color;
-        font-family: "Raleway", sans-serif;
+        color: $dark-text-color;
+        font-family: $font-stack-section-title;
     }
 
     .swiper {
         width: 100%;
+        margin-left: 20px;
       }
       
       .swiper-slide {
@@ -35,7 +48,7 @@ $main-background-color: #001c25;
         width: 360px;
         height: 540px;
         border-radius: 20px;
-        margin: 0 80px;
+        margin: 0 100px;
         overflow: hidden;
 
         img.team-photo {
@@ -50,18 +63,15 @@ $main-background-color: #001c25;
           right: 25px;
 
           a {
-
             svg {
               border-radius: 12px;
-              fill: $main-background-color;
+              fill: $button-dark-color;
             }
           }
 
           a:hover {
             svg {
-              border-radius: 12px;
-              fill: $dark-secondary-color;
-              transition: all 0.3s ease;
+              fill: $button-dark-color-hover;
             }
 
           }
@@ -73,7 +83,8 @@ $main-background-color: #001c25;
           left: 40px;
 
             p {
-              color: $main-background-color;
+              color: #fff;
+              font-family: 'Raleway', sans-serif;
             }
 
             p.team-name {
@@ -98,6 +109,29 @@ $main-background-color: #001c25;
           
 }
 
+@media screen and (max-width: 1200px) {
+
+  .team-section {
+      width: 100vw;
+      margin: 60px auto 0 auto;
+
+
+      .swiper-slide {
+        margin: 0 80px;
+        width: 300px;
+        height: 450px;
+      }
+      
+
+      h1 {
+        margin-bottom: 30px;
+        font-size: 2.75rem;
+      }
+
+  }
+
+}
+
 @media screen and (max-width: 960px) {
 
   .team-section {
@@ -115,9 +149,8 @@ $main-background-color: #001c25;
       h1 {
         margin-bottom: 30px;
         font-size: 2.75rem;
+      }
 
-
-    }
   }
 
 }

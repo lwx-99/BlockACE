@@ -1,24 +1,37 @@
 $primary-color: #00b3c5;
 $light-text-color:#BEFBFF;
-$dark-primary-color: #003445;
+$dark-text-color: #1f2123;
+$button-semi-dark-color: #474d57;
+$button-dark-color: #001934;
+$button-dark-color-hover: #00244b;
+$button-light-color: #00b3c5;
+$main-background-color: #000e1d;
+
+$font-stack-section-title: 'Chakra Petch', sans-serif;
+
 $dark-secondary-color: #324B4F;
-$main-background-color: #001c25;
+$dark-primary-color: #003445;
+
+.about-us-section-container {
+    width: calc(100vw - 10px);
+}
+
 
 .about-us-section {
-    height: 700px;
+    height: auto;
     width: 1200px;
-    display: flex;
+    max-width: calc(100vw - 10px);
     flex-direction: column;
     background-color: transparent;
-    border-radius: 16px;
     margin: 0 auto;
+    padding: 150px 0;
+    display: flex;
     align-items: center;
     justify-content: center;
 
+
     .about-us-content {
         display: flex;
-        grid-template: 700px / auto 460px;
-        gap: 40px;
 
         .about-us-main {
             display: flex;
@@ -31,8 +44,8 @@ $main-background-color: #001c25;
                 width: 100%;
                 text-align: center;
                 font-weight: 700;
-                font-size: 3.25rem;
-                color: $light-text-color;
+                font-size: 3.5rem;
+                color: $dark-text-color;
                 font-family: 'Chakra Petch', sans-serif;
             }
 
@@ -45,7 +58,7 @@ $main-background-color: #001c25;
                     max-width: 80%;
                     text-align: center;
                     font-size: 1.125rem;
-                    font-family: 'Raleway', sans-serif
+                    font-family: 'Open Sans', sans-serif
                 }
             }
 
@@ -54,7 +67,6 @@ $main-background-color: #001c25;
                 display: flex;
                 height: auto;
                 justify-content: space-around;
-                align-content: center;
     
                 .our-mission, .our-business {
                     width: 40%;
@@ -68,35 +80,21 @@ $main-background-color: #001c25;
                         justify-content: center;
                         margin-bottom: 15px;
 
-                        img {
-                            filter: drop-shadow(0px 0px 1px rgba(0, 255, 213, 1));
-                        }
-    
                     }
 
-                    h3 {
+                    h2 {
                         text-align: center;
                         font-size: 1.5rem;
                         margin-bottom: 10px;
-                        color: $light-text-color;
+                        color: $dark-text-color;
+                        font-family: $font-stack-section-title;
                     }
 
                     p {
                         font-size: 1.125rem;
-                    text-align: center;
-                    font-style: italic;
-                    font-family: 'Raleway', sans-serif;
+                        text-align: center;
+                        font-family: 'Open Sans', sans-serif
                     }
-                }
-            }
-
-            .brand-previous-logo {
-                display: flex;
-                justify-content: center;
-                margin: 30px 0;
-
-                figure {
-                    margin: 0px 30px;
                 }
             }
         }

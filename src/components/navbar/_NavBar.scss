@@ -7,7 +7,7 @@ $button-dark-color-hover: #00244b;
 $button-light-color: #00b3c5;
 $main-background-color: #000e1d;
 
-$font-stack: 'Chakra Petch', sans-serif;
+$font-stack-section-title: 'Chakra Petch', sans-serif;
 
 
 @keyframes appear-nav {
@@ -64,7 +64,7 @@ $font-stack: 'Chakra Petch', sans-serif;
                     padding: 0 20px;
                     
                     .nav-link {
-                        font-family: 'Chakra Petch', sans-serif;
+                        font-family: $font-stack-section-title;
                         color: $dark-text-color;
                         text-decoration: none;
                         font-weight: 500;

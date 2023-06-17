@@ -1,45 +1,61 @@
 $primary-color: #00b3c5;
 $light-text-color:#BEFBFF;
-$dark-primary-color: #003445;
+$dark-text-color: #1f2123;
+$button-semi-dark-color: #474d57;
+$button-dark-color: #001934;
+$button-dark-color-hover: #00244b;
+$button-light-color: #00b3c5;
+$main-background-color: #000e1d;
+
+$font-stack-section-title: 'Chakra Petch', sans-serif;
+
 $dark-secondary-color: #324B4F;
-$main-background-color: #001c25;
+$dark-primary-color: #003445;
+
+.resource-contact-section-container {
+    width: calc(100vw - 10px);
+    background-color: $main-background-color;
+    border-radius: 96px 96px 0 0;
+}
 
 .resource-contact-section {
-    height: 900px;
+    height: auto;
     width: 1400px;
+    max-width: calc(100vw - 10px);
+    padding: 100px 50px;
     display: flex;
-    padding: 50px;
-    flex-direction: row;
+    border-radius: 16px;
+    margin: 0 auto;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: $dark-primary-color;
-    border-radius: 16px;
-    margin: 100px auto 0 auto;
+    background-color: $main-background-color;
 
     .contact-container, .resource-container {
+        margin: 30px;
         width: 45%;
-        height: 100%;
+        min-height: 850px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        margin: 0 30px;
-        padding: 30px 30px;
+        padding: 40px;
         border-radius: 32px;
-        background-color: #324B4F;
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.75);
     
         h1 {
-            font-family: "Raleway", sans-serif;
+            font-family: $font-stack-section-title;
             font-size: 2.5rem;
-            margin-bottom: 10px;
-            color: $light-text-color;
+            margin-bottom: 2rem;
         }
 
         p {
-            font-size: 18px;
+            font-size: 20px;
             text-align: center;
-            font-family: "Raleway", sans-serif;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300;
         }
     }
 

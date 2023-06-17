@@ -3,7 +3,9 @@ import './Footer.css'
 
 function Footer() {
   return (
-    <footer className="footer">
+    <div className="footer-container">
+        <footer className="footer">
+
         <div>
             
         </div>
@@ -34,7 +36,9 @@ function Footer() {
 
             
         </div>
-    </footer>
+        </footer>
+    </div>
+
   )
 }
 

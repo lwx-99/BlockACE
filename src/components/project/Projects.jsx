@@ -119,6 +119,7 @@ const project03 = [
 function Projects() {
   return (
   <div className="section-container">
+      <div className="project-section-container">
       <div className="projects-section reveal" id="projects">
           <div className="title">
               <h1 className="projects-section-title">Our Portfolio</h1>
@@ -198,6 +199,7 @@ function Projects() {
             </div>
 
           </div>
+      </div>
       </div>
     </div>
   )

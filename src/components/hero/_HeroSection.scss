@@ -41,10 +41,11 @@ $main-background-color: #000e1d;
     margin: 2.5vh 2.5vh 0 2.5vh;
     overflow: hidden;
     border-radius: 32px 32px 0 0;
-    padding: 30px 60px;
+    padding: 50px;
 
     .hero-section-container {
         width: 1400px;
+        max-width: calc(100vw - 5vh);
         max-width: 100%;
         height: 100%;
         display: flex;

@@ -7,7 +7,7 @@ const CustomerList = [
     alt: "Binance"
   },
   {
-    logo: "/image/customer/HoubiWhite.webp",
+    logo: "/image/customer/Huobi-logo.png",
     customerName: "Houbi",
     alt: "Houbi"
   },
@@ -77,7 +77,7 @@ const CustomerList = [
     alt: ""
   },
   {
-    logo: "/image/customer/Evrynet.png",
+    logo: "/image/customer/Evrynet.svg",
     customerName: "Evrynet",
     alt: ""
   },
@@ -184,15 +184,17 @@ const CustomerList = [
 function OurCustomer() {
   return (
   <div className="section-container">
-    <div className="customer-section reveal" id="customers">
-      <h1 className="section-title">Partners & Clients</h1>
-      <div className="customer-container">
-          { CustomerList.map( (item) => (
-            <figure>
-              <img src={item.logo} alt={item.alt} width="120"></img>
-            </figure>
-          ))}
-      </div>
+    <div className="customer-section-container">
+      <section className="customer-section reveal" id="customers">
+        <h1 className="section-title">Partners & Clients</h1>
+        <div className="customer-container">
+            { CustomerList.map( (item) => (
+              <figure>
+                <img src={item.logo} alt={item.alt}></img>
+              </figure>
+            ))}
+        </div>
+      </section>
     </div>
   </div>
   )

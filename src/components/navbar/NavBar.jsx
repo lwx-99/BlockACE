@@ -13,13 +13,7 @@ function NavBar() {
 
   const scrollWithOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -100; 
-    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
-  }
-
-  const scrollWithOffset250 = (el) => {
-    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -250; 
+    const yOffset = 0; 
     window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
   }
 
@@ -51,7 +45,7 @@ function NavBar() {
                 </HashLink>
               </li>
               <li className="nav-item">
-                <HashLink smooth scroll={scrollWithOffset250} to="#projects" className="nav-link"  onClick={closeMobileMenu}>
+                <HashLink smooth scroll={scrollWithOffset} to="#projects" className="nav-link"  onClick={closeMobileMenu}>
                   Projects
                 </HashLink>
               </li>
