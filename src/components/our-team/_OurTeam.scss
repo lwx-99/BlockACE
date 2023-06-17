@@ -41,6 +41,22 @@ $dark-primary-color: #003445;
         width: 100%;
         margin-left: 20px;
       }
+
+      .swiper-slide-active:hover {
+            
+          img.team-photo {
+            transform: scale(1.2);
+            transition: all 1s ease;
+          }
+      }
+
+      .swiper-slide-active:not( :hover ){
+            
+        img.team-photo {
+          transform: scale(1);
+          transition: all 1s ease;
+        }
+    }
       
       .swiper-slide {
         position: relative;
@@ -71,11 +87,13 @@ $dark-primary-color: #003445;
 
           a:hover {
             svg {
-              fill: $button-dark-color-hover;
+              fill: #0077B5;
+              background-color: #fff;
             }
 
           }
         }
+
 
         .team-tag {
           position: absolute;

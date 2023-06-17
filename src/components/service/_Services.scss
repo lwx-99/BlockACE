@@ -54,7 +54,7 @@ $dark-primary-color: #003445;
 
         .service-card {
             background-color: $button-dark-color;
-            width: 400px;
+            width: 420px;
             height: 450px;
             border-radius: 32px;
             padding: 30px;
@@ -63,6 +63,7 @@ $dark-primary-color: #003445;
                 font-size: 1.75rem;
                 font-family: $font-stack-section-title;
                 color: $light-text-color;
+                text-align: center;
             }
             
             li {
@@ -71,6 +72,13 @@ $dark-primary-color: #003445;
                 font-weight: 300;
                 color: #fff;
                 line-height: 2;
+
+                .icon-list-check {
+                    height: 1rem;
+                    margin-right: 0.75rem;
+                    max-width: 100%;
+                    display: inline-block;
+                }
             }
 
             ul {

@@ -12,11 +12,11 @@ function Services() {
                 <div className="content">
                   <h2>BUSINESS DEVELOPMENT</h2>
                     <ul>
-                      <li>Press Release & Media Relations</li>
-                      <li>Community Building & Management</li>
-                      <li>KOLs & Influencers Network</li>
-                      <li>Market Maker Strategy</li>
-                      <li>Exchanges Listing</li>
+                      <li><img src="/image/icon-svg/check.svg" loading="lazy" className="icon-list-check"/>Press Release & Media Relations</li>
+                      <li><img src="/image/icon-svg/check.svg" loading="lazy" className="icon-list-check"/>Community Building & Management</li>
+                      <li><img src="/image/icon-svg/check.svg" loading="lazy" className="icon-list-check"/>KOLs & Influencers Network</li>
+                      <li><img src="/image/icon-svg/check.svg" loading="lazy" className="icon-list-check"/>Market Maker Strategy</li>
+                      <li><img src="/image/icon-svg/check.svg" loading="lazy" className="icon-list-check"/>Exchanges Listing</li>
                     </ul>
                 </div>
                 <div className='background-layer'>
@@ -26,21 +26,21 @@ function Services() {
               <div className='service-card marketing-sector'>
                 <h2>MARKETING & ADS</h2>
                   <ul>
-                    <li>Social Media Marketing</li>
-                    <li>Airdrop & Bounty Campaigns</li>
-                    <li>Performance & Growth Hacking</li>
-                    <li>Digital Advertising</li>
+                    <li><img src="/image/icon-svg/check.svg" loading="lazy" className="icon-list-check"/>Social Media Marketing</li>
+                    <li><img src="/image/icon-svg/check.svg" loading="lazy" className="icon-list-check"/>Airdrop & Bounty Campaigns</li>
+                    <li><img src="/image/icon-svg/check.svg" loading="lazy" className="icon-list-check"/>Performance & Growth Hacking</li>
+                    <li><img src="/image/icon-svg/check.svg" loading="lazy" className="icon-list-check"/>Digital Advertising</li>
                   </ul>
               </div>
 
               <div className='service-card creative-sector'>
                 <h2>CREATIVE & PRODUCTION</h2>
                   <ul>
-                    <li>Web Design</li>
-                    <li>Content Creation</li>
-                    <li>Graphic Design</li>
-                    <li>Video Production</li>
-                    <li>Brand & Visual Identity</li>
+                    <li><img src="/image/icon-svg/check.svg" loading="lazy" className="icon-list-check"/>Web Design</li>
+                    <li><img src="/image/icon-svg/check.svg" loading="lazy" className="icon-list-check"/>Content Creation</li>
+                    <li><img src="/image/icon-svg/check.svg" loading="lazy" className="icon-list-check"/>Graphic Design</li>
+                    <li><img src="/image/icon-svg/check.svg" loading="lazy" className="icon-list-check"/>Video Production</li>
+                    <li><img src="/image/icon-svg/check.svg" loading="lazy" className="icon-list-check"/>Brand & Visual Identity</li>
                   </ul>
               </div>
               
