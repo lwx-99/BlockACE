@@ -596,8 +596,22 @@
     background-position: auto;
   }
 }
+@keyframes background-moving {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 30% 60%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
 .about-us-section-container {
   width: calc(100vw - 10px);
+  background-image: url("/image/decor/background-decor.jpg");
+  background-size: cover;
+  animation: background-moving 8s ease infinite alternate-reverse;
 }
 
 .about-us-section {
@@ -57006,25 +57020,11 @@ i[class^=fi-brands-]:before, i[class*=" fi-brands-"]:before, span[class^=fi-bran
     height: 1rem;
   }
 }
-@keyframes background-moving {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 30% 45%;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
-}
 .customer-section-container {
   width: calc(100vw - 5vh);
   margin: 2.5vh;
   background-color: #fff;
   border-radius: 32px 32px 96px 96px;
-  background-image: url("/image/decor/background-decor.jpg");
-  background-size: cover;
-  animation: background-moving 5s ease infinite alternate-reverse;
 }
 
 .customer-section {
