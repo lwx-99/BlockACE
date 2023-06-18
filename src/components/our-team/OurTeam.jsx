@@ -72,8 +72,8 @@ function OurTeam() {
                 <p className="bottom-text">And More →</p>
             </section>
             <div className="background-decor-layer">
-                    <img src="/image/decor/bubble-decor-blue.png" className="bubble-01" id="bubble-01"></img>
-                    <img src="/image/decor/bubble-decor-blue.png" className="bubble-02" id="bubble-02"></img>
+                    <img src="/image/decor/bubble-decor-blue.png" loading="eager" className="bubble-01" id="bubble-01"></img>
+                    <img src="/image/decor/bubble-decor-blue.png" loading="eager" className="bubble-02" id="bubble-02"></img>
             </div>
         </div>
     </div>

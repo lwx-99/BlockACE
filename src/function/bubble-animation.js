@@ -6,7 +6,6 @@ function bubble() {
   
     var windowheight = window.innerHeight;
     var offsetY01 = bubble01.getBoundingClientRect().top;
-    var offsetY02 = bubble02.getBoundingClientRect().top;
 
     var startingPoint = 0;
 
