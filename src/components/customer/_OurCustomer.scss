@@ -12,15 +12,34 @@ $font-stack-section-title: 'Chakra Petch', sans-serif;
 $dark-secondary-color: #324B4F;
 $dark-primary-color: #003445;
 
+@keyframes background-moving {
+    0% {
+        background-position: 0% 0%;
+
+    }
+    50% {
+        background-position: 30% 45%;
+
+    }
+    100% {
+        background-position: 100% 100%;
+
+    }
+    
+}
+
 
 .customer-section-container {
     width: calc(100vw - 5vh);
     margin: 2.5vh;
     background-color: #fff;
     border-radius: 32px 32px 96px 96px;
+    background-image: url("/image/decor/background-decor.jpg");
+    background-size: cover;
+    animation: background-moving 5s ease infinite alternate-reverse; 
 }
 
-.customer-section {  
+.customer-section { 
     height: auto;
     width: 1400px;
     max-width: calc(100vw - 5vh);

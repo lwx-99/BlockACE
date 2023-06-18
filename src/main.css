@@ -62,9 +62,15 @@
 .nav-bar .nav-bar-container .nav-menu-container ul.nav-menu li.nav-item:hover {
   background-color: #FABC3C;
   border-radius: 12px;
+  padding: 0px 40px;
+  transition: padding 0.75s ease;
 }
 .nav-bar .nav-bar-container .nav-menu-container ul.nav-menu li.nav-item:hover .nav-link {
   font-weight: 700;
+}
+.nav-bar .nav-bar-container .nav-menu-container ul.nav-menu li.nav-item:not(:hover) {
+  padding: 0 20px;
+  transition: padding 0.75s ease;
 }
 .nav-bar .lang-btn {
   position: relative;
@@ -57000,11 +57006,25 @@ i[class^=fi-brands-]:before, i[class*=" fi-brands-"]:before, span[class^=fi-bran
     height: 1rem;
   }
 }
+@keyframes background-moving {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 30% 45%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
 .customer-section-container {
   width: calc(100vw - 5vh);
   margin: 2.5vh;
   background-color: #fff;
   border-radius: 32px 32px 96px 96px;
+  background-image: url("/image/decor/background-decor.jpg");
+  background-size: cover;
+  animation: background-moving 5s ease infinite alternate-reverse;
 }
 
 .customer-section {

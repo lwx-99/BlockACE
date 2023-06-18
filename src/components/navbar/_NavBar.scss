@@ -76,11 +76,20 @@ $font-stack-section-title: 'Chakra Petch', sans-serif;
                 li.nav-item:hover {
                     background-color: #FABC3C;
                     border-radius: 12px;
+                    padding: 0px 40px;
+                    transition: padding 0.75s ease;
 
                     .nav-link {
                         font-weight: 700;
                     }
                 }
+
+                li.nav-item:not( :hover ) {
+                    padding: 0 20px;
+                    transition: padding 0.75s ease;
+                }
+
+
             }
 
         }
