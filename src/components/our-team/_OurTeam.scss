@@ -137,13 +137,14 @@ $dark-primary-color: #003445;
             svg {
               border-radius: 12px;
               fill: $button-dark-color;
+              border: 1px solid $button-dark-color;
             }
           }
 
           a:hover {
             svg {
-              fill: #009aa8;
-              background-color: #fff;
+              fill: #FABC3C;
+              background-color: $button-dark-color;
             }
 
           }
@@ -168,6 +169,7 @@ $dark-primary-color: #003445;
             p.team-title {
               font-size: 2.25rem;
               font-weight: 700;
+              color: $button-light-color;
             }
 
             p.team-name.truong {

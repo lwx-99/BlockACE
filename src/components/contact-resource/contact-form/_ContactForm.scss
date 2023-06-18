@@ -26,11 +26,12 @@ $dark-primary-color: #003445;
             color: #fff;
             font-family: 'Chakra Petch', sans-serif;
             font-size: 1rem;
-            font-weight: 300;
+            font-weight: 500;
         }
 
         .submit-btn:hover, .back-btn:hover {
-            background: #00b3c5;
+            background: #FABC3C;
+            color: $dark-text-color;
         }
     }
 
