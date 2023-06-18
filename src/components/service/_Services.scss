@@ -12,6 +12,17 @@ $font-stack-section-title: 'Chakra Petch', sans-serif;
 $dark-secondary-color: #324B4F;
 $dark-primary-color: #003445;
 
+@keyframes appeartop {
+    from {
+        transform: translateY(125px);
+        opacity: 0;
+
+    } to {
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+}
 
 .service-section-container {
     width: calc(100vw - 10px);
@@ -90,6 +101,7 @@ $dark-primary-color: #003445;
         .service-card:hover {
             background-color: $button-dark-color-hover;
         }
+
 
     }
 

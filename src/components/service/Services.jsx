@@ -8,7 +8,7 @@ function Services() {
             <h1 className="section-title">Our Solutions</h1>
             <div className="service-card-container">
 
-              <div className='service-card communication-sector'>
+              <div className='service-card bd-sector'>
                 <div className="content">
                   <h2>BUSINESS DEVELOPMENT</h2>
                     <ul>
