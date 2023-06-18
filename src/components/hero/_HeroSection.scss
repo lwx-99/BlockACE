@@ -1,9 +1,9 @@
-$primary-color: #0077B5;
+$primary-color: #00b3c5;
 $light-text-color:#BEFBFF;
 $dark-text-color: #1f2123;
 $button-semi-dark-color: #474d57;
 $button-dark-color: #1e1f20;
-$button-light-color: #0094e4;
+$button-light-color: #00b3c5;
 $main-background-color: #000e1d;
 
 @keyframes appear {
@@ -122,8 +122,8 @@ $main-background-color: #000e1d;
                 }
     
                 .btn-02:hover {
-                    border: 2px solid #00a6ff;
-                    color: #1cafff;
+                    border: 2px solid #00b3c5;
+                    color: #00eaff;
                 }
             }
         }
