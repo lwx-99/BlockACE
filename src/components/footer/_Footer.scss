@@ -60,18 +60,25 @@ $dark-primary-color: #003445;
                 display: flex;
                 align-items: center;
 
-                i.fi {
-                    height: 1.125rem;
-                    margin: auto 10px;
-                    font-size: 1.125rem;
-                    opacity: 0.7;
-                    color: #fff;
+                a {
+                    line-height: 1;
+
+                    i.fi {
+                        margin: auto 10px;
+                        font-size: 1.125rem;
+                        opacity: 0.7;
+                        color: #fff;
+                        line-height: 1;
+                    }
+        
+                    i.fi:hover {
+                        opacity: 1;
+                        color: #FABC3C;
+                    }
+
                 }
-    
-                i.fi:hover {
-                    opacity: 1;
-                    color: #FABC3C;
-                }
+
+
             }
 
             .email-contact {

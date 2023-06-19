@@ -19,9 +19,9 @@ function HeroSection() {
                 </Link>
               </div>
             </div>
+            <div className="hero-section-layer">
+            <img src="/image/decor/cube.png"></img>
           </div>
-
-          <div className="hero-section-layer">
           </div>
         </section>
     </>

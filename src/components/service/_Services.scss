@@ -24,10 +24,92 @@ $dark-primary-color: #003445;
     }
 }
 
+@keyframes appearCircle {
+    0% {
+        top: 1000px;
+        right: -1000px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 400px;
+        right: -400px;
+        opacity: 0.85;
+    }
+}
+
+
+@keyframes appearCircleSmall {
+    0% {
+        top: -500px;
+        left: -500px;
+        opacity: 0;
+    }
+
+    100% {
+        top: -100px;
+        left: -100px;
+        opacity: 0.85;
+    }
+}
+
+
+@keyframes movingCircle {
+    0% {
+        transform: rotate(0deg) translateY(30px) rotate(0deg) scale(0.9);
+    }
+
+    100% {
+        transform: rotate(360deg)  translateY(30px) rotate(-360deg) scale(1);
+    }
+}
+
+@keyframes movingCircleSmall {
+    0% {
+        transform: rotate(0deg) translateY(10px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg)  translateY(10px) rotate(-360deg);
+    }
+}
+
+
+
 .service-section-container {
     width: calc(100vw - 10px);
-    background-color: $main-background-color;
     border-radius: 0 0 96px 96px;
+    background-color: $main-background-color;
+    position: relative;
+    overflow: hidden;
+
+    .decoration-layer {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        top: 0;
+        left: 0;
+
+        img.bubble-01 {
+            width: 1000px;
+            position: absolute;
+            top: 400px;
+            right: -400px;
+            opacity: 0.85;
+            animation: movingCircle 45s infinite linear, appearCircle 3s ease;
+        }
+
+        img.bubble-02 {
+            width: 400px;
+            position: absolute;
+            top: -100px;
+            left: -100px;
+            opacity: 0.85;
+            animation: movingCircleSmall 15s infinite linear, appearCircleSmall 3s ease;
+
+        }
+    }
 }
 
 
@@ -38,6 +120,7 @@ $dark-primary-color: #003445;
     max-width: calc(100vw - 10px);
     margin: 0 auto;
     padding: 150px 0;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -53,6 +136,19 @@ $dark-primary-color: #003445;
         margin-bottom: 50px;
     }
 
+    p.addition-text {
+        margin-top: 2.5rem;
+        margin-left: 20px;
+        width: auto;
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: 400;
+        font-family: "Poppins", sans-serif;
+        color: #FABC3C;
+        border-bottom: 2px solid #b6b1b1;
+        opacity: 0.75;
+    }
+
     .service-card-container {
         display: flex;
         align-items: flex-start;
@@ -62,7 +158,6 @@ $dark-primary-color: #003445;
         width: auto;
         gap: 40px;
     
-
         .service-card {
             background-color: $button-dark-color;
             width: 420px;

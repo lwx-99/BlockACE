@@ -45,7 +45,12 @@ function Services() {
               </div>
               
             </div>
+            <p className="addition-text">And many specialized services</p>
           </section>
+          <div className="decoration-layer reveal">
+            <img src="image/decor/bubble-yellow.png" className="bubble-01"></img>
+            <img src="image/decor/bubble-yellow.png" className="bubble-02"></img>
+          </div>
         </div>
     </div>
   )

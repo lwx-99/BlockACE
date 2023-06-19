@@ -17,10 +17,10 @@ function Footer() {
                 </figure>
                 <div className="social-media">
                     <div className="social-media-icon">
-                        <i class="fi fi-brands-twitter"></i>
-                        <i class="fi fi-brands-telegram"></i>
-                        <i class="fi fi-brands-facebook"></i>
-                        <i class="fi fi-brands-linkedin"></i>
+                        <a href="https://twitter.com/BlockACE_" target="blank" rel="noreferrer noopener"><i class="fi fi-brands-twitter"></i></a>
+                        <a href="https://t.me/thaile143" target="blank" rel="noreferrer noopener"><i class="fi fi-brands-telegram"></i></a>
+                        <a href="https://www.facebook.com/acesince2018" target="blank" rel="noreferrer noopener"><i class="fi fi-brands-facebook"></i></a>
+                        <a href="https://www.linkedin.com/company/blockace-blockasia-vietnam" target="blank" rel="noreferrer noopener"><i class="fi fi-brands-linkedin"></i></a>
                     </div>
                     <div className="email-contact">
                         <a href="mailto:thaile@blockace.co">

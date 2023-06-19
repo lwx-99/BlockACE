@@ -302,12 +302,24 @@
     transform: translateX(0);
   }
 }
+@keyframes appearleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 @keyframes glow {
   from {
     filter: drop-shadow(0px 0px 0px rgba(0, 255, 213, 0.3));
+    transform: scale(0.99) translateY(25px);
   }
   to {
-    filter: drop-shadow(0px 0px 5px rgb(0, 255, 213));
+    filter: drop-shadow(0px 0px 8px rgba(0, 255, 213, 0.85));
+    transform: scale(1) translateY(-5px);
   }
 }
 .hero-section {
@@ -332,15 +344,23 @@
   max-width: 100%;
   height: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-end;
+}
+.hero-section .hero-section-container .hero-section-layer {
+  width: 45%;
+  animation: appear 1.25s ease;
+}
+.hero-section .hero-section-container .hero-section-layer img {
+  width: 100%;
+  animation: glow 3s ease-in-out infinite alternate;
 }
 .hero-section .hero-section-container .hero-section-content > * {
   margin: 25px 0;
 }
 .hero-section .hero-section-container .hero-section-content {
   width: 50%;
-  animation: appear 1.25s ease;
+  animation: appearleft 1.25s ease;
   color: #fff;
 }
 .hero-section .hero-section-container .hero-section-content h1 {
@@ -474,10 +494,76 @@
     opacity: 1;
   }
 }
+@keyframes appearCircle {
+  0% {
+    top: 1000px;
+    right: -1000px;
+    opacity: 0;
+  }
+  100% {
+    top: 400px;
+    right: -400px;
+    opacity: 0.85;
+  }
+}
+@keyframes appearCircleSmall {
+  0% {
+    top: -500px;
+    left: -500px;
+    opacity: 0;
+  }
+  100% {
+    top: -100px;
+    left: -100px;
+    opacity: 0.85;
+  }
+}
+@keyframes movingCircle {
+  0% {
+    transform: rotate(0deg) translateY(30px) rotate(0deg) scale(0.9);
+  }
+  100% {
+    transform: rotate(360deg) translateY(30px) rotate(-360deg) scale(1);
+  }
+}
+@keyframes movingCircleSmall {
+  0% {
+    transform: rotate(0deg) translateY(10px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateY(10px) rotate(-360deg);
+  }
+}
 .service-section-container {
   width: calc(100vw - 10px);
-  background-color: #000e1d;
   border-radius: 0 0 96px 96px;
+  background-color: #000e1d;
+  position: relative;
+  overflow: hidden;
+}
+.service-section-container .decoration-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+.service-section-container .decoration-layer img.bubble-01 {
+  width: 1000px;
+  position: absolute;
+  top: 400px;
+  right: -400px;
+  opacity: 0.85;
+  animation: movingCircle 45s infinite linear, appearCircle 3s ease;
+}
+.service-section-container .decoration-layer img.bubble-02 {
+  width: 400px;
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  opacity: 0.85;
+  animation: movingCircleSmall 15s infinite linear, appearCircleSmall 3s ease;
 }
 
 .service-section {
@@ -487,6 +573,7 @@
   max-width: calc(100vw - 10px);
   margin: 0 auto;
   padding: 150px 0;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -499,6 +586,18 @@
   color: #fff;
   font-family: "Chakra Petch", sans-serif;
   margin-bottom: 50px;
+}
+.service-section p.addition-text {
+  margin-top: 2.5rem;
+  margin-left: 20px;
+  width: auto;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #FABC3C;
+  border-bottom: 2px solid #b6b1b1;
+  opacity: 0.75;
 }
 .service-section .service-card-container {
   display: flex;
@@ -56903,14 +57002,17 @@ i[class^=fi-brands-]:before, i[class*=" fi-brands-"]:before, span[class^=fi-bran
   display: flex;
   align-items: center;
 }
-.footer .footer-copyright .social-media .social-media-icon i.fi {
-  height: 1.125rem;
+.footer .footer-copyright .social-media .social-media-icon a {
+  line-height: 1;
+}
+.footer .footer-copyright .social-media .social-media-icon a i.fi {
   margin: auto 10px;
   font-size: 1.125rem;
   opacity: 0.7;
   color: #fff;
+  line-height: 1;
 }
-.footer .footer-copyright .social-media .social-media-icon i.fi:hover {
+.footer .footer-copyright .social-media .social-media-icon a i.fi:hover {
   opacity: 1;
   color: #FABC3C;
 }
