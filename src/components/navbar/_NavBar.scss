@@ -46,7 +46,13 @@ $font-stack-section-title: 'Chakra Petch', sans-serif;
             display: flex;
             align-items: center;
             padding: 8px 30px;
-            margin: 0 80px;
+            margin: 0 auto;
+            position: fixed;
+            top: calc(2.5vh + 30px);
+            left: 50%;
+            transform: translate(-50%, 0),  ;
+            filter: drop-shadow(0 0 0.35rem rgba(0, 0, 0, 0.15));
+            transition: top 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
 
             ul.nav-menu {
                 display: flex;

@@ -17,13 +17,10 @@ function Footer() {
                 </figure>
                 <div className="social-media">
                     <div className="social-media-icon">
-                        <i class="fi fi-brands-youtube"></i>
                         <i class="fi fi-brands-twitter"></i>
                         <i class="fi fi-brands-telegram"></i>
-                        <i class="fi fi-brands-discord"></i>
-                        <i class="fi fi-brands-medium"></i>
                         <i class="fi fi-brands-facebook"></i>
-                        <i class="fi fi-brands-instagram"></i>
+                        <i class="fi fi-brands-linkedin"></i>
                     </div>
                     <div className="email-contact">
                         <a href="mailto:thaile@blockace.co">

@@ -27,7 +27,7 @@ function NavBar() {
               <img src="/image/blockaceLogo.png" height="40px"/>
             </Link>
           </div>
-          <div className="nav-menu-container">
+          <div className="nav-menu-container" id="nav-bar-main">
             <ul className={click ? "nav-menu active" : "nav-menu"}>
               <li className="nav-item">
                 <HashLink smooth scroll={scrollWithOffset} to="#about-us" className="nav-link"  onClick={closeMobileMenu}>
