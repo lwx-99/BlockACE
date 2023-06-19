@@ -503,7 +503,7 @@
   100% {
     top: 400px;
     right: -400px;
-    opacity: 0.85;
+    opacity: 0.6;
   }
 }
 @keyframes appearCircleSmall {
@@ -515,7 +515,7 @@
   100% {
     top: -100px;
     left: -100px;
-    opacity: 0.85;
+    opacity: 0.4;
   }
 }
 @keyframes movingCircle {
@@ -554,7 +554,7 @@
   position: absolute;
   top: 400px;
   right: -400px;
-  opacity: 0.85;
+  opacity: 0.6;
   animation: movingCircle 45s infinite linear, appearCircle 3s ease;
 }
 .service-section-container .decoration-layer img.bubble-02 {
@@ -562,7 +562,7 @@
   position: absolute;
   top: -100px;
   left: -100px;
-  opacity: 0.85;
+  opacity: 0.4;
   animation: movingCircleSmall 15s infinite linear, appearCircleSmall 3s ease;
 }
 
