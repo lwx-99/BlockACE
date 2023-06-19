@@ -10,8 +10,8 @@ function bubble() {
     var startingPoint = 0;
 
     if (offsetY01 < windowheight - startingPoint) {
-        bubble01.style.transform = `translate3d(${-offsetY01/5}px,${-offsetY01/2}px,0)`
-        bubble02.style.transform = `translate3d(${offsetY01/4}px,${offsetY01/2.5}px,0)`
+        bubble01.style.transform = `translate3d(${-offsetY01/7}px,${-offsetY01/4}px,0)`
+        bubble02.style.transform = `translate3d(${offsetY01/6}px,${offsetY01/4}px,0)`
     } else {
 
     }
