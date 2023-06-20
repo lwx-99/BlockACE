@@ -24,7 +24,7 @@ function NavBar() {
           <div className="nav-bar--logo-container">
             <Link to="/" className="nav-logo">
 
-              <img src="/image/blockaceLogo.png" height="40px"/>
+              <img src="/image/blockaceLogo.png" height="30px"/>
             </Link>
           </div>
           <div className="nav-menu-container" id="nav-bar-main">

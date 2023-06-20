@@ -186,46 +186,8 @@ $dark-primary-color: #003445;
 
 @media screen and (max-width: 1200px) {
 
-  .team-section {
-      width: 100vw;
-      margin: 60px auto 0 auto;
-
-
-      .swiper-slide {
-        margin: 0 80px;
-        width: 300px;
-        height: 450px;
-      }
-      
-
-      h1 {
-        margin-bottom: 30px;
-        font-size: 2.75rem;
-      }
-
-  }
-
 }
 
 @media screen and (max-width: 960px) {
-
-  .team-section {
-      width: 100vw;
-      margin: 60px auto 0 auto;
-
-
-      .swiper-slide {
-        margin: 0;
-        width: 320px;
-        height: 480px;
-      }
-      
-
-      h1 {
-        margin-bottom: 30px;
-        font-size: 2.75rem;
-      }
-
-  }
 
 }
