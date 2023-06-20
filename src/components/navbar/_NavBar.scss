@@ -215,6 +215,7 @@ $font-stack-section-title: 'Chakra Petch', sans-serif;
     
     
         .nav-bar--logo-container {
+            z-index: 999;
             max-height: 25px;
             width: auto;
 
@@ -261,8 +262,43 @@ $font-stack-section-title: 'Chakra Petch', sans-serif;
                     left: 0px;
                     opacity: 0;
                     transition: all 0.5s ease;
-                    padding: 100px 30px;
+                    padding: 120px 30px;
                     z-index: 2;
+
+                    li.nav-item {
+                        display: none;
+                        align-items: center;
+                        height: 50px;
+                        margin: 0;
+                        padding: 0 20px;
+                        
+                        .nav-link {
+                            font-family: $font-stack-section-title;
+                            color: $dark-text-color;
+                            text-decoration: none;
+                            font-weight: 500;
+                            font-size: 1.125rem;
+                           
+                        }
+                    }
+    
+                    li.nav-item:hover {
+                        display: none;
+                        background-color: #FABC3C;
+                        border-radius: 12px;
+                        padding: 0px 40px;
+                        transition: padding 0.75s ease;
+    
+                        .nav-link {
+                            font-weight: 700;
+                        }
+                    }
+    
+                    li.nav-item:not( :hover ) {
+                        display: none;
+                        padding: 0 20px;
+                        transition: padding 0.75s ease;
+                    }
                 }
 
                 ul.nav-menu.active {
@@ -286,21 +322,34 @@ $font-stack-section-title: 'Chakra Petch', sans-serif;
                         display: flex;
                         width: 100%;
                         align-items: center;
-                        justify-content: flex-start;
-                        height: 50px;
                         margin: 12px;
                         padding: 0 20px;
                         
                         .nav-link {
                             width: 100%;
-                            font-family: $font-stack-section-title;
                             color: #fff;
-                            text-decoration: none;
+                            font-weight: 400;
+                            font-size: 1.375rem;
+                        }
+                    }
+
+                    li.nav-item:hover {
+                        display: flex;
+                        width: 100%;
+                        align-items: center;
+                        margin: 12px;
+                        padding: 0 20px;
+                        background-color: #FABC3C;
+                        
+                        .nav-link {
+                            width: 100%;
+                            color: $dark-text-color;
                             font-weight: 400;
                             font-size: 1.375rem;
                            
-                        }
                     }
+
+                }
 
                 }
     
