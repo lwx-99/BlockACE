@@ -66,7 +66,7 @@ $dark-primary-color: #003445;
                     i.fi {
                         margin: auto 10px;
                         font-size: 1.125rem;
-                        opacity: 0.7;
+                        opacity: 1;
                         color: #fff;
                         line-height: 1;
                     }
@@ -116,7 +116,6 @@ $dark-primary-color: #003445;
     
     .footer-container {
         width: 100vw;
-        
 
         .footer {
             display: flex;
@@ -135,6 +134,19 @@ $dark-primary-color: #003445;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
+                    
+                    .footer-logo {
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 30px;
+
+                        p {
+                            opacity: 0.7;
+                            margin-left: 0;
+                            text-align: center;
+                        }
+                    }
 
                     .social-media {
                         margin-top: 30px;

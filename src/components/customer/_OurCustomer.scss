@@ -97,24 +97,32 @@ $dark-primary-color: #003445;
 }
 
 @media screen and (max-width: 960px) {
+
+    .customer-section-container {
+        width: 100vw;
+        margin: 0;
+        border-radius: 0;
+    }
+    
     
     .customer-section {  
         height: auto;
         width: 90vw;
-        padding: 30px 20px 60px 20px;
+        padding: 120px 20px;
         margin: 0 auto;
 
         h1.section-title {
             text-align: center;
             font-size: 2.25rem;
+            margin-bottom: 20px;
         }
     
         .customer-container {
-            grid-template-columns: repeat(3, 25vw);
+            grid-template-columns: repeat(3, 23vw);
             gap: 30px;
 
             img {
-                width: 25vw;
+                width: 23vw;
             }
         }
     }

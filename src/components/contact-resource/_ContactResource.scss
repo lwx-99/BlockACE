@@ -95,8 +95,8 @@ $dark-primary-color: #003445;
 @media screen and (max-width: 960px) {
     .resource-contact-section-container {
         width: 100vw;
-        border-radius: 32px 32px 0 0;
-        padding: 10px;
+        border-radius: 0;
+        padding: 30px 10px;
 
         #contact-us { 
 
@@ -107,7 +107,11 @@ $dark-primary-color: #003445;
                     min-height: auto;
                     width: 100%;
                     padding: 30px 15px;
-                    margin: 30px 10px;
+                    margin: 20px 10px;
+
+                    h1 {
+                        font-size: 2.25rem;
+                    }
                 }
             }
         }

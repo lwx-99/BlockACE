@@ -190,4 +190,37 @@ $dark-primary-color: #003445;
 
 @media screen and (max-width: 960px) {
 
+  .team-section-container {
+      width: 100vw;
+  }
+
+  .team-section {
+      width: auto;
+      max-width: auto;
+      padding: 120px 0;
+
+      h1 {
+          margin-bottom: 40px;
+          margin-left: 0px;
+          font-size: 2.5rem;
+      }
+
+      p.bottom-text {
+          margin-left: 0px;
+          font-size: 1.125rem;
+      }
+
+    .swiper {
+        margin-left: 5px;
+      }
+      
+      .swiper-slide {
+        width: 320px;
+        height: 480px;
+        margin: 0 15px;
+
+      }
+          
+  }
+
 }
