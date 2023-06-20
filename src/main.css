@@ -783,6 +783,7 @@
   }
   .service-section p.addition-text {
     font-size: 1.125rem;
+    border-bottom: none;
   }
   .service-section .service-card-container {
     height: 100%;
