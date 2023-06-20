@@ -145,7 +145,29 @@ $dark-primary-color: #003445;
         font-family: "Poppins", sans-serif;
         color: #FABC3C;
         border-bottom: 2px solid #b6b1b1;
-        opacity: 0.75;
+        opacity: 1;
+
+        span {
+            font-size: 1.75rem;
+        }
+    }
+
+    p.addition-text:hover {
+        color: #ffaa00;
+
+        span {
+            margin-left: 20px;
+            transition: all 0.5s ease;
+        }
+    }
+
+    p.addition-text:not(:hover) {
+        color: #FABC3C;
+
+        span {
+            margin-left: 0px;
+            transition: all 0.5s ease;
+        }
     }
 
     .service-card-container {

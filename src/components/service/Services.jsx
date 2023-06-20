@@ -45,7 +45,7 @@ function Services() {
               </div>
               
             </div>
-            <p className="addition-text">And many specialized services</p>
+            <a href="https://calendly.com/thaileblockace/greetings" target="blank" rel="noreferrer noopener"><p className="addition-text">Not what you looking for? Click here for your tailored services <span>→</span></p></a>
           </section>
           <div className="decoration-layer reveal">
             <img src="image/decor/bubble-yellow.png" className="bubble-01"></img>

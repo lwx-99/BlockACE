@@ -21,7 +21,7 @@ function NavBar() {
     <>
       <nav className="nav-bar">
         <div className="nav-bar-container">
-          <div className="nav-bar--logo-container">
+          <div className={click ? "nav-bar--logo-container active" : "nav-bar--logo-container"}>
             <Link to="/" className="nav-logo">
 
               <img src="/image/blockaceLogo.png" height="30px"/>
@@ -78,7 +78,7 @@ function NavBar() {
               </div>
               : <></>}
             </div>
-            <div className="menu-icon-mobile" onClick={handleClick}>
+            <div className={click ? "menu-icon-mobile active" : "menu-icon-mobile"} onClick={handleClick}>
                   { !click ?
                     <img src="/image/icon-svg/hamburger.svg" width="28"></img>
                       :

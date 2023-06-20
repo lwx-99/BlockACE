@@ -104,6 +104,37 @@ $dark-primary-color: #003445;
                     height: 1.125rem;
                 }
 
+            }
+
+            .meeting-contact {
+                margin-left: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1rem;
+                font-weight: 500;
+                color: white;
+
+                a {
+                    display: flex;
+
+                    p {
+                        margin-right: 6px;
+                    }
+                }
+                
+                a:hover {
+                    cursor: pointer;
+                    color: #FABC3C;
+
+                    svg {
+                        fill: #FABC3C;
+
+                        path:nth-child(1), path:nth-child(2), path:nth-child(3) {
+                            fill: #FABC3C;
+                        }
+                    }
+                }
 
 
             }
@@ -149,7 +180,16 @@ $dark-primary-color: #003445;
                     }
 
                     .social-media {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 30px;
                         margin-top: 30px;
+
+                        .email-contact, .meeting-contact {
+                            margin: 0;
+                        }
                     }
                 }
             }

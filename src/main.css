@@ -155,7 +155,7 @@
 
 @media screen and (max-width: 960px) {
   .nav-bar {
-    padding: 0 10px;
+    padding: 0 12px;
     display: flex;
     justify-content: center;
     position: sticky;
@@ -173,6 +173,9 @@
   }
   .nav-bar .nav-bar--logo-container img {
     max-height: 25px;
+  }
+  .nav-bar .nav-bar--logo-container.active {
+    position: fixed;
   }
   .nav-bar .nav-bar-container {
     width: 100%;
@@ -209,7 +212,7 @@
     position: fixed;
     top: -100vh;
     left: 0px;
-    opacity: 0;
+    opacity: 1;
     transition: all 0.5s ease;
     padding: 120px 30px;
     z-index: 2;
@@ -298,6 +301,10 @@
     display: block;
     height: 28px;
     z-index: 999;
+  }
+  .nav-bar .lang-btn-mobile-menu-btn .menu-icon-mobile.active {
+    position: fixed;
+    right: 25px;
   }
   .nav-bar .lang-btn-mobile-menu-btn .lang-btn {
     position: relative;
@@ -696,7 +703,24 @@
   font-family: "Poppins", sans-serif;
   color: #FABC3C;
   border-bottom: 2px solid #b6b1b1;
-  opacity: 0.75;
+  opacity: 1;
+}
+.service-section p.addition-text span {
+  font-size: 1.75rem;
+}
+.service-section p.addition-text:hover {
+  color: #ffaa00;
+}
+.service-section p.addition-text:hover span {
+  margin-left: 20px;
+  transition: all 0.5s ease;
+}
+.service-section p.addition-text:not(:hover) {
+  color: #FABC3C;
+}
+.service-section p.addition-text:not(:hover) span {
+  margin-left: 0px;
+  transition: all 0.5s ease;
 }
 .service-section .service-card-container {
   display: flex;
@@ -57120,6 +57144,31 @@ i[class^=fi-brands-]:before, i[class*=" fi-brands-"]:before, span[class^=fi-bran
   margin: auto 0 auto 8px;
   height: 1.125rem;
 }
+.footer .footer-copyright .social-media .meeting-contact {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+}
+.footer .footer-copyright .social-media .meeting-contact a {
+  display: flex;
+}
+.footer .footer-copyright .social-media .meeting-contact a p {
+  margin-right: 6px;
+}
+.footer .footer-copyright .social-media .meeting-contact a:hover {
+  cursor: pointer;
+  color: #FABC3C;
+}
+.footer .footer-copyright .social-media .meeting-contact a:hover svg {
+  fill: #FABC3C;
+}
+.footer .footer-copyright .social-media .meeting-contact a:hover svg path:nth-child(1), .footer .footer-copyright .social-media .meeting-contact a:hover svg path:nth-child(2), .footer .footer-copyright .social-media .meeting-contact a:hover svg path:nth-child(3) {
+  fill: #FABC3C;
+}
 
 @media screen and (max-width: 960px) {
   .footer-container {
@@ -57155,7 +57204,15 @@ i[class^=fi-brands-]:before, i[class*=" fi-brands-"]:before, span[class^=fi-bran
     text-align: center;
   }
   .footer-container .footer .footer-copyright .footer-logo-container .social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
     margin-top: 30px;
+  }
+  .footer-container .footer .footer-copyright .footer-logo-container .social-media .email-contact, .footer-container .footer .footer-copyright .footer-logo-container .social-media .meeting-contact {
+    margin: 0;
   }
 }
 @keyframes background-moving {
@@ -57606,6 +57663,22 @@ a:visited {
 ::-webkit-scrollbar-thumb {
   background: rgb(155, 155, 155);
   border-radius: 10px;
+}
+
+::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: "Open Sans", sans-serif;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: "Open Sans", sans-serif;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-family: "Open Sans", sans-serif;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  font-family: "Open Sans", sans-serif;
 }
 
 @media screen and (max-width: 960px) {
