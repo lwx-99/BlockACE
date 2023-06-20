@@ -16,7 +16,7 @@ $dark-primary-color: #003445;
     width: calc(100vw - 10px);
     background-color: $main-background-color;
     border-radius: 96px 96px 0 0;
-    padding: 60px;
+    padding: 60px 0px;
 
     #contact-us {
         display: flex;
@@ -96,7 +96,7 @@ $dark-primary-color: #003445;
     .resource-contact-section-container {
         width: 100vw;
         border-radius: 0;
-        padding: 30px 10px;
+        padding: 40px 10px;
 
         #contact-us { 
 

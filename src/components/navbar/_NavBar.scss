@@ -27,7 +27,7 @@ $font-stack-section-title: 'Chakra Petch', sans-serif;
 
 
     .nav-bar--logo-container {
-        max-height: 40px;
+        max-height: 30px;
         width: auto;
     }
 
@@ -64,7 +64,6 @@ $font-stack-section-title: 'Chakra Petch', sans-serif;
                 li.nav-item {
                     display: flex;
                     align-items: center;
-                    border-top: 4px solid transparent;
                     height: 50px;
                     margin: 0;
                     padding: 0 20px;
@@ -100,96 +99,98 @@ $font-stack-section-title: 'Chakra Petch', sans-serif;
 
         }
     }
-    
 
-    .lang-btn {
-        position: relative;
-        border-top: 4px solid transparent;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 80px;
-        width: 90px;
+    .lang-btn-mobile-menu-btn {
 
+        .menu-icon-mobile {
+            display: none;
+        }
 
-        .lang-svg-icon {
+        .lang-btn {
+            position: relative;
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            fill: rgb(255, 255, 255);
+            justify-content: center;
+            height: 80px;
+            width: 90px;
 
-            div {
-                margin: 0 12px;
-            }
-
-            .rotate-icon {
-                transform: rotate(360deg);
-                transition: all 0.2s ease-in-out;
-            }
-        }
-
-        .lang-selector {
-
-            position: absolute;
-            top: 75px;
-            right: 0px;
-            display: flex;
-            flex-direction: column;
-            background-color: $button-dark-color;
-            padding: 15px 15px;
-            border-radius: 12px;
-            opacity: 1;
-            animation: appear-nav 0.2s ease-in;
-
-            button {
+            .lang-svg-icon {
                 display: flex;
                 align-items: center;
-                cursor: pointer;
-                font-size: 1rem;
-                background: none;
-                border: none;
-                padding: 16px 24px 16px 18px;
-                color: #fff;
+                justify-content: space-between;
+                fill: rgb(255, 255, 255);
+    
+                div {
+                    margin: 0 12px;
+                }
+    
+                .rotate-icon {
+                    transform: rotate(360deg);
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+
+            .lang-selector {
+
+                position: absolute;
+                top: 75px;
+                right: 0px;
+                display: flex;
+                flex-direction: column;
+                background-color: $button-dark-color;
+                padding: 15px 15px;
                 border-radius: 12px;
-                text-align: left;
-                width: 165px;
-
-                span {
-                    color: #9b9b9b;
-                    margin: 0 6px;
-                    font-weight: 500;
+                opacity: 1;
+                animation: appear-nav 0.2s ease-in;
+    
+                button {
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    font-size: 1rem;
+                    background: none;
+                    border: none;
+                    padding: 16px 24px 16px 18px;
+                    color: #fff;
+                    border-radius: 12px;
+                    text-align: left;
+                    width: 165px;
+    
+                    span {
+                        color: #9b9b9b;
+                        margin: 0 6px;
+                        font-weight: 500;
+                    }
+                }
+    
+                button:hover {
+                    background-color: $button-dark-color-hover;
+                    color: #fff;
+    
+                    span {
+                        margin: 0 6px;
+                    }
                 }
             }
 
-            button:hover {
-                background-color: $button-dark-color-hover;
-                color: #fff;
-
-                span {
-                    margin: 0 6px;
-                }
+            .lang-selector ::before{
+                background: url(/public/image/svg/nav-triangle.6acc08d5.svg) no-repeat 50%/cover;
+                bottom: 100%;
+                content: "";
+                display: block;
+                height: 14px;
+                position: absolute;
+                right: 30px;
+                width: 30px;
             }
+        
         }
 
-        .lang-selector ::before{
-            background: url(/public/image/svg/nav-triangle.6acc08d5.svg) no-repeat 50%/cover;
-            bottom: 100%;
-            content: "";
-            display: block;
-            height: 14px;
-            position: absolute;
-            right: 30px;
-            width: 30px;
+        .lang-btn:hover .rotate-icon {
+            transform: rotate(180deg);
+            transition: all 0.2s ease-in-out 0s;
         }
-    }
 
-    .lang-btn:hover .rotate-icon {
-        transform: rotate(180deg);
-        transition: all 0.2s ease-in-out 0s;
-    }
-
-    .menu-icon-mobile {
-        display: none;
     }
 
 }
@@ -200,6 +201,215 @@ $font-stack-section-title: 'Chakra Petch', sans-serif;
 }
 
 @media screen and (max-width: 960px) {
+    .nav-bar {
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        height: auto;
+        z-index: 1000;
+        background-color: transparent;
+        max-width: 100%;
+        width: 100%;
+    
+    
+        .nav-bar--logo-container {
+            max-height: 25px;
+            width: auto;
 
-  
+            img {
+                max-height: 25px;
+            }
+        }
+    
+        .nav-bar-container {
+            
+            width: 100%;
+            max-width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+    
+            .nav-menu-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: visible;
+                background-color: transparent;
+                border-radius: 0;
+                padding: 0;
+                margin: 0;
+                position: relative;
+                top: 0;
+                left: 0;
+                transform: none;
+                filter: none;
+                transition: none;
+    
+                ul.nav-menu {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-content: center;
+                    flex-wrap: nowrap;
+                    width: 100vw;
+                    height: 100vh;
+                    position: fixed;
+                    top: -100vh;
+                    left: 0px;
+                    opacity: 0;
+                    transition: all 0.5s ease;
+                    padding: 100px 30px;
+                    z-index: 2;
+                }
+
+                ul.nav-menu.active {
+                    background-color: $main-background-color;
+                    display: flex;
+                    visibility: visible;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    list-style: none;
+                    width: 100vw;
+                    height: 100vh;
+                    position: fixed;
+                    top: 0px;
+                    left: 0px;
+                    opacity: 1;
+                    transition: all 0.5s ease;
+                    z-index: 2;
+    
+                    li.nav-item {
+                        display: flex;
+                        width: 100%;
+                        align-items: center;
+                        justify-content: flex-start;
+                        height: 50px;
+                        margin: 12px;
+                        padding: 0 20px;
+                        
+                        .nav-link {
+                            width: 100%;
+                            font-family: $font-stack-section-title;
+                            color: #fff;
+                            text-decoration: none;
+                            font-weight: 400;
+                            font-size: 1.375rem;
+                           
+                        }
+                    }
+
+                }
+    
+            }
+        }
+    
+        .lang-btn-mobile-menu-btn {
+            width: auto;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+    
+            .menu-icon-mobile {
+                display: block;
+                height: 28px;
+                z-index: 999;
+            }
+    
+            .lang-btn {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 80px;
+                width: 80px;
+                z-index: 1;
+    
+                .lang-svg-icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    fill: rgb(255, 255, 255);
+        
+                    div {
+                        margin: 0 10px;
+                    }
+        
+                    .rotate-icon {
+                        transform: none;
+                        transition: none;
+                        display: none;
+                    }
+                }
+    
+                .lang-selector {
+    
+                    position: absolute;
+                    top: 75px;
+                    right: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: $button-dark-color;
+                    padding: 15px 15px;
+                    border-radius: 12px;
+                    opacity: 1;
+                    animation: appear-nav 0.2s ease-in;
+        
+                    button {
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                        font-size: 1rem;
+                        background: none;
+                        border: none;
+                        padding: 16px 24px 16px 18px;
+                        color: #fff;
+                        border-radius: 12px;
+                        text-align: left;
+                        width: 165px;
+        
+                        span {
+                            color: #9b9b9b;
+                            margin: 0 6px;
+                            font-weight: 500;
+                        }
+                    }
+        
+                    button:hover {
+                        background-color: $button-dark-color-hover;
+                        color: #fff;
+        
+                        span {
+                            margin: 0 6px;
+                        }
+                    }
+                }
+    
+                .lang-selector ::before{
+                    background: url(/public/image/svg/nav-triangle.6acc08d5.svg) no-repeat 50%/cover;
+                    bottom: 100%;
+                    content: "";
+                    display: block;
+                    height: 14px;
+                    position: absolute;
+                    right: 30px;
+                    width: 30px;
+                }
+            
+            }
+    
+            .lang-btn:hover .rotate-icon {
+                transform: rotate(180deg);
+                transition: all 0.2s ease-in-out 0s;
+            }
+    
+        }
+
+    }
+    
 }
+ 
