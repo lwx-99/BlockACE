@@ -18,18 +18,18 @@ function Footer() {
                 <div className="social-media">
                     <div className="social-media-icon">
                         <a href="https://twitter.com/BlockACE_" target="blank" rel="noreferrer noopener"><i class="fi fi-brands-twitter"></i></a>
-                        <a href="https://t.me/thaile143" target="blank" rel="noreferrer noopener"><i class="fi fi-brands-telegram"></i></a>
+                        <a href="https://t.me/anhlemsc" target="blank" rel="noreferrer noopener"><i class="fi fi-brands-telegram"></i></a>
                         <a href="https://www.facebook.com/acesince2018" target="blank" rel="noreferrer noopener"><i class="fi fi-brands-facebook"></i></a>
                         <a href="https://www.linkedin.com/company/blockace-blockasia-vietnam" target="blank" rel="noreferrer noopener"><i class="fi fi-brands-linkedin"></i></a>
                     </div>
                     <div className="email-contact">
-                        <a href="mailto:thaile@blockace.co">
+                        <a href="mailto:">
                             <p>Email Us</p>
                             <i class="fi fi-br-envelope"></i>
                         </a>
                     </div>
                     <div className="meeting-contact">
-                        <a href="https://calendly.com/thaileblockace/" target="blank" rel="noreferrer noopener">
+                        <a href="https://calendly.com/" target="blank" rel="noreferrer noopener">
                             <p>Book a meeting?</p>
                             <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 40 40" fill="none">
                             <path d="M27.4166 25.9298C26.1216 27.0554 24.5105 28.4566 21.5764 28.4566H19.8247C17.7043 28.4566 15.7759 27.702 14.3955 26.3307C13.0478 24.9914 12.3043 23.1595 12.3043 21.1702V18.8179C12.3043 16.8286 13.0466 14.9955 14.3955 13.6574C15.7759 12.286 17.7043 11.5314 19.8247 11.5314H21.5764C24.5105 11.5314 26.1216 12.9326 27.4166 14.0582C28.7596 15.2263 29.9199 16.2348 33.0098 16.2348C33.4898 16.2348 33.9605 16.1969 34.4183 16.1245C34.4148 16.1153 34.4113 16.1073 34.4078 16.0981C34.224 15.6513 34.0073 15.2125 33.758 14.7887L31.6914 11.2776C29.7958 8.05585 26.2914 6.07227 22.5002 6.07227H18.367C14.5758 6.07227 11.0714 8.05699 9.17577 11.2776L7.10922 14.7887C5.21359 18.0105 5.21359 21.9787 7.10922 25.1993L9.17577 28.7105C11.0714 31.9322 14.5758 33.9158 18.367 33.9158H22.5002C26.2914 33.9158 29.7958 31.9311 31.6914 28.7105L33.758 25.1993C34.0073 24.7744 34.224 24.3367 34.4078 23.89C34.4113 23.8808 34.4148 23.8727 34.4183 23.8635C33.9605 23.7912 33.491 23.7533 33.0098 23.7533C29.9199 23.7533 28.7596 24.7617 27.4166 25.9298Z" fill="#FFFFFF"/>

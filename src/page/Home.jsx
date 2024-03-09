@@ -15,7 +15,6 @@ function Home() {
         <OurTeam />
         <Projects />
         <OurCustomer />
-        <ContactResource />
     </>
   )
 }
