@@ -13,22 +13,22 @@ function Footer() {
             <div className="footer-logo-container">
                 <figure className="footer-logo">
                     <img src="/image/blockaceLogo.png" width="150px"/>
-                    <p>© 2023 BlockACE</p>
+                    <p>© BlockACE - Since 2018</p>
                 </figure>
                 <div className="social-media">
                     <div className="social-media-icon">
-                        <a href="https://twitter.com/BlockACE_" target="blank" rel="noreferrer noopener"><i class="fi fi-brands-twitter"></i></a>
+                        <a href="http://twitter.com/anhlemsc" target="blank" rel="noreferrer noopener"><i class="fi fi-brands-twitter"></i></a>
                         <a href="https://t.me/anhlemsc" target="blank" rel="noreferrer noopener"><i class="fi fi-brands-telegram"></i></a>
                         <a href="https://www.facebook.com/acesince2018" target="blank" rel="noreferrer noopener"><i class="fi fi-brands-facebook"></i></a>
-                        <a href="https://www.linkedin.com/company/blockace-blockasia-vietnam" target="blank" rel="noreferrer noopener"><i class="fi fi-brands-linkedin"></i></a>
+                        <a href="http://linkedin.com/in/anhlemsc" target="blank" rel="noreferrer noopener"><i class="fi fi-brands-linkedin"></i></a>
                     </div>
                     <div className="email-contact">
-                        <a href="mailto:">
+                        <a href="mailto:anhle@blockace.co">
                             <p>Email Us</p>
                             <i class="fi fi-br-envelope"></i>
                         </a>
                     </div>
-                    <div className="meeting-contact">
+                    {/*<div className="meeting-contact">
                         <a href="https://calendly.com/" target="blank" rel="noreferrer noopener">
                             <p>Book a meeting?</p>
                             <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 40 40" fill="none">
@@ -39,7 +39,7 @@ function Footer() {
                             <path d="M34.4187 16.1224C33.9609 16.1948 33.4914 16.2327 33.0102 16.2327C29.9203 16.2327 28.76 15.2242 27.417 14.0561C26.122 12.9305 24.5109 11.5293 21.5767 11.5293H19.8251C17.7047 11.5293 15.7763 12.2839 14.3959 13.6553C13.0482 14.9945 12.3047 16.8265 12.3047 18.8158V21.1681C12.3047 23.1574 13.047 24.9905 14.3959 26.3286C15.7763 27.6999 17.7047 28.4546 19.8251 28.4546H21.5767C24.5109 28.4546 26.122 27.0533 27.417 25.9277C28.76 24.7596 29.9203 23.7512 33.0102 23.7512C33.4902 23.7512 33.9609 23.7891 34.4187 23.8614C34.688 23.2033 34.8847 22.5234 35.0112 21.8354C35.0135 21.8239 35.0147 21.8124 35.017 21.8009C34.3625 21.6815 33.6904 21.6206 33.0102 21.6206C25.9101 21.6206 26.2789 26.324 21.5767 26.324H19.8251C16.5983 26.324 14.4766 24.0624 14.4766 21.1681V18.8158C14.4766 15.9214 16.5971 13.6599 19.8251 13.6599H21.5767C26.2789 13.6599 25.9101 18.3633 33.0102 18.3633C33.6904 18.3633 34.3625 18.3024 35.017 18.1829C35.0147 18.1715 35.0135 18.1611 35.0112 18.1496C34.8859 17.4616 34.688 16.7817 34.4187 16.1224Z" fill="#000000"/>
                             </svg>
                         </a>
-                    </div>
+                    </div>*/}
                 </div>
             </div>
 

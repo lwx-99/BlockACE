@@ -24,6 +24,7 @@ $font-stack-section-title: 'Chakra Petch', sans-serif;
     z-index: 1000;
     background-color: transparent;
     max-width: 100%;
+    height: 66px;
 
 
     .nav-bar--logo-container {
@@ -45,7 +46,7 @@ $font-stack-section-title: 'Chakra Petch', sans-serif;
             border-radius: 100px;
             display: flex;
             align-items: center;
-            padding: 8px 30px;
+            padding: 8px 25px;
             margin: 0 auto;
             position: fixed;
             top: calc(2.5vh + 30px);
@@ -64,9 +65,9 @@ $font-stack-section-title: 'Chakra Petch', sans-serif;
                 li.nav-item {
                     display: flex;
                     align-items: center;
-                    height: 50px;
+                    height: 45px;
                     margin: 0;
-                    padding: 0 20px;
+                    padding: 0 15px;
                     
                     .nav-link {
                         font-family: $font-stack-section-title;
@@ -81,7 +82,7 @@ $font-stack-section-title: 'Chakra Petch', sans-serif;
                 li.nav-item:hover {
                     background-color: #FABC3C;
                     border-radius: 12px;
-                    padding: 0px 40px;
+                    padding: 0px 30px;
                     transition: padding 0.75s ease;
 
                     .nav-link {
@@ -376,7 +377,6 @@ $font-stack-section-title: 'Chakra Petch', sans-serif;
 
                 
             .menu-icon-mobile.active {
-                position: fixed;
                 right: 25px;
             }
     

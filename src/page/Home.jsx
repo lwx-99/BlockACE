@@ -5,16 +5,18 @@ import Services from '../components/service/Services'
 import OurCustomer from '../components/customer/OurCustomer'
 import ContactResource from '../components/contact-resource/ContactResource'
 import OurTeam from '../components/our-team/OurTeam'
+import Media from '../components/media/Media'
+import CardSlide from '../components/cardSlide/CardSlide'
 
 function Home() {
   return (
     <>
         <HeroSection />
         <AboutUs />
-        <Services />
         <OurTeam />
         <Projects />
         <OurCustomer />
+        <Media />
     </>
   )
 }

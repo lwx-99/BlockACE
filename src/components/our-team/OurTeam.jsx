@@ -11,7 +11,7 @@ function OurTeam() {
     <div className="section-container">
         <div className="team-section-container">
             <section className="team-section reveal" id="team">
-                <h1>Our Team</h1>
+                <h1>Founder</h1>
                 <div className="CoverFlowSlide"> 
                     <Swiper
                         loop={false}
@@ -35,7 +35,7 @@ function OurTeam() {
                             <img className="team-photo" src="/image/team/Founder-AnhLe.jpg" />
                             <div className="team-tag">
                                 <p className="team-name">Anh Le</p>
-                                <p className="team-title">Founder</p>
+                                {/*<p className="team-title">Founder</p>*/}
                             </div>
                             <div className="linkedin">
                                 <a href="https://www.linkedin.com/in/anhlemsc/" target="_blank" rel="noreferrer noopener">
@@ -69,7 +69,7 @@ function OurTeam() {
                     </SwiperSlide>*/}
                     </Swiper>
                 </div>
-                <p className="bottom-text">And More →</p>
+               {/*<p className="bottom-text">And More →</p>*/}
             </section>
             <div className="background-decor-layer">
                     <img src="/image/decor/bubble-decor-blue.png" loading="eager" className="bubble-01" id="bubble-01"></img>

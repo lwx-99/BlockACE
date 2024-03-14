@@ -54,15 +54,15 @@ function NavBar() {
                   Partners
                 </HashLink>
               </li>
-              <li className="nav-item">
+              {/*<li className="nav-item">
                 <HashLink smooth scroll={scrollWithOffset} to="#contact-us" className="nav-link"  onClick={closeMobileMenu}>
                   Contact
                 </HashLink>
-              </li>
+              </li>*/}
             </ul>
           </div>
-          <div className="lang-btn-mobile-menu-btn">
-            <div className="lang-btn" 
+          {<div className="lang-btn-mobile-menu-btn">
+            {/*<div className="lang-btn" 
               onMouseOver={() => setIsShown(true)}
               onMouseOut={() => setIsShown(false)}
               onClick={() => setIsShown(!IsShow)}>
@@ -77,7 +77,7 @@ function NavBar() {
                 <button className="lang-selector-btn" onClick={() => {setCurrentLang({language: "VI"}); setIsShown(false);}}>Tiếng Việt <span>VI</span><img src="/image/svg/vietnam.svg" width="20"></img></button>
               </div>
               : <></>}
-            </div>
+              </div>*/}
             <div className={click ? "menu-icon-mobile active" : "menu-icon-mobile"} onClick={handleClick}>
                   { !click ?
                     <img src="/image/icon-svg/hamburger.svg" width="28"></img>
@@ -85,7 +85,7 @@ function NavBar() {
                     <img src="/image/icon-svg/close.svg" width="28"></img>
                   }
             </div>
-          </div>
+          </div>}
         </div>
       </nav>
     </>

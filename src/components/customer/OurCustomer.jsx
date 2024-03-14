@@ -52,6 +52,51 @@ const CustomerList = [
     alt: "BingX"
   },
   {
+    logo: "/image/customer/NodeCaptial.jpg",
+    customerName: "NodeCaptial",
+    alt: "NodeCaptial"
+  },
+  {
+    logo: "/image/customer/GenesisCapital.jpg",
+    customerName: "GenesisCapital",
+    alt: "GenesisCapital"
+  },
+  {
+    logo: "/image/customer/jinse.jpg",
+    customerName: "Jinse",
+    alt: "Jinse"
+  },
+  {
+    logo: "/image/customer/QuestCapital.jpg",
+    customerName: "QuestCapital",
+    alt: "QuestCapital"
+  },
+  {
+    logo: "/image/customer/BNCapital.jpg",
+    customerName: "BNCapital",
+    alt: "BNCapital"
+  },
+  {
+    logo: "/image/customer/LMT.jpg",
+    customerName: "LMT",
+    alt: "LMT"
+  },
+  {
+    logo: "/image/customer/BHEX.jpg",
+    customerName: "BHEX",
+    alt: "BHEX"
+  },
+  {
+    logo: "/image/customer/WBF.jpg",
+    customerName: "WBF",
+    alt: "WBF"
+  },
+  {
+    logo: "/image/customer/SunriseDragon.png",
+    customerName: "SunriseDragon",
+    alt: "SunriseDragon"
+  },
+  {
     logo: "/image/customer/Acent.png",
     customerName: "Acent",
     alt: "Acent"
@@ -122,11 +167,6 @@ const CustomerList = [
     alt: "SaigonTradeCoin"
   },
   {
-    logo: "/image/customer/SunriseDragon.png",
-    customerName: "SunriseDragon",
-    alt: "SunriseDragon"
-  },
-  {
     logo: "/image/customer/coinerVN.jpg",
     customerName: "CoinerVN",
     alt: "CoinerVN"
@@ -136,48 +176,7 @@ const CustomerList = [
     customerName: "IMCommunity",
     alt: "IMCommunity"
   },
-  {
-    logo: "/image/customer/NodeCaptial.jpg",
-    customerName: "NodeCaptial",
-    alt: "NodeCaptial"
-  },
-  {
-    logo: "/image/customer/GenesisCapital.jpg",
-    customerName: "GenesisCapital",
-    alt: "GenesisCapital"
-  },
-  {
-    logo: "/image/customer/jinse.jpg",
-    customerName: "Jinse",
-    alt: "Jinse"
-  },
-  {
-    logo: "/image/customer/QuestCapital.jpg",
-    customerName: "QuestCapital",
-    alt: "QuestCapital"
-  },
-  {
-    logo: "/image/customer/BNCapital.jpg",
-    customerName: "BNCapital",
-    alt: "BNCapital"
-  },
-  {
-    logo: "/image/customer/LMT.jpg",
-    customerName: "LMT",
-    alt: "LMT"
-  },
-  {
-    logo: "/image/customer/BHEX.jpg",
-    customerName: "BHEX",
-    alt: "BHEX"
-  },
-  {
-    logo: "/image/customer/WBF.jpg",
-    customerName: "WBF",
-    alt: "WBF"
-  },
-
-
+  
 
 ]
 
@@ -186,7 +185,7 @@ function OurCustomer() {
   <div className="section-container">
     <div className="customer-section-container">
       <section className="customer-section reveal" id="customers">
-        <h1 className="section-title">Partners & Clients</h1>
+        <h1 className="section-title">Companies & Clients</h1>
         <div className="customer-container">
             { CustomerList.map( (item) => (
               <figure>

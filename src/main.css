@@ -16,6 +16,7 @@
   z-index: 1000;
   background-color: transparent;
   max-width: 100%;
+  height: 66px;
 }
 .nav-bar .nav-bar--logo-container {
   max-height: 30px;
@@ -34,7 +35,7 @@
   border-radius: 100px;
   display: flex;
   align-items: center;
-  padding: 8px 30px;
+  padding: 8px 25px;
   margin: 0 auto;
   position: fixed;
   top: calc(2.5vh + 30px);
@@ -53,9 +54,9 @@
 .nav-bar .nav-bar-container .nav-menu-container ul.nav-menu li.nav-item {
   display: flex;
   align-items: center;
-  height: 50px;
+  height: 45px;
   margin: 0;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 .nav-bar .nav-bar-container .nav-menu-container ul.nav-menu li.nav-item .nav-link {
   font-family: "Chakra Petch", sans-serif;
@@ -67,7 +68,7 @@
 .nav-bar .nav-bar-container .nav-menu-container ul.nav-menu li.nav-item:hover {
   background-color: #FABC3C;
   border-radius: 12px;
-  padding: 0px 40px;
+  padding: 0px 30px;
   transition: padding 0.75s ease;
 }
 .nav-bar .nav-bar-container .nav-menu-container ul.nav-menu li.nav-item:hover .nav-link {
@@ -303,7 +304,6 @@
     z-index: 999;
   }
   .nav-bar .lang-btn-mobile-menu-btn .menu-icon-mobile.active {
-    position: fixed;
     right: 25px;
   }
   .nav-bar .lang-btn-mobile-menu-btn .lang-btn {
@@ -415,7 +415,7 @@
   width: calc(100vw - 5vh);
   height: 97.5vh;
   min-height: 700px;
-  max-height: 1000px;
+  max-height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -436,6 +436,7 @@
   justify-content: space-between;
   align-items: flex-end;
   transform: scale(1);
+  padding-bottom: 80px;
 }
 .hero-section .hero-section-container .hero-section-layer {
   width: 40%;
@@ -467,7 +468,7 @@
   line-height: 1.2;
   font-weight: 200;
   color: #BEFBFF;
-  font-size: 2.375rem;
+  font-size: 2.25rem;
 }
 .hero-section .hero-section-container .hero-section-content p {
   font-weight: 300;
@@ -806,6 +807,9 @@
 }
 .about-us-section-container {
   width: calc(100vw - 10px);
+  background: url("/public/sea-map.jpg") fixed center center;
+  background-size: cover;
+  height: auto;
 }
 
 .about-us-section {
@@ -814,7 +818,7 @@
   max-width: calc(100vw - 10px);
   flex-direction: column;
   margin: 0 auto;
-  padding: 150px 0;
+  padding: 200px 0 250px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -843,10 +847,11 @@
   justify-content: center;
 }
 .about-us-section .about-us-content .about-us-main .about-us-article p {
-  max-width: 80%;
+  max-width: 100%;
   text-align: center;
-  font-size: 1.125rem;
-  font-family: "Open Sans", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  font-family: "Gellix", sans-serif;
 }
 .about-us-section .about-us-content .about-us-main .mission-business-container {
   display: flex;
@@ -854,7 +859,7 @@
   justify-content: space-around;
 }
 .about-us-section .about-us-content .about-us-main .mission-business-container .our-mission, .about-us-section .about-us-content .about-us-main .mission-business-container .our-business {
-  width: 40%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -863,7 +868,7 @@
 .about-us-section .about-us-content .about-us-main .mission-business-container .our-mission figure, .about-us-section .about-us-content .about-us-main .mission-business-container .our-business figure {
   display: flex;
   justify-content: center;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 .about-us-section .about-us-content .about-us-main .mission-business-container .our-mission h2, .about-us-section .about-us-content .about-us-main .mission-business-container .our-business h2 {
   text-align: center;
@@ -873,14 +878,16 @@
   font-family: "Chakra Petch", sans-serif;
 }
 .about-us-section .about-us-content .about-us-main .mission-business-container .our-mission p, .about-us-section .about-us-content .about-us-main .mission-business-container .our-business p {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   text-align: center;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Gellix", sans-serif;
 }
 
 @media screen and (max-width: 960px) {
   .about-us-section-container {
     width: 100vw;
+    background: url("/public/sea-map-mobile.jpg") fixed center center;
+    background-size: cover;
   }
   .about-us-section {
     height: auto;
@@ -900,10 +907,10 @@
   }
   .about-us-section .about-us-content .about-us-main .about-us-article p {
     max-width: 80%;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .about-us-section .about-us-content .about-us-main .mission-business-container .our-mission, .about-us-section .about-us-content .about-us-main .mission-business-container .our-business {
-    width: 45%;
+    width: 80%;
   }
   .about-us-section .about-us-content .about-us-main .mission-business-container .our-mission figure, .about-us-section .about-us-content .about-us-main .mission-business-container .our-business figure {
     margin-bottom: 15px;
@@ -913,7 +920,8 @@
     margin-bottom: 10px;
   }
   .about-us-section .about-us-content .about-us-main .mission-business-container .our-mission p, .about-us-section .about-us-content .about-us-main .mission-business-container .our-business p {
-    font-size: 1rem;
+    font-size: 1.25rem;
+    font-weight: 500;
   }
 }
 /*.CardSlide {
@@ -57082,7 +57090,7 @@ i[class^=fi-brands-]:before, i[class*=" fi-brands-"]:before, span[class^=fi-bran
   max-width: calc(100vw - 10px);
   height: auto;
   margin: 0 auto;
-  padding: 100px 50px 50px 50px;
+  padding: 75px 50px;
 }
 .footer .footer-copyright {
   width: 100%;
@@ -57573,6 +57581,126 @@ i[class^=fi-brands-]:before, i[class*=" fi-brands-"]:before, span[class^=fi-bran
     margin: 0 15px;
   }
 }
+@keyframes background-moving {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 30% 60%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+.media-section-container {
+  width: calc(100vw - 5vh);
+  margin: 2.5vh;
+  background-color: #fff;
+  border-radius: 96px 96px 32px 32px;
+  /* background-image: url("/image/decor/background-decor.jpg"); */
+  background-size: cover;
+  animation: background-moving 6s ease infinite alternate-reverse;
+}
+
+.media-section {
+  height: auto;
+  width: 1400px;
+  max-width: calc(100vw - 5vh);
+  margin: 0 auto;
+  padding: 150px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.media-section h1.section-title {
+  margin-bottom: 0px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: #1f2123;
+  font-family: "Chakra Petch", sans-serif;
+}
+.media-section .media-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 150px);
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.media-section .media-container img {
+  width: 110px;
+}
+
+@media screen and (max-width: 1200px) {
+  .media-section .media-container {
+    grid-template-columns: repeat(8, 100px);
+    gap: 25px;
+  }
+  .media-section .media-container img {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .media-section-container {
+    width: 100vw;
+    margin: 0;
+    border-radius: 0;
+  }
+  .media-section {
+    height: auto;
+    width: 90vw;
+    padding: 120px 20px;
+    margin: 0 auto;
+  }
+  .media-section h1.section-title {
+    text-align: center;
+    font-size: 2.25rem;
+    margin-bottom: 20px;
+  }
+  .media-section .media-container {
+    grid-template-columns: repeat(3, 23vw);
+    gap: 30px;
+  }
+  .media-section .media-container img {
+    width: 23vw;
+  }
+}
+@font-face {
+  font-family: Gellix;
+  src: url(./assets/fonts/Gellix/Gellix-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: Gellix;
+  src: url(./assets/fonts/Gellix/Gellix-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Gellix;
+  src: url(./assets/fonts/Gellix/Gellix-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Gellix;
+  src: url(./assets/fonts/Gellix/Gellix-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: Gellix;
+  src: url(./assets/fonts/Gellix/Gellix-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: Gellix;
+  src: url(./assets/fonts/Gellix/Gellix-Black.ttf);
+  font-weight: 800;
+}
 * {
   box-sizing: border-box;
   margin: 0 0;
@@ -57593,11 +57721,9 @@ body {
   background-color: #f5f5f7;
   /* background-image: url("/image/decor/background-decor-vertical.jpg"); */
   background-size: cover;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Gellix", sans-serif;
   font-weight: 500;
   height: 100%;
-  width: calc(100vw - 10px);
-  margin: 0 auto;
   text-rendering: optimizeLegibility;
   font-synthesis: none;
   text-rendering: optimizeLegibility;

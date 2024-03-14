@@ -1,0 +1,130 @@
+$primary-color: #00b3c5;
+$light-text-color:#BEFBFF;
+$dark-text-color: #1f2123;
+$button-semi-dark-color: #474d57;
+$button-dark-color: #001934;
+$button-dark-color-hover: #00244b;
+$button-light-color: #00b3c5;
+$main-background-color: #000e1d;
+
+$font-stack-section-title: 'Chakra Petch', sans-serif;
+
+$dark-secondary-color: #324B4F;
+$dark-primary-color: #003445;
+
+@keyframes background-moving {
+    0% {
+        background-position: 0% 0%;
+
+    }
+    50% {
+        background-position: 30% 60%;
+
+    }
+    100% {
+        background-position: 100% 100%;
+
+    }
+    
+}
+
+
+.media-section-container {
+    width: calc(100vw - 5vh);
+    margin: 2.5vh;
+    background-color: #fff;
+    border-radius: 96px 96px 32px 32px;
+    /* background-image: url("/image/decor/background-decor.jpg"); */
+    background-size: cover;
+    animation: background-moving 6s ease infinite alternate-reverse; 
+}
+
+.media-section { 
+    height: auto;
+    width: 1400px;
+    max-width: calc(100vw - 5vh);
+    margin: 0 auto;
+    padding: 150px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+
+    h1.section-title {
+        margin-bottom: 0px;
+        text-align: left;
+        font-weight: 700;
+        font-size: 3.5rem;
+        color: $dark-text-color;
+        font-family: $font-stack-section-title;
+    }
+
+    .media-container {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(5, 150px);
+        gap: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+            
+        img {
+            width: 110px;
+        }
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 1200px) {
+    
+    .media-section {  
+        .media-container {
+            grid-template-columns: repeat(8, 100px);
+            gap: 25px;
+
+            img {
+                width: 100px;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 960px) {
+
+    .media-section-container {
+        width: 100vw;
+        margin: 0;
+        border-radius: 0;
+    }
+    
+    
+    .media-section {  
+        height: auto;
+        width: 90vw;
+        padding: 120px 20px;
+        margin: 0 auto;
+
+        h1.section-title {
+            text-align: center;
+            font-size: 2.25rem;
+            margin-bottom: 20px;
+        }
+    
+        .media-container {
+            grid-template-columns: repeat(3, 23vw);
+            gap: 30px;
+
+            img {
+                width: 23vw;
+            }
+        }
+    }
+    
+}
