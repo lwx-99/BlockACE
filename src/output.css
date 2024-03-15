@@ -32,10 +32,6 @@
   margin-top: 0.25rem
 }
 
-.mt-5 {
-  margin-top: 1.25rem
-}
-
 .mt-6 {
   margin-top: 1.5rem
 }
@@ -159,11 +155,6 @@
   text-align: center
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem
-}
-
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem
@@ -215,11 +206,6 @@
 .focus\:border-red-600:focus {
   --tw-border-opacity: 1;
   border-color: rgb(220 38 38 / var(--tw-border-opacity))
-}
-
-.focus\:outline-none:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px
 }
 
 .focus\:ring-4:focus {

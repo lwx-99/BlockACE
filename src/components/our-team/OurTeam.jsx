@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide as SwiperSlide} from "swiper/react";
-import { EffectCoverflow } from 'swiper';
+import { EffectCoverflow } from 'swiper/modules';
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";

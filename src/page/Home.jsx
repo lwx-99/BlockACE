@@ -16,6 +16,7 @@ function Home() {
         <OurTeam />
         <Projects />
         <OurCustomer />
+        <CardSlide />
         <Media />
     </>
   )

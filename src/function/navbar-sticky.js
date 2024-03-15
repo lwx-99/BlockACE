@@ -3,7 +3,6 @@ window.addEventListener('scroll', navbarSticky)
 function navbarSticky() {
     var navBar = document.getElementById("nav-bar-main");
     var measureFromTop = document.documentElement.scrollTop;
-    console.log(measureFromTop)
     var startingPoint = navBar.getBoundingClientRect().y;
 
     if (window.innerWidth > 960) {

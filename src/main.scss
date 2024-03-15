@@ -2,7 +2,6 @@
 @use './components/hero/HeroSection';
 @use './components/service/Services';
 @use './components/about-us/AboutUs';
-@use './components/about-us/cardSlide/CardSlide';
 @use './components/project/Projects';
 @use './components/footer/Footer';
 @use './components/customer/OurCustomer';
@@ -11,6 +10,7 @@
 @use './components/contact-resource/resource/OurResource';
 @use './components/our-team/OurTeam';
 @use './components/media/Media';
+@use './components/cardSlide/CardSlide1';
 
 $primary-color: #00b3c5;
 $light-text-color:#BEFBFF;

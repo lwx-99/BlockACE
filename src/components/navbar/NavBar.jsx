@@ -31,12 +31,7 @@ function NavBar() {
             <ul className={click ? "nav-menu active" : "nav-menu"}>
               <li className="nav-item">
                 <HashLink smooth scroll={scrollWithOffset} to="#about-us" className="nav-link"  onClick={closeMobileMenu}>
-                  About Us
-                </HashLink>
-              </li>
-              <li className="nav-item" >
-                <HashLink smooth scroll={scrollWithOffset} to="#services" className="nav-link"  onClick={closeMobileMenu}>
-                  Services
+                  About
                 </HashLink>
               </li>
               <li className="nav-item" >
@@ -46,12 +41,22 @@ function NavBar() {
               </li>
               <li className="nav-item">
                 <HashLink smooth scroll={scrollWithOffset} to="#projects" className="nav-link"  onClick={closeMobileMenu}>
-                  Projects
+                  Portfolio
                 </HashLink>
               </li>
               <li className="nav-item">
                 <HashLink smooth scroll={scrollWithOffset} to="#customers" className="nav-link"  onClick={closeMobileMenu}>
-                  Partners
+                  Clients
+                </HashLink>
+              </li>
+              <li className="nav-item">
+                <HashLink smooth scroll={scrollWithOffset} to="#playlist" className="nav-link"  onClick={closeMobileMenu}>
+                  Events
+                </HashLink>
+              </li>
+              <li className="nav-item">
+                <HashLink smooth scroll={scrollWithOffset} to="#media-relation" className="nav-link"  onClick={closeMobileMenu}>
+                  Media
                 </HashLink>
               </li>
               {/*<li className="nav-item">
