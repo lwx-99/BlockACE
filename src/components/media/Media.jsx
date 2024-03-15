@@ -81,9 +81,19 @@ const CustomerList = [
     customerName: "coin68",
     alt: "coin68"
   },
+  {
+    logo: "/image/customer/CryptoHolic.webp",
+    customerName: "CryptoHolic",
+    alt: "CryptoHolic"
+  },
+  {
+    logo: "/image/customer/SaigonTradeCoin.png",
+    customerName: "SaigonTradeCoin",
+    alt: "SaigonTradeCoin"
+  },
   
   
-  
+
   
 
 ]

@@ -67,11 +67,6 @@ const CustomerList = [
     alt: "Jinse"
   },
   {
-    logo: "/image/customer/QuestCapital.jpg",
-    customerName: "QuestCapital",
-    alt: "QuestCapital"
-  },
-  {
     logo: "/image/customer/BNCapital.jpg",
     customerName: "BNCapital",
     alt: "BNCapital"
@@ -146,37 +141,6 @@ const CustomerList = [
     customerName: "Gravity",
     alt: "Gravity"
   },
-  {
-    logo: "/image/customer/SpaceCrypto.png",
-    customerName: "SpaceCrypto",
-    alt: "SpaceCrypto"
-  },
-  {
-    logo: "/image/customer/BlockchainCrews.png",
-    customerName: "BlockchainCrews",
-    alt: "BlockchainCrews"
-  },
-  {
-    logo: "/image/customer/CryptoHolic.webp",
-    customerName: "CryptoHolic",
-    alt: "CryptoHolic"
-  },
-  {
-    logo: "/image/customer/SaigonTradeCoin.png",
-    customerName: "SaigonTradeCoin",
-    alt: "SaigonTradeCoin"
-  },
-  {
-    logo: "/image/customer/coinerVN.jpg",
-    customerName: "CoinerVN",
-    alt: "CoinerVN"
-  },
-  {
-    logo: "/image/customer/IMCommunity.jpg",
-    customerName: "IMCommunity",
-    alt: "IMCommunity"
-  },
-  
 
 ]
 

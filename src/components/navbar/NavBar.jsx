@@ -51,7 +51,7 @@ function NavBar() {
               </li>
               <li className="nav-item">
                 <HashLink smooth scroll={scrollWithOffset} to="#playlist" className="nav-link"  onClick={closeMobileMenu}>
-                  Events
+                  Gallery
                 </HashLink>
               </li>
               <li className="nav-item">
