@@ -16,7 +16,7 @@ function AboutUs() {
                 <div className="our-mission">
                   <div>
                     <figure>
-                      <img src="image/icon-svg/focus.svg" height="100px" />
+                      <img src="image/icon-svg/earth-symbol-with-asia-and-oceania.svg" height="200px" />
                     </figure>
                     {/*<h2>Our Mission</h2>*/}
                     {<p>BlockACE provides one-stop solution for crypto & blockchain businesses' development in Vietnam and South East Asia.</p>}

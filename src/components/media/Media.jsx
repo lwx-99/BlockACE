@@ -36,11 +36,11 @@ const CustomerList = [
     customerName: "CoinTokyo",
     alt: "CoinTokyo"
   },
-  {
+  /*{
     logo: "/image/media/blocktides.jpg",
     customerName: "blocktides",
     alt: "blocktides"
-  },
+  },*/
   {
     logo: "/image/media/sctv.png",
     customerName: "SCTV",
@@ -50,6 +50,26 @@ const CustomerList = [
     logo: "/image/media/vtc.png",
     customerName: "VTC",
     alt: "VTC"
+  },
+  {
+    logo: "/image/media/htv.png",
+    customerName: "HTV",
+    alt: "HTV"
+  },
+  {
+    logo: "/image/media/vov.jpg",
+    customerName: "VOV",
+    alt: "VOV"
+  },
+  {
+    logo: "/image/media/VITV_logo.webp",
+    customerName: "VITV",
+    alt: "VITV"
+  },
+  {
+    logo: "/image/media/fbnc.png",
+    customerName: "fbnc",
+    alt: "fbnc"
   },
   {
     logo: "/image/media/thanhnien.png",
@@ -67,9 +87,84 @@ const CustomerList = [
     alt: "sgtimes"
   },
   {
+    logo: "/image/media/vietnamnet.jpg",
+    customerName: "vietnamnet",
+    alt: "vietnamnet"
+  },
+  {
     logo: "/image/media/cafebiz.png",
     customerName: "cafebiz",
     alt: "cafebiz"
+  },
+  {
+    logo: "/image/media/cafef.png",
+    customerName: "CafeF",
+    alt: "CafeF"
+  },
+  {
+    logo: "/image/media/dantriinternational.png",
+    customerName: "DantriInternational",
+    alt: "DantriInternational"
+  },
+  {
+    logo: "/image/media/doanhnghiephoinhap.jpg",
+    customerName: "doanhnghiephoinhap",
+    alt: "doanhnghiephoinhap"
+  },
+  {
+    logo: "/image/media/enternews.png",
+    customerName: "enternews",
+    alt: "enternews"
+  },
+  {
+    logo: "/image/media/ictnew.png",
+    customerName: "ictnews",
+    alt: "ictnews"
+  },
+  {
+    logo: "/image/media/Logo_baomoi.png",
+    customerName: "BaoMoi",
+    alt: "BaoMoi"
+  },
+  {
+    logo: "/image/media/logobizhub.png",
+    customerName: "bizhub",
+    alt: "bizhub"
+  },
+  {
+    logo: "/image/media/thegioitiepthi.webp",
+    customerName: "thegioitiepthi",
+    alt: "thegioitiepthi"
+  },
+  {
+    logo: "/image/media/mxpress.png",
+    customerName: "mxpress",
+    alt: "mxpress"
+  },
+  {
+    logo: "/image/media/thoibaonganhang.png",
+    customerName: "thoibaonganhang",
+    alt: "thoibaonganhang"
+  },
+  {
+    logo: "/image/media/thoibaotaichinh.svg",
+    customerName: "thoibaotaichinh",
+    alt: "thoibaotaichinh"
+  },
+  {
+    logo: "/image/media/vccinews.png",
+    customerName: "vccinews",
+    alt: "vccinews"
+  },
+  {
+    logo: "/image/media/vietnamnews.png",
+    customerName: "vietnamnews",
+    alt: "vietnamnews"
+  },
+  {
+    logo: "/image/media/virlogo.svg",
+    customerName: "virlogo",
+    alt: "virlogo"
   },
   {
     logo: "/image/media/bta.webp",
